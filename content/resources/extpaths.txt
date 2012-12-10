@@ -3,3 +3,4 @@
 doxia
 doxia-sitetools
 doxia-1.2
+doxia-sitetools-1.2
