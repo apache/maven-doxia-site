@@ -2,3 +2,4 @@
 # space indentation = directories not yet committed to svn production tree
 doxia
 doxia-sitetools
+doxia-1.2
