@@ -51,7 +51,7 @@ Introduction
 
  A sample is given below:
 
-%{snippet|id=example|file=src/books/example-book.xml}
+%{snippet|id=example|file=content/books/example-book.xml}
 
 * Configuring Doxia Book Maven Plugin
 

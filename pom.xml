@@ -211,7 +211,7 @@ under the License.
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-pdf-plugin</artifactId>
-          <version>1.2-SNAPSHOT</version>
+          <version>1.2</version>
 
         </plugin>
       </plugins>
@@ -234,8 +234,8 @@ under the License.
         <configuration>
           <books>
             <book>
-              <directory>src/books/example-book</directory>
-              <descriptor>src/books/example-book.xml</descriptor>
+              <directory>content/books/example-book</directory>
+              <descriptor>content/books/example-book.xml</descriptor>
               <formats>
                 <format>
                   <id>latex</id>
@@ -295,6 +295,8 @@ under the License.
             </goals>
             <configuration>
               <outputDirectory>${project.reporting.outputDirectory}</outputDirectory>
+              <siteDirectory>${basedir}/content</siteDirectory>
+              <docDescriptor>${basedir}/content/pdf.xml</docDescriptor>
             </configuration>
           </execution>
         </executions>
