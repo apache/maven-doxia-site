@@ -1,3 +1,4 @@
 # directories in /www/maven.apache.org/doxia but not in any svn tree: dtd, project, xsd
 # space indentation = directories not yet committed to svn production tree
 doxia
+doxia-sitetools
