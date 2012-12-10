@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+
+  <properties>
+    <title>Doxia Markup Languages References</title>
+    <author email="ltheussl_AT_apache_DOT_org">Lukas Theussl</author>
+    <author email="vsiveton_AT_apache_DOT_org">Vincent Siveton</author>
+  </properties>
+
+  <body>
+
+    <section name="Doxia Markup Languages References">
+      <p>
+        The following table gives an overview of the markup languages currently
+        supported by Doxia:
+      </p>
+      <ul>
+        <li>if a <i>Parser</i> is available for a given format, it
+        means that you can write your documentation in this language and Doxia
+        can generate output from it,</li>
+        <li>if a <i>Sink</i> is available, it means you can
+        generate output in this format.</li>
+      </ul>
+
+      <p>
+        The source directory is the directory under which Maven expects source
+        documents in this format (e.g. <code>src/site/apt/</code> for Apt), the
+        file extension is the default file extension, and the parser id is gives the
+        unique identifier that is used by plexus to lookup the corresponding
+        component.
+      </p>
+
+        <table border="0">
+          <tr>
+            <th>Format</th>
+            <th>Short description</th>
+            <th align="center">Parser<br/>(input)</th>
+            <th align="center">Sink<br/>(output)</th>
+            <th>Source Directory</th>
+            <th>File Extension</th>
+            <th>Doxia Module</th>
+            <th>Parser Id</th>
+          </tr>
+
+          <tr>
+            <td><a href="./apt-format.html">Apt</a></td>
+            <td>Almost Plain Text</td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td><code>apt</code></td>
+            <td><code>apt</code></td>
+            <td><a href="../doxia/doxia-modules/doxia-module-apt/"><code>doxia-module-apt</code></a></td>
+            <td><code>apt</code></td>
+          </tr>
+
+          <tr>
+            <td><a href="../modules/index.html#Confluence">Confluence</a></td>
+            <td>Confluence Enterprise Wiki</td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/><sup>*</sup></td>
+            <td><code>confluence</code></td>
+            <td><code>confluence</code></td>
+            <td><a href="../doxia/doxia-modules/doxia-module-confluence/"><code>doxia-module-confluence</code></a></td>
+            <td><code>confluence</code></td>
+          </tr>
+
+          <tr>
+            <td><a href="../modules/index.html#Simplified_DocBook">Simplified DocBook</a></td>
+            <td>Simplified DocBook XML Standard</td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td><code>docbook</code></td>
+            <td><code>xml</code></td>
+            <td><a href="../doxia/doxia-modules/doxia-module-docbook-simple/"><code>doxia-module-docbook-simple</code></a></td>
+            <td><code>doc-book</code></td>
+          </tr>
+
+          <tr>
+            <td><a href="./fml-format.html">FML</a></td>
+            <td>FAQ Markup Language</td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td align="center"><img src="../images/icon_error_sml.gif" alt="No"/></td>
+            <td><code>fml</code></td>
+            <td><code>fml</code></td>
+            <td><a href="../doxia/doxia-modules/doxia-module-fml/"><code>doxia-module-fml</code></a></td>
+            <td><code>fml</code></td>
+          </tr>
+
+          <tr>
+            <td><a href="../modules/index.html#iText">iText</a></td>
+            <td>iText PDF Library</td>
+            <td align="center"><img src="../images/icon_error_sml.gif" alt="No"/></td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td></td>
+            <td></td>
+            <td><a href="../doxia/doxia-modules/doxia-module-itext/"><code>doxia-module-itext</code></a></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td><a href="../modules/index.html#FO">FO</a><sup>*</sup></td>
+            <td>XSL formatting objects (XSL-FO)</td>
+            <td align="center"><img src="../images/icon_error_sml.gif" alt="No"/></td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td></td>
+            <td></td>
+            <td><a href="../doxia/doxia-modules/doxia-module-fo/"><code>doxia-module-fo</code></a></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td><a href="../modules/index.html#LaTeX">LaTeX</a></td>
+            <td>LaTeX typesetting system</td>
+            <td align="center"><img src="../images/icon_error_sml.gif" alt="No"/></td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td></td>
+            <td></td>
+            <td><a href="../doxia/doxia-modules/doxia-module-latex/"><code>doxia-module-latex</code></a></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td><a href="../modules/index.html#Markdown">Markdown</a><sup>**</sup></td>
+            <td>Markdown markup language</td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td align="center"><img src="../images/icon_error_sml.gif" alt="No"/></td>
+            <td><code>markdown</code></td>
+            <td><code>md</code></td>
+            <td><a href="../doxia/doxia-modules/doxia-module-markdown/"><code>doxia-module-markdown</code></a></td>
+            <td><code>markdown</code></td>
+          </tr>
+
+          <tr>
+            <td><a href="../modules/index.html#RTF">RTF</a></td>
+            <td>Microsoft Rich Text Format</td>
+            <td align="center"><img src="../images/icon_error_sml.gif" alt="No"/></td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td></td>
+            <td></td>
+            <td><a href="../doxia/doxia-modules/doxia-module-rtf/"><code>doxia-module-rtf</code></a></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td><a href="../modules/index.html#TWiki">TWiki</a><sup>*</sup></td>
+            <td>TWiki Structured Wiki</td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td><code>twiki</code></td>
+            <td><code>twiki</code></td>
+            <td><a href="../doxia/doxia-modules/doxia-module-twiki/"><code>doxia-module-twiki</code></a></td>
+            <td><code>twiki</code></td>
+          </tr>
+
+          <tr>
+            <td><a href="./xdoc-format.html">Xdoc</a></td>
+            <td>XML Documentation Format</td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td><code>xdoc</code></td>
+            <td><code>xml</code></td>
+            <td><a href="../doxia/doxia-modules/doxia-module-xdoc/"><code>doxia-module-xdoc</code></a></td>
+            <td><code>xdoc</code></td>
+          </tr>
+
+          <tr>
+            <td><a href="../modules/index.html#XHTML">XHTML</a></td>
+            <td>Extensible Hypertext Markup Language</td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td><code>xhtml</code></td>
+            <td><code>xhtml</code></td>
+            <td><a href="../doxia/doxia-modules/doxia-module-xhtml/"><code>doxia-module-xhtml</code></a></td>
+            <td><code>xhtml</code></td>
+          </tr>
+        </table>
+
+        <p>
+          Note some modules are not included per default with the site plugin.
+          Have a look at the available modules here: <a href="http://repo.maven.apache.org/maven2/org/apache/maven/doxia/">http://repo.maven.apache.org/maven2/org/apache/maven/doxia/</a>.
+          <br/>
+          If you need to add module for the maven site plugin simply add it as a dependency of the plugin
+          <source>
+            <![CDATA[
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-site-plugin</artifactId>
+              <version>3.2</version>
+              <dependencies>
+                <dependency>
+                  <groupId>org.apache.maven.doxia</groupId>
+                  <artifactId>doxia-module-markdown</artifactId>
+                  <version>1.3</version>
+                </dependency>
+              </dependencies>
+            </plugin>
+            ]]>
+          </source>
+        </p>
+
+        <p>
+          <sup>*</sup> Since Doxia 1.1
+        </p>
+        <p>
+          <sup>**</sup> Since Doxia 1.3
+        </p>
+    </section>
+
+  </body>
+
+</document>

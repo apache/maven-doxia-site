@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.apache.maven</groupId>
+    <artifactId>maven-parent</artifactId>
+    <version>22</version>
+    <relativePath>../../pom/maven/pom.xml</relativePath>
+  </parent>
+
+  <groupId>org.apache.maven.doxia</groupId>
+  <artifactId>doxia-site</artifactId>
+  <packaging>pom</packaging>
+
+  <name>Doxia Site</name>
+  <description>Site of the Maven Doxia Framework</description>
+  <url>http://maven.apache.org/doxia/</url>
+  <inceptionYear>2005</inceptionYear>
+
+  <mailingLists>
+    <mailingList>
+      <name>Maven User List</name>
+      <subscribe>users-subscribe@maven.apache.org</subscribe>
+      <unsubscribe>users-unsubscribe@maven.apache.org</unsubscribe>
+      <post>users@maven.apache.org</post>
+      <archive>http://mail-archives.apache.org/mod_mbox/maven-users</archive>
+      <otherArchives>
+        <otherArchive>http://www.mail-archive.com/users@maven.apache.org/</otherArchive>
+        <otherArchive>http://oldnabble.com/Maven---Users-f178.html</otherArchive>
+        <otherArchive>http://markmail.org/list/org.apache.maven.users</otherArchive>
+      </otherArchives>
+    </mailingList>
+    <mailingList>
+      <name>Maven Developer List</name>
+      <subscribe>dev-subscribe@maven.apache.org</subscribe>
+      <unsubscribe>dev-unsubscribe@maven.apache.org</unsubscribe>
+      <post>dev@maven.apache.org</post>
+      <archive>http://mail-archives.apache.org/mod_mbox/maven-dev</archive>
+      <otherArchives>
+        <otherArchive>http://www.mail-archive.com/dev@maven.apache.org/</otherArchive>
+        <otherArchive>http://old.nabble.com/Maven-Developers-f179.html</otherArchive>
+        <otherArchive>http://markmail.org/list/org.apache.maven.dev</otherArchive>
+      </otherArchives>
+    </mailingList>
+    <mailingList>
+      <name>Maven Commits List</name>
+      <subscribe>commits-subscribe@maven.apache.org</subscribe>
+      <unsubscribe>commits-unsubscribe@maven.apache.org</unsubscribe>
+      <archive>http://mail-archives.apache.org/mod_mbox/maven-commits</archive>
+      <otherArchives>
+        <otherArchive>http://www.mail-archive.com/commits@maven.apache.org</otherArchive>
+        <otherArchive>http://old.nabble.com/Maven---Commits-f15575.html</otherArchive>
+        <otherArchive>http://markmail.org/list/org.apache.maven.commits</otherArchive>
+      </otherArchives>
+    </mailingList>
+    <mailingList>
+      <name>Maven Issues List</name>
+      <subscribe>issues-subscribe@maven.apache.org</subscribe>
+      <unsubscribe>issues-unsubscribe@maven.apache.org</unsubscribe>
+      <archive>http://mail-archives.apache.org/mod_mbox/maven-issues/</archive>
+      <otherArchives>
+        <otherArchive>http://www.mail-archive.com/issues@maven.apache.org</otherArchive>
+        <otherArchive>http://old.nabble.com/Maven---Issues-f15573.html</otherArchive>
+        <otherArchive>http://markmail.org/list/org.apache.maven.issues</otherArchive>
+      </otherArchives>
+    </mailingList>
+    <mailingList>
+      <name>Old Doxia Developer List (closed)</name>
+      <archive>http://mail-archives.apache.org/mod_mbox/maven-doxia-dev/</archive>
+      <otherArchives>
+        <otherArchive>http://www.mail-archive.com/doxia-dev@maven.apache.org</otherArchive>
+        <otherArchive>http://www.nabble.com/Doxia---dev-f11816.html</otherArchive>
+        <otherArchive>http://markmail.org/list/org.apache.maven.doxia-dev</otherArchive>
+      </otherArchives>
+    </mailingList>
+    <mailingList>
+      <name>Old Doxia User List (closed)</name>
+      <archive>http://mail-archives.apache.org/mod_mbox/maven-doxia-users/</archive>
+      <otherArchives>
+        <otherArchive>http://www.mail-archive.com/doxia-users@maven.apache.org</otherArchive>
+        <otherArchive>http://www.nabble.com/Doxia---Users-f14483.html</otherArchive>
+        <otherArchive>http://markmail.org/list/org.apache.maven.doxia-users</otherArchive>
+      </otherArchives>
+    </mailingList>
+    <mailingList>
+      <name>Old Doxia Commits List (closed)</name>
+      <archive>http://mail-archives.apache.org/mod_mbox/maven-doxia-commits/</archive>
+      <otherArchives>
+        <otherArchive>http://www.mail-archive.com/doxia-commits@maven.apache.org</otherArchive>
+        <otherArchive>http://markmail.org/list/org.apache.maven.doxia-commits</otherArchive>
+      </otherArchives>
+    </mailingList>
+    <mailingList>
+      <name>Maven Issues List</name>
+      <subscribe>issues-subscribe@maven.apache.org</subscribe>
+      <unsubscribe>issues-unsubscribe@maven.apache.org</unsubscribe>
+      <archive>http://mail-archives.apache.org/mod_mbox/maven-issues/</archive>
+      <otherArchives>
+        <otherArchive>http://www.mail-archive.com/issues@maven.apache.org</otherArchive>
+        <otherArchive>http://www.nabble.com/Maven---Issues-f15573.html</otherArchive>
+        <otherArchive>http://markmail.org/list/org.apache.maven.issues</otherArchive>
+      </otherArchives>
+    </mailingList>
+
+    <!-- duplication from parent pom - temporary until they inherit properly -->
+    <mailingList>
+      <name>Maven Announcements List</name>
+      <post>announce@maven.apache.org</post>
+      <subscribe>announce-subscribe@maven.apache.org</subscribe>
+      <unsubscribe>announce-unsubscribe@maven.apache.org</unsubscribe>
+      <archive>http://mail-archives.apache.org/mod_mbox/maven-announce/</archive>
+      <otherArchives>
+        <otherArchive>http://www.mail-archive.com/announce@maven.apache.org</otherArchive>
+        <otherArchive>http://www.nabble.com/Maven-Announcements-f15617.html</otherArchive>
+        <otherArchive>http://markmail.org/list/org.apache.maven.announces</otherArchive>
+      </otherArchives>
+    </mailingList>
+    <mailingList>
+      <name>Maven Notifications List</name>
+      <subscribe>notifications-subscribe@maven.apache.org</subscribe>
+      <unsubscribe>notifications-unsubscribe@maven.apache.org</unsubscribe>
+      <archive>http://mail-archives.apache.org/mod_mbox/maven-notifications/</archive>
+      <otherArchives>
+        <otherArchive>http://www.mail-archive.com/notifications@maven.apache.org</otherArchive>
+        <otherArchive>http://www.nabble.com/Maven---Notifications-f15574.html</otherArchive>
+        <otherArchive>http://markmail.org/list/org.apache.maven.notifications</otherArchive>
+      </otherArchives>
+    </mailingList>
+  </mailingLists>
+
+  <scm>
+    <connection>scm:svn:http://svn.apache.org/repos/asf/maven/doxia/site/</connection>
+    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/maven/doxia/site/</developerConnection>
+    <url>http://svn.apache.org/viewvc/maven/doxia/site/</url>
+  </scm>
+
+  <issueManagement>
+    <system>jira</system>
+    <url>http://jira.codehaus.org/browse/DOXIA</url>
+  </issueManagement>
+
+  <ciManagement>
+    <system>Jenkins</system>
+    <url>https://builds.apache.org/job/maven-doxia-trunks/</url>
+  </ciManagement>
+
+  <distributionManagement>
+    <site>
+      <id>apache.website</id>
+      <url>scp://people.apache.org/www/maven.apache.org/doxia/</url>
+    </site>
+  </distributionManagement>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>apache.snapshots</id>
+      <name>Apache Snapshot Repository</name>
+      <url>http://repository.apache.org/snapshots/</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <properties>
+    <doxiaVersion>1.3</doxiaVersion>
+    <site.output>${project.build.directory}/site</site.output>
+  </properties>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-antrun-plugin</artifactId>
+          <version>1.6</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>3.2</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-pdf-plugin</artifactId>
+          <version>1.2-SNAPSHOT</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
+    <plugins>
+<!-- START SNIPPET: configuration -->
+      <plugin>
+        <groupId>org.apache.maven.doxia</groupId>
+        <artifactId>doxia-book-maven-plugin</artifactId>
+        <version>1.3-SNAPSHOT</version>
+        <executions>
+          <execution>
+            <phase>pre-site</phase>
+            <goals>
+              <goal>render-books</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <books>
+            <book>
+              <directory>src/books/example-book</directory>
+              <descriptor>src/books/example-book.xml</descriptor>
+              <formats>
+                <format>
+                  <id>latex</id>
+                </format>
+                <format>
+                  <id>xdoc</id>
+                </format>
+                <format>
+                  <id>pdf</id>
+                </format>
+                <format>
+                  <id>rtf</id>
+                </format>
+              </formats>
+            </book>
+          </books>
+        </configuration>
+      </plugin>
+<!-- END SNIPPET: configuration -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>site</id>
+            <phase>site</phase>
+            <configuration>
+              <target>
+
+                <copy todir="${project.reporting.outputDirectory}/doxia-example-book/">
+                  <fileset dir="${project.build.directory}/generated-site/pdf/doxia-example-book">
+                    <include name="**/*.pdf"/>
+                  </fileset>
+                  <fileset dir="${project.build.directory}/generated-site/rtf/doxia-example-book">
+                    <include name="**/*.rtf"/>
+                  </fileset>
+                </copy>
+
+              </target>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pdf-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>pdf</id>
+            <phase>site</phase>
+            <goals>
+              <goal>pdf</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.reporting.outputDirectory}</outputDirectory>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <reporting>
+    <excludeDefaults>true</excludeDefaults>
+    <outputDirectory>${site.output}</outputDirectory>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>2.6</version>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>cim</report>
+              <report>issue-tracking</report>
+              <report>license</report>
+              <report>mailing-list</report>
+              <report>project-team</report>
+              <report>scm</report>
+              <report>summary</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+        <configuration>
+          <checkoutDirectoryName>doxia</checkoutDirectoryName>
+          <webAccessUrl>http://svn.apache.org/viewvc/maven/doxia/</webAccessUrl>
+          <anonymousConnection>scm:svn:http://svn.apache.org/repos/asf/maven/doxia/trunks/</anonymousConnection>
+          <developerConnection>scm:svn:https://svn.apache.org/repos/asf/maven/doxia/trunks/</developerConnection>
+        </configuration>
+      </plugin>
+    </plugins>
+  </reporting>
+
+  <profiles>
+    <profile>
+      <id>linkcheck</id>
+      <!-- TODO: remove pdf from build, apparently linkcheck plugin is not compatible -->
+      <reporting>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-linkcheck-plugin</artifactId>
+            <version>1.1</version>
+          </plugin>
+        </plugins>
+      </reporting>
+    </profile>
+  </profiles>
+
+</project>

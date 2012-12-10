@@ -1,0 +1,132 @@
+ -----
+ Doxia Developers Centre
+ -----
+ Vincent Siveton
+ ------
+ 2008-03-02
+ ------
+
+~~ Licensed to the Apache Software Foundation (ASF) under one
+~~ or more contributor license agreements.  See the NOTICE file
+~~ distributed with this work for additional information
+~~ regarding copyright ownership.  The ASF licenses this file
+~~ to you under the Apache License, Version 2.0 (the
+~~ "License"); you may not use this file except in compliance
+~~ with the License.  You may obtain a copy of the License at
+~~
+~~   http://www.apache.org/licenses/LICENSE-2.0
+~~
+~~ Unless required by applicable law or agreed to in writing,
+~~ software distributed under the License is distributed on an
+~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+~~ KIND, either express or implied.  See the License for the
+~~ specific language governing permissions and limitations
+~~ under the License.
+
+~~ NOTE: For help with the syntax of this file, see:
+~~ http://maven.apache.org/doxia/references/apt-format.html
+
+Create a New Doxia Module
+
+ First, you need to create a POM with <doxia-modules> as parent:
+
++----
+<project>
+  <parent>
+    <groupId>org.apache.maven.doxia</groupId>
+    <artifactId>doxia-modules</artifactId>
+    <version>1.0</version> <!-- Latest release -->
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>doxia-module-my</artifactId>
+  <name>Doxia :: MY Module</name>
+
+  ...
+</project>
++----
+
+ Secondly, you should implement some Doxia classes:
+
+ * <MyParser> class
+
++----
+import org.apache.maven.doxia.parser.AbstractParser;
+
+/**
+ * @plexus.component role="org.apache.maven.doxia.parser.Parser" role-hint="my"
+ */
+public class MyParser
+    extends AbstractParser
+{
+...
+}
++----
+
+ * <MyParseException> class (optional)
+
++----
+import org.apache.maven.doxia.parser.ParseException;
+
+public class MyParseException
+    extends ParseException
+{
+...
+}
++----
+
+ * <MySiteModule> class (optional, will be used by doxia-sitetools)
+
++----
+import org.apache.maven.doxia.module.site.AbstractSiteModule;
+
+/**
+ * @plexus.component role="org.apache.maven.doxia.module.site.SiteModule" role-hint="my"
+ */
+public class MySiteModule
+    extends AbstractSiteModule
+{
+...
+}
++----
+
+ * <MySink> class
+
++----
+import org.apache.maven.doxia.sink.SinkAdapter;
+
+public class MySink
+    extends SinkAdapter
+{
+...
+}
++----
+
+ * <MySinkFactory> class
+
++----
+import org.apache.maven.doxia.sink.SinkFactory;
+
+/**
+ * @plexus.component role="org.apache.maven.doxia.sink.SinkFactory" role-hint="my"
+ */
+public class MySinkFactory
+    extends SinkFactory
+{
+...
+}
++----
+
+  []
+
+
+* {References}
+
+  * {{{../modules/index.html}Doxia Modules Guide}}
+
+  * {{{../macros/index.html}Doxia Macros Guide}}
+
+  * {{{../doxia/apidocs/index.html}Doxia API Reference}}
+
+  * {{{../doxia-sitetools/apidocs/index.html}Doxia Sitetools API Reference}}
+
+  []
