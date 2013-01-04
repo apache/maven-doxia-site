@@ -4,3 +4,4 @@ doxia
 doxia-archives
 doxia-sitetools
 doxia-sitetools-archives
+doxia-ide/eclipse/
