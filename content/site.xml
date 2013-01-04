@@ -83,7 +83,7 @@ under the License.
         <item name="Doxia Sitetools" href="doxia-sitetools-archives/doxia-sitetools-1.2/index.html"/>
       </item>
       <item name="Doxia Tools" href="doxia-tools/index.html"/>
-      <item name="Doxia IDE" href="doxia-ide/index.html"/>
+      <item name="Doxia IDE" href="doxia-ide.html"/>
     </menu>
 
     <menu ref="reports"/>
