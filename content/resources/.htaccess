@@ -1,0 +1,2 @@
+RedirectMatch permanent ^/doxia-1.2/(.*)$ /doxia-archives/doxia-1.2/$1
+
