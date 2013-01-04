@@ -10,7 +10,7 @@ Doxia IDE
 
   IDE integration to ease Doxia documents editing in your favorite IDE:
 
-  * Eclipse: {{{doxia-ide/eclipse/} <<<Doxia Eclipse Editor Plugin>>>}}
+  * Eclipse: {{{./doxia-ide/eclipse/} <<<Doxia Eclipse Editor Plugin>>>}}
 
   * Netbeans: {{{http://svn.apache.org/viewvc/maven/sandbox/trunk/doxia/doxia-ide/netbeans/}work in progress}}
     or {{{http://code.google.com/p/nb-doxia-support/}external nb-doxia-support}}
