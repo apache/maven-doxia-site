@@ -2,8 +2,9 @@
  Doxia APT Enhancements
  -----
  Lukas Theussl
+ Robert Scholte
  -----
- 2009-05-27
+ 2013-04-06
  ------
 
 ~~ Licensed to the Apache Software Foundation (ASF) under one
@@ -194,6 +195,16 @@ Enhancements to the APT format
   * An <<external>> link is a link that is neither local nor internal.
 
     An external link should be a valid {{{http://www.ietf.org/rfc/rfc2396.txt}URI}}.
+    
+  []  
+    
+  Anchors are always translated to a valid id, including escaping. In some situation this can cause issues, especially when referring to a javadoc-link.\
+  Since Doxia 1.4 there is support for literal anchors, by using 2 hashed (##) instead of 1.
+  This implies that the writer is responsible for using the right URL encoding!
+  
+---
+  {{{../apidocs/groovyx/net/http/ParserRegistry.html##parseText(org.apache.http.HttpResponse)}ParserRegistry}}
+---  
 
 * {Figure extensions}
 ~~~~~~~~~~~~~~~~~~~~~
