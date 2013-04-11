@@ -29,7 +29,7 @@
 Doxia Issues & Gotchas
 
  This document collects some infos about specific issues and 'gotchas' when working with Doxia.
- Please check also the {{{../faq.apt}Frequently Asked Questions}}.
+ Please check also the {{{../faq.html}Frequently Asked Questions}}.
 
 %{toc|section=1|fromDepth=2|toDepth=2}
 
