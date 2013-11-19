@@ -151,6 +151,8 @@ public class MyClass
 |           | of the snippet will not be escaped. This means that you can use it like Server-Side Includes on a
 |           | webserver. Default value is <<<true>>>.
 *-----------+--------------+
+| encoding  | The encoding of the file to read (since Doxia 1.6). If omitted the default JVM encoding will be used.
+*-----------+--------------+
 
 * {TOC Macro}
 
