@@ -180,7 +180,7 @@ under the License.
   </pluginRepositories>
 
   <properties>
-    <doxiaVersion>1.4</doxiaVersion>
+    <doxiaVersion>1.5</doxiaVersion>
     <site.output>${project.build.directory}/site</site.output>
   </properties>
 
