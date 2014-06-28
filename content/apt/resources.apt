@@ -28,6 +28,14 @@
 
 External Resources
 
+* Extensions
+
+*-----------+--------------+
+|| Name    || Author
+*-----------+--------------+
+| {{{http://doxia-include.sourceforge.net/}Doxia :: Include Macro}} | Juergen Kellerer
+*-----------+--------------+
+
 * Articles
 
 *-----------+--------------+--------------+
@@ -58,4 +66,3 @@ Related External Projects
  * {{{http://wiki.eclipse.org/Mylyn/Incubator/WikiText}Mylyn WikiText}} (originally known as Textile-J).
 
  []
-
