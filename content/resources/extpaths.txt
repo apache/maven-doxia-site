@@ -6,3 +6,4 @@ doxia-sitetools
 doxia-sitetools-archives
 doxia-ide
 doxia-tools
+doxia-tools-archives
