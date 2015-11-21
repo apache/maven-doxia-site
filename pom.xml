@@ -153,13 +153,6 @@ under the License.
     <url>https://builds.apache.org/job/maven-doxia-trunks/</url>
   </ciManagement>
 
-  <distributionManagement>
-    <site>
-      <id>apache.website</id>
-      <url>scp://people.apache.org/www/maven.apache.org/doxia/</url>
-    </site>
-  </distributionManagement>
-
   <pluginRepositories>
     <pluginRepository>
       <id>apache.snapshots</id>
