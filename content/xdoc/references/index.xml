@@ -202,9 +202,7 @@ under the License.
           Have a look at the available modules here: <a href="http://repo.maven.apache.org/maven2/org/apache/maven/doxia/">http://repo.maven.apache.org/maven2/org/apache/maven/doxia/</a>.
           <br/>
           If you need to add module for the maven site plugin simply add it as a dependency of the plugin
-          <source>
-            <![CDATA[
-            <plugin>
+          <source><![CDATA[            <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-site-plugin</artifactId>
               <version>3.2</version>
@@ -215,8 +213,7 @@ under the License.
                   <version>1.3</version>
                 </dependency>
               </dependencies>
-            </plugin>
-            ]]>
+            </plugin>]]>
           </source>
         </p>
 

@@ -21,20 +21,19 @@ under the License.
 
 <project xmlns="http://maven.apache.org/DECORATION/1.0.0"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 ../../../doxia-sitetools/doxia-decoration-model/target/generated-site/xsd/decoration-1.0.0.xsd"
+ xsi:schemaLocation="http://maven.apache.org/DECORATION/1.3.0 http://maven.apache.org/xsd/decoration-1.3.0.xsd"
  name="Doxia">
   <version position="none" />
 
-  <bannerLeft>
-    <name>Maven</name>
-    <src>images/apache-maven-project-2.png</src>
-    <href>http://maven.apache.org/</href>
-  </bannerLeft>
-  <bannerRight>
-    <name>Doxia</name>
-    <src>images/maven-logo-2.gif</src>
-    <href>http://maven.apache.org/doxia/</href>
-  </bannerRight>
+  <custom>
+    <fluidoSkin>
+      <sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
+      <googlePlusOne />
+      <googleSearch>
+        <sitesearch>https://maven.apache.org/doxia</sitesearch>
+      </googleSearch>
+    </fluidoSkin>
+  </custom>
 
   <body>
     <breadcrumbs>

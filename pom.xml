@@ -23,7 +23,7 @@ under the License.
   <parent>
     <groupId>org.apache.maven</groupId>
     <artifactId>maven-parent</artifactId>
-    <version>24</version>
+    <version>27</version>
     <relativePath>../../pom/maven/pom.xml</relativePath>
   </parent>
 
@@ -110,19 +110,8 @@ under the License.
         <otherArchive>http://markmail.org/list/org.apache.maven.doxia-commits</otherArchive>
       </otherArchives>
     </mailingList>
-    <mailingList>
-      <name>Maven Issues List</name>
-      <subscribe>issues-subscribe@maven.apache.org</subscribe>
-      <unsubscribe>issues-unsubscribe@maven.apache.org</unsubscribe>
-      <archive>http://mail-archives.apache.org/mod_mbox/maven-issues/</archive>
-      <otherArchives>
-        <otherArchive>http://www.mail-archive.com/issues@maven.apache.org</otherArchive>
-        <otherArchive>http://www.nabble.com/Maven---Issues-f15573.html</otherArchive>
-        <otherArchive>http://markmail.org/list/org.apache.maven.issues</otherArchive>
-      </otherArchives>
-    </mailingList>
 
-    <!-- duplication from parent pom - temporary until they inherit properly -->
+    <!-- duplication from parent pom - temporary until we have a feature to make them inherit properly -->
     <mailingList>
       <name>Maven Announcements List</name>
       <post>announce@maven.apache.org</post>
