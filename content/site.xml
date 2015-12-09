@@ -25,12 +25,18 @@ under the License.
  name="Doxia">
   <version position="none" />
 
+  <bannerRight>
+    <name>Doxia</name>
+    <src>images/doxia-logo.png</src>
+    <href>http://maven.apache.org/doxia/</href>
+  </bannerRight>
+
   <custom>
     <fluidoSkin>
       <sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
       <googlePlusOne />
       <googleSearch>
-        <sitesearch>https://maven.apache.org/doxia</sitesearch>
+        <sitesearch>http://maven.apache.org/doxia</sitesearch>
       </googleSearch>
     </fluidoSkin>
   </custom>
