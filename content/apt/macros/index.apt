@@ -30,10 +30,9 @@ Doxia Macros Guide
 
  The Doxia <Core> includes macro mechanisms to facilitate the documentation writing.
 
- Macros are currently only supported for the standard Maven input formats APT and Xdoc.
- Support in FML files will be added in a
- {{{http://jira.codehaus.org/browse/DOXIA-281}future version}} of Doxia.
- Macros are not (and probably will never be) supported by Confluence, Docbook, Twiki and XHTML modules.
+ Macros are currently only supported for APT, Xdoc and FML formats. Starting with Doxia 1.7 (maven-site-plugin 3.5),
+ macros are also supported for XHTML and Markdown.
+ Macros are not (and probably will never be) supported by Confluence, Docbook and Twiki modules.
 
  A macro in an APT source file is a <<non-indented>> line that looks like this:
 
@@ -41,7 +40,7 @@ Doxia Macros Guide
 %{macro_name|param1=value1|param2=value2|...}
 +----
 
- An Xdoc macro has the following syntax:
+ An Xdoc or FML macro has the following syntax:
 
 +----
 <macro name="macro_name">
@@ -49,6 +48,12 @@ Doxia Macros Guide
   <param name="param2" value="value2"/>
   ...
 </macro>
++----
+
+ Since Doxia 1.7, an XHTML or Markdown macro has the following syntax:
+
++----
+<!-- MACRO{macro_name|param1=value1|param2=value2|...} -->
 +----
 
  As of Doxia 1.1, the following macros are available:
