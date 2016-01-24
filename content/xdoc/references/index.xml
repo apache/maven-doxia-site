@@ -94,7 +94,7 @@ under the License.
             <td><code>docbook</code></td>
             <td><code>xml</code></td>
             <td><a href="../doxia/doxia-modules/doxia-module-docbook-simple/"><code>doxia-module-docbook-simple</code></a></td>
-            <td><code>doc-book</code></td>
+            <td><code>docbook</code></td>
           </tr>
 
           <tr>
