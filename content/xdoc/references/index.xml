@@ -147,7 +147,7 @@ under the License.
             <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
             <td align="center"><img src="../images/icon_error_sml.gif" alt="No"/></td>
             <td><code>markdown</code></td>
-            <td><code>md</code></td>
+            <td><code>md</code>, <code>markdown</code><sup>***</sup></td>
             <td><a href="../doxia/doxia-modules/doxia-module-markdown/"><code>doxia-module-markdown</code></a></td>
             <td><code>markdown</code></td>
           </tr>
@@ -222,6 +222,9 @@ under the License.
         </p>
         <p>
           <sup>**</sup> Since Doxia 1.3
+        </p>
+        <p>
+          <sup>***</sup> Since Doxia 1.7
         </p>
     </section>
 
