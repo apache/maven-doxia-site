@@ -50,8 +50,9 @@ under the License.
 
         <p>
           Historically, the xdoc format can be traced back to the
-          <a href="http://jakarta.apache.org/site/jakarta-site2.html">Anakia</a> format, as once used by the
-          <a href="http://jakarta.apache.org/">Apache Jakarta</a> project.
+          <a href="http://velocity.apache.org/anakia/devel/">Anakia</a> format, as once used by the
+          <a href="http://jakarta.apache.org/">Apache Jakarta</a> project then moved
+          to <a href="http://velocity.apache.org/">Velocity</a>.
         </p>
 
         <p>
