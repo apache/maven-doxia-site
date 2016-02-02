@@ -56,7 +56,7 @@ Doxia Macros Guide
 <!-- MACRO{macro_name|param1=value1|param2=value2|...} -->
 +----
 
- As of Doxia 1.1, the following macros are available:
+ As of Doxia 1.7, the following macros are available:
 
 %{toc|section=1|fromDepth=2|toDepth=2}
 
@@ -249,3 +249,29 @@ public class MyClass
 *-----------+--------------+
 
  For more information, see the {{{./swf-macro.html}SWF Macro}} page.
+
+* {SSI Macro}
+
+ Since Doxia 1.7, the <SSI> macro prints a server side include. For instance, in an APT file,
+ you could write:
+
++----
+%{ssi|function=include|file=included-file.html}
++----
+
+ In a xdoc file, it will be:
+
++----
+<macro name="ssi">
+  <param name="function" value="include"/>
+  <param name="file" value="included-file.html"/>
+</macro>
++----
+
+*-----------+--------------+
+|| Parameter || Description  |
+*-----------+--------------+
+| function  | The SSI function to insert.
+*-----------+--------------+
+| <any>     | Parameter that will be added to the SSI directive.
+*-----------+--------------+
