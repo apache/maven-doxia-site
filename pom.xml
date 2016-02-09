@@ -162,7 +162,7 @@ under the License.
   </pluginRepositories>
 
   <properties>
-    <doxiaVersion>1.6</doxiaVersion>
+    <doxiaVersion>1.7</doxiaVersion>
     <site.output>${project.build.directory}/site</site.output>
   </properties>
 

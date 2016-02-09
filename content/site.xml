@@ -79,9 +79,13 @@ under the License.
         <item name="Create a Doxia Macro" href="developers/macros.html"/>
         <item name="Using the Sink API" href="developers/sink.html"/>
       </item>
-      <item name="Doxia 1.6" href="doxia/index.html" collapse="false">
+      <item name="Doxia 1.7" href="doxia/index.html" collapse="false">
         <item name="Doxia base" href="doxia/index.html"/>
-        <item name="Doxia Sitetools" href="doxia-sitetools/index.html"/>
+        <!--item name="Doxia Sitetools" href="doxia-sitetools/index.html"/-->
+      </item>
+      <item name="Doxia 1.6" href="doxia-archives/doxia-1.6/index.html" collapse="false">
+        <item name="Doxia base" href="doxia-archives/doxia-1.6/index.html"/>
+        <item name="Doxia Sitetools" href="doxia-sitetools-archives/doxia-sitetools-1.6/index.html"/>
       </item>
       <item name="Doxia 1.5" href="doxia/index.html" collapse="false">
         <item name="Doxia base" href="doxia-archives/doxia-1.5/index.html"/>
