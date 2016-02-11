@@ -1,3 +1,7 @@
 RedirectMatch permanent ^/doxia/doxia-1.2/(.*)$ /doxia/doxia-archives/doxia-1.2/$1
 RedirectMatch permanent ^/doxia/doxia-sitetools-1.2 /doxia/doxia-sitetools-archives/doxia-sitetools-1.2/$1
 Redirect Permanent /doxia/doxia-ide/index.html  /doxia/doxia-ide.html
+# support resources pointed from /doxia/*-archives/
+Redirect Permanent /doxia/images/apache-maven-project.png  /images/apache-maven-project.png
+RedirectMatch permanent ^/doxia/.*-archives/images/(.*)$ /doxia/images/$1
+RedirectMatch permanent ^/doxia/.*-archives/css/(.*)$ /doxia/css/$1
