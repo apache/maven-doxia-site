@@ -81,7 +81,7 @@ under the License.
       </item>
       <item name="Doxia 1.7" href="doxia/index.html" collapse="false">
         <item name="Doxia base" href="doxia/index.html"/>
-        <!--item name="Doxia Sitetools" href="doxia-sitetools/index.html"/-->
+        <item name="Doxia Sitetools" href="doxia-sitetools/index.html"/>
       </item>
       <item name="Doxia 1.6" href="doxia-archives/doxia-1.6/index.html" collapse="false">
         <item name="Doxia base" href="doxia-archives/doxia-1.6/index.html"/>
