@@ -42,4 +42,4 @@ Upgrading from v. 1.1.x to 1.2.x
   Functionally v. 1.2 is equivalent and fully compatible with v. 1.1.
 
   The full list of changes is available in the release notes:
-  {{{http://jira.codehaus.org/secure/ReleaseNote.jspa?version=14082&styleName=Text&projectId=10780}1.2}}
+  {{{https://issues.apache.org/jira/secure/ReleaseNote.jspa?version=12330556&styleName=Text&projectId=12317230}1.2}}
