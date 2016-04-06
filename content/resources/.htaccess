@@ -5,4 +5,4 @@ Redirect Permanent /doxia/doxia-ide/index.html  /doxia/doxia-ide.html
 Redirect Permanent /doxia/images/apache-maven-project.png  /images/apache-maven-project.png
 RedirectMatch permanent ^/doxia/.*-archives/images/(.*)$ /doxia/images/$1
 RedirectMatch permanent ^/doxia/.*-archives/css/(.*)$ /doxia/css/$1
-RedirectMatch permanent ^/doxia/.*-archives/index.html$ /doxia/index.html
+#RedirectMatch permanent ^/doxia/.*-archives/index.html$ /doxia/index.html
