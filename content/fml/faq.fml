@@ -38,17 +38,17 @@ under the License.
       <answer>
         <p>
           There are two modules available that can be used to generate pdf output: an
-          <a href="http://maven.apache.org/doxia/doxia/doxia-modules/doxia-module-itext/">iText module</a>
+          <a href="/doxia/doxia/doxia-modules/doxia-module-itext/">iText module</a>
           that uses the
           <a href="http://www.lowagie.com/iText/">iText</a> framework, and a
-          <a href="http://maven.apache.org/doxia/doxia/doxia-modules/doxia-module-fo/">FO</a> module,
+          <a href="/doxia/doxia/doxia-modules/doxia-module-fo/">FO</a> module,
           that can be used e.g. in conjunction with
           <a href="http://xmlgraphics.apache.org/fop/">Apache FOP</a> to generate a pdf.
           Unfortunately, the iText team has discontinued the XML to PDF functionalities, so probably
           only the fo module is going to be supported in the future.
         </p>
         <p>
-          For Maven there is a <a href="http://maven.apache.org/plugins/maven-pdf-plugin/">pdf plugin</a> available.
+          For Maven there is a <a href="/plugins/maven-pdf-plugin/">pdf plugin</a> available.
         </p>
       </answer>
     </faq>
@@ -58,7 +58,7 @@ under the License.
         <p>
           Doxia also has a fairly simple tool for writing books. It comes complete with a Maven plugin
           to produce PDFs, LaTeX documents and Xdoc for direct integration in your Maven site.
-          The <a href="http://svn.apache.org/repos/asf/maven/doxia/doxia-tools/trunk/doxia-book-renderer/">Doxia Book code</a>
+          The <a href="https://svn.apache.org/repos/asf/maven/doxia/doxia-tools/trunk/doxia-book-renderer/">Doxia Book code</a>
           is still limited but fully functional.
         </p>
         <p>
@@ -72,7 +72,7 @@ under the License.
         <p>
           We decided to keep pretty printing out of the core modules. So, XML based sinks like Xdoc or XHTML are
           intentionally unformatted. You could always do this after the document generation or directly
-          by creating a specialized end-user sink (see <a href="http://jira.codehaus.org/browse/DOXIA-255">DOXIA-255</a>).
+          by creating a specialized end-user sink (see <a href="https://issues.apache.org/jira/browse/DOXIA-255">DOXIA-255</a>).
         </p>
       </answer>
     </faq>
@@ -85,15 +85,15 @@ under the License.
 
         <dl>
           <dt>Xdoc XSD 2.0</dt>
-          <dd><a href="http://maven.apache.org/xsd/xdoc-2.0.xsd">http://maven.apache.org/xsd/xdoc-2.0.xsd</a></dd>
+          <dd><a href="/xsd/xdoc-2.0.xsd">https://maven.apache.org/xsd/xdoc-2.0.xsd</a></dd>
           <dt>FML XSD 1.0.1</dt>
-          <dd><a href="http://maven.apache.org/xsd/fml-1.0.1.xsd">http://maven.apache.org/xsd/fml-1.0.1.xsd</a></dd>
+          <dd><a href="/xsd/fml-1.0.1.xsd">https://maven.apache.org/xsd/fml-1.0.1.xsd</a></dd>
           <dt>Book XSD 1.0</dt>
-          <dd><a href="http://maven.apache.org/xsd/book-1.0.0.xsd">http://maven.apache.org/xsd/book-1.0.0.xsd</a></dd>
+          <dd><a href="/xsd/book-1.0.0.xsd">https://maven.apache.org/xsd/book-1.0.0.xsd</a></dd>
           <dt>Document XSD 1.0.1</dt>
-          <dd><a href="http://maven.apache.org/xsd/document-1.0.1.xsd">http://maven.apache.org/xsd/document-1.0.1.xsd</a></dd>
+          <dd><a href="/xsd/document-1.0.1.xsd">https://maven.apache.org/xsd/document-1.0.1.xsd</a></dd>
           <dt>Decoration XSD 1.0</dt>
-          <dd><a href="http://maven.apache.org/xsd/decoration-1.0.0.xsd">http://maven.apache.org/xsd/decoration-1.0.0.xsd</a></dd>
+          <dd><a href="/xsd/decoration-1.0.0.xsd">https://maven.apache.org/xsd/decoration-1.0.0.xsd</a></dd>
         </dl>
 
         <p>
