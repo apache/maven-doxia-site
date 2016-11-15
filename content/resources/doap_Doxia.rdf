@@ -53,14 +53,20 @@ under the License.
         <location rdf:resource="http://svn.apache.org/repos/asf/maven/doxia/doxia/trunk/"/>
         <browse rdf:resource="http://svn.apache.org/viewvc/maven/doxia/doxia/trunk/"/>
       </SVNRepository>
+    </repository>
+    <repository>
       <SVNRepository>
         <location rdf:resource="http://svn.apache.org/repos/asf/maven/doxia/doxia-sitetools/trunk/"/>
         <browse rdf:resource="http://svn.apache.org/viewvc/maven/doxia/doxia-sitetools/trunk/"/>
       </SVNRepository>
+    </repository>
+    <repository>
       <SVNRepository>
         <location rdf:resource="http://svn.apache.org/repos/asf/maven/doxia/doxia-tools/trunk/"/>
         <browse rdf:resource="http://svn.apache.org/viewvc/maven/doxia/doxia-tools/trunk/"/>
       </SVNRepository>
+    </repository>
+    <repository>
       <SVNRepository>
         <location rdf:resource="http://svn.apache.org/repos/asf/maven/doxia/site/trunk/"/>
         <browse rdf:resource="http://svn.apache.org/viewvc/maven/doxia/site/trunk/"/>
