@@ -76,6 +76,17 @@ under the License.
           </tr>
 
           <tr>
+            <td><a href="http://asciidoc.org/">AsciiDoc</a></td>
+            <td><a href="https://github.com/asciidoctor/asciidoctor-maven-plugin#maven-site-integration">Asciidoctor Maven Plugin</a></td>
+            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
+            <td align="center"><img src="../images/icon_error_sml.gif" alt="No"/></td>
+            <td><code>asciidoc</code></td>
+            <td><code>adoc</code>, <code>asciidoc</code></td>
+            <td><a href="https://github.com/asciidoctor/asciidoctor-maven-plugin#maven-site-integration"><code>asciidoctor-maven-plugin</code></a></td>
+            <td><code>asciidoc</code></td>
+          </tr>
+
+          <tr>
             <td><a href="../modules/index.html#Confluence">Confluence</a></td>
             <td>Confluence Enterprise Wiki</td>
             <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
