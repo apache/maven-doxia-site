@@ -309,10 +309,10 @@ under the License.
           <reportSet><!-- execute only reports necessary for main site, in a dedicated reportSet -->
             <id>site-mpir</id>
             <reports>
-              <!--report>index</report>      apt/index.apt.vm -->
+              <report>index</report>          <!-- apt/index.apt.vm -->
               <report>project-team</report>
               <report>mailing-list</report>
-              <!--report>scm</report>        xdoc/source-repository.xml -->
+              <report>scm</report>            <!-- xdoc/source-repository.xml -->
               <report>issue-tracking</report>
               <report>cim</report>
             </reports>
