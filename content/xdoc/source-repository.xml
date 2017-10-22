@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+  <properties>
+    <title>Source Repository</title>
+  </properties>
+  <body>
+    <section name="Source Repository">
+      <p>
+        Maven Doxia projects use <a href="http://git-scm.com/">Git</a> or <a href="http://subversion.apache.org/">Subversion</a> to manage their source code:
+        decisions to stay with Subversion or move to Git are tracked on <a href="https://cwiki.apache.org/confluence/display/MAVEN/Git+Migration">Maven's Wiki</a>.
+      </p>
+      <p>
+        Instructions on Subversion use can be found in the online book <a href="http://svnbook.red-bean.com/">Version Control with Subversion</a>.
+        Instructions on Git use can be found in the online book <a href="http://git-scm.com/book/">Pro Git</a>.
+        Instructions for using the Apache Software Foundation Git repositories are at <a href="https://git-wip-us.apache.org/">https://git-wip-us.apache.org</a>.
+      </p>
+
+      <subsection name="Components in Git">
+      <p>
+        The components in git are:
+        <table>
+          <tr>
+            <td><a href="/doxia/doxia/">Apache Maven Doxia base</a></td>
+            <td><source><a href="https://gitbox.apache.org/repos/asf/maven-doxia.git">https://gitbox.apache.org/repos/asf/maven-doxia.git</a></source></td>
+            <td><a href="https://github.com/apache/maven-doxia/">(GitHub mirror)</a></td>
+          </tr>
+          <tr>
+            <td><a href="/doxia/doxia-sitetools/">Apache Maven Doxia Sitetools</a></td>
+            <td><source><a href="https://gitbox.apache.org/repos/asf/maven-doxia-sitetools.git">https://gitbox.apache.org/repos/asf/maven-doxia-sitetools.git</a></source></td>
+            <td><a href="https://github.com/apache/maven-doxia-sitetools/">(GitHub mirror)</a></td>
+          </tr>
+        </table>
+      </p>
+      </subsection>
+
+      <subsection name="Components in Subversion">
+      <p>
+        Everything in Subversion can be checked-out from a single entry point, referencing each part through svn:externals
+        <source><a href="http://svn.apache.org/viewvc/maven/doxia/trunks/">https://svn.apache.org/repos/asf/maven/doxia/trunks/</a></source>
+      </p>
+      <p>
+        You can also check out every component separately. The components in Subversion are:
+        <table>
+          <tr>
+            <td><a href="/doxia/doxia-tools/">Apache Maven Doxia Tools: Linkcheck, Converter, ...</a></td>
+            <td><source><a href="https://svn.apache.org/viewvc/maven/doxia/doxia-tools/trunk/">https://svn.apache.org/repos/asf/maven/doxia/doxia-tools/trunk/</a></source></td>
+            <td><a href="https://github.com/apache/maven-doxia-tools/">(GitHub mirror)</a></td>
+          </tr>
+          <tr>
+            <td><a href="/doxia/doxia-ide.html">Apache Maven Doxia IDE</a></td>
+            <td><source><a href="https://svn.apache.org/viewvc/maven/doxia/doxia-ide/trunk/">https://svn.apache.org/repos/asf/maven/doxia/doxia-ide/trunk/</a></source></td>
+            <td><a href="https://github.com/apache/maven-doxia-ide/">(GitHub mirror)</a></td>
+          </tr>
+        </table>
+      </p>
+      </subsection>
+
+      <subsection name="Doxia website">
+      <p>The sources for this site are available in a separate Subversion location:</p>
+      <source><a href="https://svn.apache.org/viewvc/maven/doxia/site/trunk">https://svn.apache.org/repos/asf/maven/doxia/site/trunk</a></source>
+      </subsection>
+    </section>
+  </body>
+</document>
