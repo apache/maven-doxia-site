@@ -42,14 +42,27 @@ under the License.
         The components in git are:
         <table>
           <tr>
-            <td><a href="/doxia/doxia/">Apache Maven Doxia base</a></td>
+            <td><a href="doxia/">Apache Maven Doxia base</a></td>
             <td><source><a href="https://gitbox.apache.org/repos/asf/maven-doxia.git">https://gitbox.apache.org/repos/asf/maven-doxia.git</a></source></td>
             <td><a href="https://github.com/apache/maven-doxia/">(GitHub mirror)</a></td>
           </tr>
           <tr>
-            <td><a href="/doxia/doxia-sitetools/">Apache Maven Doxia Sitetools</a></td>
+            <td><a href="doxia-sitetools/">Apache Maven Doxia Sitetools</a></td>
             <td><source><a href="https://gitbox.apache.org/repos/asf/maven-doxia-sitetools.git">https://gitbox.apache.org/repos/asf/maven-doxia-sitetools.git</a></source></td>
             <td><a href="https://github.com/apache/maven-doxia-sitetools/">(GitHub mirror)</a></td>
+          </tr>
+          <tr>
+            <th>Doxia Tools</th>
+          </tr>
+          <tr>
+            <td><a href="doxia-tools/doxia-converter/">Apache Maven Doxia Converter</a></td>
+            <td><source><a href="https://gitbox.apache.org/repos/asf/maven-doxia-converter.git">https://gitbox.apache.org/repos/asf/maven-doxia-converter.git</a></source></td>
+            <td><a href="https://github.com/apache/maven-doxia-converter/">(GitHub mirror)</a></td>
+          </tr>
+          <tr>
+            <td><a href="doxia-tools/doxia-linkcheck/">Apache Maven Doxia LinkCheck</a></td>
+            <td><source><a href="https://gitbox.apache.org/repos/asf/maven-doxia-linkcheck.git">https://gitbox.apache.org/repos/asf/maven-doxia-linkcheck.git</a></source></td>
+            <td><a href="https://github.com/apache/maven-doxia-linkcheck/">(GitHub mirror)</a></td>
           </tr>
         </table>
       </p>
@@ -64,7 +77,7 @@ under the License.
         You can also check out every component separately. The components in Subversion are:
         <table>
           <tr>
-            <td><a href="/doxia/doxia-tools/">Apache Maven Doxia Tools: Linkcheck, Converter, ...</a></td>
+            <td><a href="/doxia/doxia-tools/">Apache Maven Doxia Tools: Doxia Book</a></td>
             <td><source><a href="https://svn.apache.org/viewvc/maven/doxia/doxia-tools/trunk/">https://svn.apache.org/repos/asf/maven/doxia/doxia-tools/trunk/</a></source></td>
             <td><a href="https://github.com/apache/maven-doxia-tools/">(GitHub mirror)</a></td>
           </tr>
