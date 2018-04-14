@@ -210,7 +210,7 @@ under the License.
 
         <p>
           Note some modules are not included per default with the site plugin.
-          Have a look at the available modules here: <a href="https://repo.maven.apache.org/maven2/org/apache/maven/doxia/">http://repo.maven.apache.org/maven2/org/apache/maven/doxia/</a>.
+          Have a look at the available modules here: <a href="https://repo.maven.apache.org/maven2/org/apache/maven/doxia/">https://repo.maven.apache.org/maven2/org/apache/maven/doxia/</a>.
           <br/>
           If you need to add module for the maven site plugin simply add it as a dependency of the plugin
           <source><![CDATA[            <plugin>
