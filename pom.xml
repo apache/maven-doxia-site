@@ -156,7 +156,7 @@ under the License.
   <distributionManagement>
     <site>
       <id>apache.website</id>
-      <url>${siteDistributionUrl}</url>
+      <url>scm:svn:https://svn.apache.org/repos/asf/maven/doxia/website/content/</url>
     </site>
   </distributionManagement>
 
@@ -169,7 +169,6 @@ under the License.
   </pluginRepositories>
 
   <properties>
-    <siteDistributionUrl>scm:svn:https://svn.apache.org/repos/infra/websites/production/maven-doxia/content/</siteDistributionUrl>
     <maven.site.path>doxia-site</maven.site.path>
     <doxiaVersion>1.8</doxiaVersion>
     <site.output>${project.build.directory}/site</site.output>
@@ -385,12 +384,6 @@ under the License.
           </plugins>
         </pluginManagement>
       </build>
-    </profile>
-    <profile>
-      <id>ASF-jenkins</id>
-      <properties><!-- INFRA-16088 Jenkins credentials put outside CMS svn space but on new ASF svn repo space -->
-        <siteDistributionUrl>scm:svn:https://svn.apache.org/repos/asf/maven/doxia/website/content/</siteDistributionUrl>
-      </properties>
     </profile>
   </profiles>
 
