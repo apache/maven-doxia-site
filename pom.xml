@@ -147,12 +147,10 @@ under the License.
     <system>jira</system>
     <url>https://issues.apache.org/jira/browse/DOXIA</url>
   </issueManagement>
-
   <ciManagement>
     <system>Jenkins</system>
-    <url>https://builds.apache.org/job/maven-doxia-trunks/</url>
+    <url>https://builds.apache.org/job/maven-box/</url>
   </ciManagement>
-
   <distributionManagement>
     <site>
       <id>apache.website</id>
@@ -367,6 +365,9 @@ under the License.
     </profile>
     <profile>
       <id>java8-ant-ln</id>
+      <activation>
+        <jdk>[1.8,)</jdk>
+      </activation>
       <build>
         <pluginManagement>
           <plugins>

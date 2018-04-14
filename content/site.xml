@@ -19,10 +19,9 @@ specific language governing permissions and limitations
 under the License.
 -->
 
-<project xmlns="http://maven.apache.org/DECORATION/1.7.0"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://maven.apache.org/DECORATION/1.7.0 http://maven.apache.org/xsd/decoration-1.7.0.xsd"
- name="Doxia">
+<project xmlns="http://maven.apache.org/DECORATION/1.8.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/DECORATION/1.8.0 http://maven.apache.org/xsd/decoration-1.8.0.xsd"
+  name="Doxia">
   <version position="none" />
 
   <bannerRight>
@@ -31,9 +30,11 @@ under the License.
     <href>https://maven.apache.org/doxia/</href>
   </bannerRight>
 
+  <edit>https://github.com/apache/maven-doxia-site/tree/HEAD</edit>
+
   <body>
     <breadcrumbs>
-      <item name="Doxia" href="http://maven.apache.org/doxia/index.html"/>
+      <item name="Doxia" href="https://maven.apache.org/doxia/index.html"/>
     </breadcrumbs>
 
     <menu name="About Doxia">
