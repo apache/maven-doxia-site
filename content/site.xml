@@ -34,7 +34,7 @@ under the License.
 
   <body>
     <links>
-      <item name="Get Sources" href="/doxia/source-repository.html" />
+      <item name="Get Sources" href="https://maven.apache.org/doxia/source-repository.html" />
     </links>
     <breadcrumbs>
       <item name="Doxia" href="https://maven.apache.org/doxia/index.html"/>
