@@ -37,9 +37,21 @@ under the License.
         Instructions for using the Apache Software Foundation Git repositories are at <a href="https://git-wip-us.apache.org/">https://git-wip-us.apache.org</a>.
       </p>
 
+      <subsection name="Doxia Website">
+      <p>The sources for this site are available in a separate Git repository:
+        <table>
+          <tr>
+            <td><a href="/doxia/">Apache Maven Doxia website</a></td>
+            <td><source><a href="https://gitbox.apache.org/repos/asf/maven-doxia-site.git">https://gitbox.apache.org/repos/asf/maven-doxia-site.git</a></source></td>
+            <td><a href="https://github.com/apache/maven-doxia-site/">(GitHub mirror)</a></td>
+          </tr>
+        </table>
+      </p>
+      </subsection>
+
       <subsection name="Components in Git">
       <p>
-        The components in git are:
+        The components in Git are:
         <table>
           <tr>
             <td><a href="doxia/">Apache Maven Doxia base</a></td>
@@ -88,11 +100,6 @@ under the License.
           </tr>
         </table>
       </p>
-      </subsection>
-
-      <subsection name="Doxia website">
-      <p>The sources for this site are available in a separate Subversion location:</p>
-      <source><a href="https://svn.apache.org/viewvc/maven/doxia/site/trunk">https://svn.apache.org/repos/asf/maven/doxia/site/trunk</a></source>
       </subsection>
     </section>
   </body>
