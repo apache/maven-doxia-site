@@ -30,7 +30,7 @@ under the License.
     <href>https://maven.apache.org/doxia/</href>
   </bannerRight>
 
-  <edit>https://github.com/apache/maven-doxia-site/tree/trunk</edit>
+  <edit>${project.scm.url}</edit>
 
   <body>
     <links>
