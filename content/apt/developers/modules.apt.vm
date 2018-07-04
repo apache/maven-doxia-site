@@ -28,14 +28,14 @@
 
 Create a New Doxia Module
 
- First, you need to create a POM with <doxia-modules> as parent:
+ First, the easiest way is to create a POM with <doxia-modules> as parent:
 
 +----
 <project>
   <parent>
     <groupId>org.apache.maven.doxia</groupId>
     <artifactId>doxia-modules</artifactId>
-    <version>1.0</version> <!-- Latest release -->
+    <version>${project.version}</version> <!-- Latest release -->
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>doxia-module-my</artifactId>
@@ -45,22 +45,29 @@ Create a New Doxia Module
 </project>
 +----
 
- Secondly, you should implement some Doxia classes:
+ Secondly, you should implement some Doxia classes, depending on what features you want: parsing
+ or generating markup.
+
+
+* Parsing
 
  * <MyParser> class
 
 +----
 import org.apache.maven.doxia.parser.AbstractParser;
+import org.apache.maven.doxia.parser.Parser;
+import org.codehaus.plexus.component.annotations.Component;
 
-/**
- * @plexus.component role="org.apache.maven.doxia.parser.Parser" role-hint="my"
- */
+@Component( role = Parser.class, hint = "my" )
 public class MyParser
     extends AbstractParser
 {
 ...
 }
 +----
+
+ Depending on the type markup, extending <<<AbstractTextParser>>>, <<<AbstractXmlParser>>>
+ or <<<XhtmlBaseParser>>> may give you more features.
 
  * <MyParseException> class (optional)
 
@@ -74,20 +81,22 @@ public class MyParseException
 }
 +----
 
- * <MySiteModule> class (optional, will be used by doxia-sitetools)
+ * <MyParserModule> class
 
 +----
-import org.apache.maven.doxia.module.site.AbstractSiteModule;
+import org.apache.maven.doxia.parser.module.AbstractParserModule;
+import org.codehaus.plexus.component.annotations.Component;
 
-/**
- * @plexus.component role="org.apache.maven.doxia.module.site.SiteModule" role-hint="my"
- */
-public class MySiteModule
-    extends AbstractSiteModule
+@Component( role = ParserModule.class, hint = "my" )
+public class MyParserModule
+    extends AbstractParserModule
 {
 ...
 }
 +----
+
+
+* Generating
 
  * <MySink> class
 
@@ -101,20 +110,25 @@ public class MySink
 }
 +----
 
+ Depending on the type markup, extending <<<AbstractTextSink>>>, <<<AbstractXmlSink>>>
+ or <<<XhtmlBaseSink>>> may give you more features.
+
  * <MySinkFactory> class
 
 +----
 import org.apache.maven.doxia.sink.SinkFactory;
+import org.codehaus.plexus.component.annotations.Component;
 
-/**
- * @plexus.component role="org.apache.maven.doxia.sink.SinkFactory" role-hint="my"
- */
+@Component( role = SinkFactory.class, hint = "my" )
 public class MySinkFactory
     extends SinkFactory
 {
 ...
 }
 +----
+
+ Depending on the type markup, extending <<<AbstractTextSinkFactory>>>, <<<AbstractXmlSinkFactory>>>
+ or <<<AbstractBinarySinkFactory>>> may give you more features.
 
   []
 
