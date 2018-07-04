@@ -35,7 +35,7 @@ Create a New Doxia Module
   <parent>
     <groupId>org.apache.maven.doxia</groupId>
     <artifactId>doxia-modules</artifactId>
-    <version>${project.version}</version> <!-- Latest release -->
+    <version>${doxiaVersion}</version> <!-- Latest release -->
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>doxia-module-my</artifactId>
