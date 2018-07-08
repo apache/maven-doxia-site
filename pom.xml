@@ -349,11 +349,11 @@ under the License.
             <id>site-mpir</id>
             <reports>
               <report>index</report>          <!-- apt/index.apt.vm -->
-              <report>project-team</report>
-              <report>mailing-list</report>
-              <report>scm</report>            <!-- xdoc/source-repository.xml -->
-              <report>issue-tracking</report>
-              <report>cim</report>
+              <report>team</report>
+              <report>mailing-lists</report>
+              <report>scm</report>            <!-- xdoc/scm.xml -->
+              <report>issue-management</report>
+              <report>ci-management</report>
             </reports>
           </reportSet>
         </reportSets>
