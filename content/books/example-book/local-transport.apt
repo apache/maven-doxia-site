@@ -1,4 +1,3 @@
-~~ Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements; and to You under the Apache License, Version 2.0.
  -----
  Local Transport
  -----
@@ -22,3 +21,5 @@ Service service = getServiceRegistry().getService("FooService");
 XFireProxyFactory factory = new XFireProxyFactory(getXFire());
 FooService foo = (FooService) factory.create(service, "xfire.local://FooService");
 +---------------------------------------------------------------------------------------------------------------------+
+
+~~ Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements; and to You under the Apache License, Version 2.0.

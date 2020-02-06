@@ -1,4 +1,3 @@
-~~ Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements; and to You under the Apache License, Version 2.0.
  -----
  Castor
  -----
@@ -390,3 +389,5 @@ public class BookService
 
  After configuring the service and web application, deploy it to your favorite servlet container, and the service
  should be visible at /services/BookService?wsdl under the deployed webapp context path.
+ 
+ ~~ Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements; and to You under the Apache License, Version 2.0.
