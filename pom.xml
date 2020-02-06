@@ -188,6 +188,21 @@ under the License.
     <pluginManagement>
       <plugins>
         <plugin>
+          <groupId>org.apache.rat</groupId>
+          <artifactId>apache-rat-plugin</artifactId>
+          <configuration>
+            <excludes combine.children="append">
+              <exclude>Jenkinsfile</exclude>
+              <exclude>content/resources/images/architecture.odg</exclude>
+              <exclude>.repository/**</exclude><!-- Jenkins job with local Maven repository -->
+              <exclude>.maven/spy.log</exclude><!-- Hudson Maven3 integration log -->
+              <exclude>dependency-reduced-pom.xml</exclude><!-- Maven shade plugin -->
+              <exclude>.asf.yaml</exclude><!-- GitHub Support -->
+              <exclude>.java-version</exclude>
+            </excludes>
+          </configuration>
+        </plugin>
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-antrun-plugin</artifactId>
           <version>3.0.0</version>

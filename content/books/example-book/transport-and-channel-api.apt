@@ -59,3 +59,5 @@ c.send(msg, context);
  [[1]] SoapSerializerHandler - Services provide a MessageSerializer of their own which is responsible for serializing the soap body. But what about the message headers? This is written out by the SoapSerializer. What the SoapSerializerHandler does is replace the outMessage.MessageSerializer with new SoapSerializer(outMsg.getMessageSerializer()).
 
 * MessageExchanges
+
+~~ Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements; and to You under the Apache License, Version 2.0.

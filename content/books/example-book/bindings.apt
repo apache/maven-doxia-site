@@ -99,3 +99,5 @@ The MessageBinding
 
  There is also one other type of binding, the MessageBinding. The MessageBinding has special semantics to allow you to
  work with XML streams and fragments real easily. Read more on the Message Binding page.
+
+~~ Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements; and to You under the Apache License, Version 2.0.
