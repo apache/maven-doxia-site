@@ -24,6 +24,7 @@ under the License.
     <groupId>org.apache.maven</groupId>
     <artifactId>maven-parent</artifactId>
     <version>34</version>
+    <relativePath/>
   </parent>
 
   <groupId>org.apache.maven.doxia</groupId>
@@ -42,11 +43,10 @@ under the License.
       <subscribe>users-subscribe@maven.apache.org</subscribe>
       <unsubscribe>users-unsubscribe@maven.apache.org</unsubscribe>
       <post>users@maven.apache.org</post>
-      <archive>http://mail-archives.apache.org/mod_mbox/maven-users</archive>
+      <archive>https://mail-archives.apache.org/mod_mbox/maven-users</archive>
       <otherArchives>
-        <otherArchive>http://www.mail-archive.com/users@maven.apache.org/</otherArchive>
-        <otherArchive>http://oldnabble.com/Maven---Users-f178.html</otherArchive>
-        <otherArchive>http://markmail.org/list/org.apache.maven.users</otherArchive>
+        <otherArchive>https://www.mail-archive.com/users@maven.apache.org/</otherArchive>
+        <otherArchive>https://markmail.org/list/org.apache.maven.users</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
@@ -54,59 +54,56 @@ under the License.
       <subscribe>dev-subscribe@maven.apache.org</subscribe>
       <unsubscribe>dev-unsubscribe@maven.apache.org</unsubscribe>
       <post>dev@maven.apache.org</post>
-      <archive>http://mail-archives.apache.org/mod_mbox/maven-dev</archive>
+      <archive>https://mail-archives.apache.org/mod_mbox/maven-dev</archive>
       <otherArchives>
-        <otherArchive>http://www.mail-archive.com/dev@maven.apache.org/</otherArchive>
-        <otherArchive>http://old.nabble.com/Maven-Developers-f179.html</otherArchive>
-        <otherArchive>http://markmail.org/list/org.apache.maven.dev</otherArchive>
+        <otherArchive>https://www.mail-archive.com/dev@maven.apache.org/</otherArchive>
+        <otherArchive>https://markmail.org/list/org.apache.maven.dev</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
       <name>Maven Commits List</name>
       <subscribe>commits-subscribe@maven.apache.org</subscribe>
       <unsubscribe>commits-unsubscribe@maven.apache.org</unsubscribe>
-      <archive>http://mail-archives.apache.org/mod_mbox/maven-commits</archive>
+      <archive>https://mail-archives.apache.org/mod_mbox/maven-commits</archive>
       <otherArchives>
-        <otherArchive>http://www.mail-archive.com/commits@maven.apache.org</otherArchive>
-        <otherArchive>http://old.nabble.com/Maven---Commits-f15575.html</otherArchive>
-        <otherArchive>http://markmail.org/list/org.apache.maven.commits</otherArchive>
+        <otherArchive>https://www.mail-archive.com/commits@maven.apache.org</otherArchive>
+        <otherArchive>https://markmail.org/list/org.apache.maven.commits</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
       <name>Maven Issues List</name>
       <subscribe>issues-subscribe@maven.apache.org</subscribe>
       <unsubscribe>issues-unsubscribe@maven.apache.org</unsubscribe>
-      <archive>http://mail-archives.apache.org/mod_mbox/maven-issues/</archive>
+      <archive>https://mail-archives.apache.org/mod_mbox/maven-issues/</archive>
       <otherArchives>
-        <otherArchive>http://www.mail-archive.com/issues@maven.apache.org</otherArchive>
-        <otherArchive>http://old.nabble.com/Maven---Issues-f15573.html</otherArchive>
-        <otherArchive>http://markmail.org/list/org.apache.maven.issues</otherArchive>
+        <otherArchive>https://www.mail-archive.com/issues@maven.apache.org</otherArchive>
+        <otherArchive>https://markmail.org/list/org.apache.maven.issues</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
       <name>Old Doxia Developer List (closed)</name>
-      <archive>http://mail-archives.apache.org/mod_mbox/maven-doxia-dev/</archive>
+      <archive>https://mail-archives.apache.org/mod_mbox/maven-doxia-dev/</archive>
       <otherArchives>
-        <otherArchive>http://www.mail-archive.com/doxia-dev@maven.apache.org</otherArchive>
-        <otherArchive>http://www.nabble.com/Doxia---dev-f11816.html</otherArchive>
-        <otherArchive>http://markmail.org/list/org.apache.maven.doxia-dev</otherArchive>
+        <otherArchive>https://www.mail-archive.com/doxia-dev@maven.apache.org</otherArchive>
+        <otherArchive>https://www.nabble.com/Doxia---dev-f11816.html</otherArchive>
+        <otherArchive>https://markmail.org/list/org.apache.maven.doxia-dev</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
       <name>Old Doxia User List (closed)</name>
-      <archive>http://mail-archives.apache.org/mod_mbox/maven-doxia-users/</archive>
+      <archive>https://mail-archives.apache.org/mod_mbox/maven-doxia-users/</archive>
       <otherArchives>
-        <otherArchive>http://www.mail-archive.com/doxia-users@maven.apache.org</otherArchive>
-        <otherArchive>http://www.nabble.com/Doxia---Users-f14483.html</otherArchive>
-        <otherArchive>http://markmail.org/list/org.apache.maven.doxia-users</otherArchive>
+        <otherArchive>https://www.mail-archive.com/doxia-users@maven.apache.org</otherArchive>
+        <otherArchive>https://www.nabble.com/Doxia---Users-f14483.html</otherArchive>
+        <otherArchive>https://markmail.org/list/org.apache.maven.doxia-users</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
       <name>Old Doxia Commits List (closed)</name>
-      <archive>http://mail-archives.apache.org/mod_mbox/maven-doxia-commits/</archive>
+      <archive>https://mail-archives.apache.org/mod_mbox/maven-doxia-commits/</archive>
       <otherArchives>
-        <otherArchive>http://www.mail-archive.com/doxia-commits@maven.apache.org</otherArchive>
-        <otherArchive>http://markmail.org/list/org.apache.maven.doxia-commits</otherArchive>
+        <otherArchive>https://www.mail-archive.com/doxia-commits@maven.apache.org</otherArchive>
+        <otherArchive>https://markmail.org/list/org.apache.maven.doxia-commits</otherArchive>
       </otherArchives>
     </mailingList>
 
@@ -118,20 +115,20 @@ under the License.
       <unsubscribe>announce-unsubscribe@maven.apache.org</unsubscribe>
       <archive>http://mail-archives.apache.org/mod_mbox/maven-announce/</archive>
       <otherArchives>
-        <otherArchive>http://www.mail-archive.com/announce@maven.apache.org</otherArchive>
-        <otherArchive>http://www.nabble.com/Maven-Announcements-f15617.html</otherArchive>
-        <otherArchive>http://markmail.org/list/org.apache.maven.announces</otherArchive>
+        <otherArchive>https://www.mail-archive.com/announce@maven.apache.org</otherArchive>
+        <otherArchive>https://www.nabble.com/Maven-Announcements-f15617.html</otherArchive>
+        <otherArchive>https://markmail.org/list/org.apache.maven.announces</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
       <name>Maven Notifications List</name>
       <subscribe>notifications-subscribe@maven.apache.org</subscribe>
       <unsubscribe>notifications-unsubscribe@maven.apache.org</unsubscribe>
-      <archive>http://mail-archives.apache.org/mod_mbox/maven-notifications/</archive>
+      <archive>https://mail-archives.apache.org/mod_mbox/maven-notifications/</archive>
       <otherArchives>
         <otherArchive>http://www.mail-archive.com/notifications@maven.apache.org</otherArchive>
-        <otherArchive>http://www.nabble.com/Maven---Notifications-f15574.html</otherArchive>
-        <otherArchive>http://markmail.org/list/org.apache.maven.notifications</otherArchive>
+        <otherArchive>https://www.nabble.com/Maven---Notifications-f15574.html</otherArchive>
+        <otherArchive>https://markmail.org/list/org.apache.maven.notifications</otherArchive>
       </otherArchives>
     </mailingList>
   </mailingLists>
@@ -173,13 +170,13 @@ under the License.
     <pluginRepository>
       <id>apache.snapshots</id>
       <name>Apache Snapshot Repository</name>
-      <url>http://repository.apache.org/snapshots/</url>
+      <url>https://repository.apache.org/snapshots/</url>
     </pluginRepository>
   </pluginRepositories>
 
   <properties>
     <maven.site.path>doxia-site</maven.site.path>
-    <doxiaVersion>1.9</doxiaVersion>
+    <doxiaVersion>1.9.1</doxiaVersion>
     <site.output>${project.build.directory}/site</site.output>
   </properties>
 
