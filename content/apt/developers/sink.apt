@@ -121,8 +121,8 @@ Using the Doxia Sink API
 
 * {Passing attributes to Sink events}
 
-  With Doxia 1.1 a number of methods have been added to the Sink API that
-  allow to pass a set of attributes to many sink events. A typical use case would be:
+  A number of methods in the Sink API enable passing
+  a set of attributes to many sink events. A typical use case is:
 
 +----
 SinkEventAttributeSet atts = new SinkEventAttributeSet();
@@ -131,10 +131,10 @@ atts.addAttribute( SinkEventAttributes.ALIGN, "center" );
 sink.paragraph( atts );
 +----
 
-  What kind of attributes are supported depends on the event and the sink
+  The kind of attributes supported depends on the event and the sink
   implementation. The sink API specifies a list of suggested attribute
-  names that sinks are expected to recognize, and parsers are expected to use
-  preferably when emitting events.
+  names that sinks are expected to recognize and parsers are expected to use
+  when emitting events.
 
 
 * {Avoid sink.rawText!}

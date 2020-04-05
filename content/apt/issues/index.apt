@@ -60,28 +60,6 @@ Doxia Issues & Gotchas
   in <<<DEBUG>>> mode, eg invoke maven with the <<<-X>>> switch,
   you can see which source document is being parsed when the warning is emitted.
 
-* {TOC macro issues}
-
-  There was a particular {{{https://issues.apache.org/jira/browse/DOXIA-316}bug}}
-  in the TOC macro in version 1.0 that has been fixed but leads to a
-  backward incompatibility in some cases. If you have specified the
-  <<<section>>> parameter in your TOC, as for instance:
-
-+----
-%{toc|section=1|fromDepth=1|toDepth=1}
-+----
-
-  then the generated TOC is probably different from the result with Doxia 1.0.
-  In <<Doxia 1.1>>, depth=1 is section, depth=2 is sub-section, etc, as documented
-  in the {{{../macros/index.html#TOC_Macro}macro guide}}.
-
-* {Verbatim blocks not boxed}
-
-  There was a particular {{{https://issues.apache.org/jira/browse/DOXIA-297}bug}}
-  in Doxia 1.0 that verbatim blocks were always boxed. If after an upgrade
-  to <<Doxia 1.1>> you find that your blocks are not boxed anymore, check that
-  you actually start your verbatim block with <<<+-->>> (and not <<<--->>>).
-
 * {Figure sink events}
 
   Doxia distinguishes between figures, which are block-level elements, and images (or icons),
