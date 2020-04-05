@@ -169,13 +169,5 @@ xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd
         </p>
       </answer>
     </faq>
-    <faq id="How_to_integrate_Doxia_1.1_with_Maven">
-      <question>How to integrate Doxia 1.1 with Maven?</question>
-      <answer>
-        <p>
-          See this <a href="developers/maven-integration.html">page</a>.
-        </p>
-      </answer>
-    </faq>
   </part>
 </faqs>
