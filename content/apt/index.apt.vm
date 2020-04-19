@@ -44,12 +44,6 @@ Maven Doxia
 
  The current version of {{{./doxia/}Doxia base framework}} is ${doxiaVersion}.
 
-* Maven Doxia Enhancements
-
- * {{{./upgrading.html}Upgrading from earlier versions}}
-
- []
-
 * Brief History
 
 ~~ {{{http://www.xmlmind.com/aptconvert.html}Aptconvert}}
