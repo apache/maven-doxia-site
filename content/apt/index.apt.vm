@@ -72,8 +72,6 @@ Maven Doxia
 
   * {{{./doxia-tools/}Additional Tools}} like {{{./doxia-tools/doxia-converter/index.html}Doxia Converter}}
 
-  * {{{./doxia-ide/}IDE integration}}
-
   []
 
 * Doxia Reference Pages
