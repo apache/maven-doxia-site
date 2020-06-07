@@ -32,11 +32,8 @@ Enhancements to the APT format
 
   In the following we provide a list of differences/enhancements to the
   original {{{./apt-format.html}APT}} format that were incorporated in Doxia.
-  Note that the original specification still applies to <<Doxia-1.0>>
-  (used e.g. by Maven-2.0.x), the changes outlined here only apply from
-  <<Doxia-1.1>> (used by Maven >= 2.1.x).
   Apart from some exceptions, these differences are usually
-  'backwards-compatible', i.e. any document that gets correctly processed
+  'backwards-compatible'. That is, any document that gets correctly processed
   by Aptconvert should also
   be a valid Doxia input file and lead to identical results when processed
   by a Doxia parser.
