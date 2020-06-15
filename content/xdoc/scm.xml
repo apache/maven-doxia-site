@@ -79,28 +79,6 @@ under the License.
         </table>
       </p>
       </subsection>
-
-      <subsection name="Components in Subversion">
-      <p>
-        Everything in Subversion can be checked-out from a single entry point, referencing each part through svn:externals
-        <source><a href="http://svn.apache.org/viewvc/maven/doxia/trunks/">https://svn.apache.org/repos/asf/maven/doxia/trunks/</a></source>
-      </p>
-      <p>
-        You can also check out every component separately. The components in Subversion are:
-        <table>
-          <tr>
-            <td><a href="/doxia/doxia-tools/">Apache Maven Doxia Tools: Doxia Book</a></td>
-            <td><source><a href="https://svn.apache.org/viewvc/maven/doxia/doxia-tools/trunk/">https://svn.apache.org/repos/asf/maven/doxia/doxia-tools/trunk/</a></source></td>
-            <td><a href="https://github.com/apache/maven-doxia-tools/">(GitHub mirror)</a></td>
-          </tr>
-          <tr>
-            <td><a href="/doxia/doxia-ide.html">Apache Maven Doxia IDE</a></td>
-            <td><source><a href="https://svn.apache.org/viewvc/maven/doxia/doxia-ide/trunk/">https://svn.apache.org/repos/asf/maven/doxia/doxia-ide/trunk/</a></source></td>
-            <td><a href="https://github.com/apache/maven-doxia-ide/">(GitHub mirror)</a></td>
-          </tr>
-        </table>
-      </p>
-      </subsection>
     </section>
   </body>
 </document>
