@@ -68,7 +68,7 @@ Doxia Modules Guide
 
  <<References>>:
 
-  * {{{http://www.docbook.org/schemas/simplified}Simplified DocBook Introduction}}
+  * {{{https://www.docbook.org/schemas/simplified}Simplified DocBook Introduction}}
 
   * {{{http://www.docbook.org/xml/simple/sdocbook/elements.html}Simplified DocBook Element Reference}}
 
@@ -96,39 +96,39 @@ Doxia Modules Guide
 
   []
 
-* {FO} (since Doxia 1.1)
+* {FO}
 
  XSL formatting objects (XSL-FO)
 
  <<References>>:
 
-  * {{{http://www.w3.org/TR/xsl11/}XSL-FO Recommendation (05 December 2006)}}
+  * {{{https://www.w3.org/TR/xsl11/}XSL-FO Recommendation (05 December 2006)}}
 
-  * {{{http://zvon.org/xxl/xslfoReference/Output/index.html}XSL FO reference}}
+  * {{{https://zvon.org/xxl/xslfoReference/Output/index.html}XSL FO reference}}
 
-  * {{{http://xmlgraphics.apache.org/fop/}Apache FOP}}
+  * {{{https://xmlgraphics.apache.org/fop/}Apache FOP}}
 
   []
 
 * {LaTeX}
 
- {{{http://www.latex-project.org/}LaTeX}} is a popular document markup language.
+ {{{https://www.latex-project.org/}LaTeX}} is a popular document markup language.
 
  <<References>>:
 
-  * {{{http://www.latex-project.org/guides/usrguide.pdf}LaTeX2e for authors}}
+  * {{{https://www.latex-project.org/guides/usrguide.pdf}LaTeX2e for authors}}
 
   * {{{http://www.stdout.org/~winston/latex/latexsheet.pdf}Latex reference sheet}}
 
   []
 
-* {Markdown} (since Doxia 1.3)
+* {Markdown}
 
  {{{http://en.wikipedia.org/wiki/Markdown}Markdown}} is a widespread Markup language.
 
  <<References>>:
 
-  * {{{http://daringfireball.net/projects/markdown/}Official Markdown project at Daring Fireball}}
+  * {{{https://daringfireball.net/projects/markdown/}Official Markdown project at Daring Fireball}}
 
   []
 
@@ -145,13 +145,13 @@ Doxia Modules Guide
 
   []
 
-* {TWiki} (since Doxia 1.1)
+* {TWiki}
 
- {{{http://twiki.org/}TWiki}} is a structured wiki.
+ {{{https://twiki.org/}TWiki}} is a structured wiki.
 
  <<References>>:
 
-  * {{{http://twiki.org/cgi-bin/view/TWiki04x01/TextFormattingRules} TWiki Text Formatting}}
+  * {{{https://twiki.org/cgi-bin/view/TWiki04x01/TextFormattingRules} TWiki Text Formatting}}
 
   []
 
@@ -167,13 +167,13 @@ Doxia Modules Guide
 
 * {XHTML}
 
- {{{http://www.w3.org/MarkUp/}XHTML}} is a markup language with the same expressions as HTML, but also
+ {{{https://www.w3.org/MarkUp/}XHTML}} is a markup language with the same expressions as HTML, but also
  conforms to XML syntax.
 
  <<References>>:
 
   * {{{http://www.iangraham.org/books/xhtml1/extras/html-7nov2000.pdf}HTML and XHTML Quick Reference Charts: Head and Body Markup}}
 
-  * {{{http://www.w3.org/TR/xhtml1/}XHTML 1.0 Specification}}
+  * {{{https://www.w3.org/TR/xhtml1/}XHTML 1.0 Specification}}
 
   []
