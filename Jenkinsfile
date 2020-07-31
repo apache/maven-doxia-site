@@ -43,7 +43,7 @@ pipeline {
         buildDiscarder(logRotator(numToKeepStr:'15'))
         timeout(time: 10, unit: 'MINUTES')
         skipStagesAfterUnstable()
-        timestamps()
+        //timestamps()
         disableConcurrentBuilds()
         ansiColor('xterm')
     }
