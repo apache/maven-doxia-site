@@ -120,39 +120,6 @@ under the License.
           </tr>
 
           <tr>
-            <td><a href="../modules/index.html#iText">iText</a></td>
-            <td>iText PDF Library</td>
-            <td align="center"><img src="../images/icon_error_sml.gif" alt="No"/></td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td></td>
-            <td></td>
-            <td><a href="../doxia/doxia-modules/doxia-module-itext/"><code>doxia-module-itext</code></a></td>
-            <td></td>
-          </tr>
-
-          <tr>
-            <td><a href="../modules/index.html#FO">FO</a><sup>*</sup></td>
-            <td>XSL formatting objects (XSL-FO)</td>
-            <td align="center"><img src="../images/icon_error_sml.gif" alt="No"/></td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td></td>
-            <td></td>
-            <td><a href="../doxia/doxia-modules/doxia-module-fo/"><code>doxia-module-fo</code></a></td>
-            <td></td>
-          </tr>
-
-          <tr>
-            <td><a href="../modules/index.html#LaTeX">LaTeX</a></td>
-            <td>LaTeX typesetting system</td>
-            <td align="center"><img src="../images/icon_error_sml.gif" alt="No"/></td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td></td>
-            <td></td>
-            <td><a href="../doxia/doxia-modules/doxia-module-latex/"><code>doxia-module-latex</code></a></td>
-            <td></td>
-          </tr>
-
-          <tr>
             <td><a href="../modules/index.html#Markdown">Markdown</a><sup>**</sup></td>
             <td>Markdown markup language</td>
             <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
@@ -161,17 +128,6 @@ under the License.
             <td><code>md</code>, <code>markdown</code><sup>***</sup></td>
             <td><a href="../doxia/doxia-modules/doxia-module-markdown/"><code>doxia-module-markdown</code></a></td>
             <td><code>markdown</code></td>
-          </tr>
-
-          <tr>
-            <td><a href="../modules/index.html#RTF">RTF</a></td>
-            <td>Microsoft Rich Text Format</td>
-            <td align="center"><img src="../images/icon_error_sml.gif" alt="No"/></td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td></td>
-            <td></td>
-            <td><a href="../doxia/doxia-modules/doxia-module-rtf/"><code>doxia-module-rtf</code></a></td>
-            <td></td>
           </tr>
 
           <tr>
@@ -239,6 +195,43 @@ under the License.
         </p>
     </section>
 
+    <section  name="Doxia Page Output Format (deprecated)">
+      <p>
+        The following table gives an overview of the output-only page-oriented deprecated (in Doxia 1.11) formats:
+      </p>
+
+        <table border="0">
+          <tr>
+            <th>Format</th>
+            <th>Short description</th>
+            <th>Doxia Module</th>
+          </tr>
+
+          <tr>
+            <td><a href="../modules/index.html#iText">iText</a></td>
+            <td>iText PDF Library</td>
+            <td><a href="../doxia/doxia-modules/doxia-module-itext/"><code>doxia-module-itext</code></a></td>
+          </tr>
+
+          <tr>
+            <td><a href="../modules/index.html#FO">FO</a><sup>*</sup></td>
+            <td>XSL formatting objects (XSL-FO)</td>
+            <td><a href="../doxia/doxia-modules/doxia-module-fo/"><code>doxia-module-fo</code></a></td>
+          </tr>
+
+          <tr>
+            <td><a href="../modules/index.html#LaTeX">LaTeX</a></td>
+            <td>LaTeX typesetting system</td>
+            <td><a href="../doxia/doxia-modules/doxia-module-latex/"><code>doxia-module-latex</code></a></td>
+          </tr>
+
+          <tr>
+            <td><a href="../modules/index.html#RTF">RTF</a></td>
+            <td>Microsoft Rich Text Format</td>
+            <td><a href="../doxia/doxia-modules/doxia-module-rtf/"><code>doxia-module-rtf</code></a></td>
+          </tr>
+        </table>
+    </section>
   </body>
 
 </document>
