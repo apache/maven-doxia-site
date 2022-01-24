@@ -132,7 +132,7 @@ under the License.
 &lt;/project&gt;</source>
         </p>
         <p>
-          <b>Note</b>: for preformance reasons, all XSDs/DTDs use a cache in ${java.io.tmpdir}.
+          <b>Note</b>: for performance reasons, all XSDs/DTDs use a cache in ${java.io.tmpdir}.
         </p>
       </answer>
     </faq>
