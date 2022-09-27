@@ -393,11 +393,13 @@ Table caption
 
   Rows may contain single line or multiple line cells. Each line of cell text
   is separated from the adjacent cell by the pipe character (<<<|>>>).
-  (<<<|>>> may be used in the cell text if quoted: <<<\\|>>>.)
+  (<<<|>>> may be used in the cell text if quoted: <<<\\|>>>.). If the cell is
+  starting with a double pipe character (<<<||>>>) the cell is rendered as table header.
 
-  The last <<<|>>> is only used to make the table nicer.  The first <<<|>>> is
-  not only used to make the table nicer, but also to specify that a grid is to
-  be drawn around table cells.
+  The last <<<|>>> is only used to make the table look nicer.  The first <<<|>>> is
+  used in addition to specify that a grid is to be drawn around table cells.
+  As a preceding double pipe is also used to indicate table header cells it is not possible
+  to have a table header in the top-left cell without making the table having a grid.
 
   The following example shows a simple table with no grid and no caption.
 
