@@ -41,7 +41,7 @@ The APT format
   The information contained in this document corresponds to the original
   APT format as published by {{{http://www.xmlmind.com/}Xmlmind}}.
   In version 1.1 Maven Doxia has applied several modifications to this original
-  format, see this separate {{{./doxia-apt.html}document}}
+  format. See this separate {{{./doxia-apt.html}document}}
   for a detailed description. Notable differences are highlighted below
   with a {{{./doxia-apt.html}\[Change\]}} link.
 
