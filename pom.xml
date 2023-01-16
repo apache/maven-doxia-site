@@ -155,7 +155,7 @@ under the License.
 
   <properties>
     <maven.site.path>doxia-site</maven.site.path>
-    <doxiaVersion>1.9.1</doxiaVersion>
+    <doxiaVersion>1.12.0</doxiaVersion>
     <site.output>${project.build.directory}/site</site.output>
   </properties>
 
