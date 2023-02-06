@@ -295,7 +295,7 @@ code line 2
       </subsection>
 
       <a name="Dont_put_source_inside_paragraphs"/>
-      <subsection name="Dont put &lt;source&gt; inside paragraphs">
+      <subsection name="Don't put &lt;source&gt; inside paragraphs">
 
         <p>Wrong:</p>
 

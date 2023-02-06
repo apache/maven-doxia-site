@@ -23,14 +23,14 @@ under the License.
   <parent>
     <groupId>org.apache.maven</groupId>
     <artifactId>maven-parent</artifactId>
-    <version>36-SNAPSHOT</version>
-    <relativePath/>
+    <version>40-SNAPSHOT</version>
+    <relativePath />
   </parent>
 
   <groupId>org.apache.maven.doxia</groupId>
   <artifactId>doxia-site</artifactId>
-  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
   <name>Doxia Site</name>
   <description>Site of the Maven Doxia Framework</description>
@@ -109,9 +109,9 @@ under the License.
     <!-- duplication from parent pom - temporary until we have a feature to make them inherit properly -->
     <mailingList>
       <name>Maven Announcements List</name>
-      <post>announce@maven.apache.org</post>
       <subscribe>announce-subscribe@maven.apache.org</subscribe>
       <unsubscribe>announce-unsubscribe@maven.apache.org</unsubscribe>
+      <post>announce@maven.apache.org</post>
       <archive>https://mail-archives.apache.org/mod_mbox/maven-announce/</archive>
       <otherArchives>
         <otherArchive>https://www.mail-archive.com/announce@maven.apache.org</otherArchive>
@@ -134,8 +134,8 @@ under the License.
   <scm>
     <connection>scm:git:https://gitbox.apache.org/repos/asf/maven-doxia-site.git</connection>
     <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/maven-doxia-site.git</developerConnection>
-    <url>https://github.com/apache/maven-doxia-site/tree/${project.scm.tag}</url>
     <tag>master</tag>
+    <url>https://github.com/apache/maven-doxia-site/tree/${project.scm.tag}</url>
   </scm>
 
   <issueManagement>
@@ -153,14 +153,21 @@ under the License.
     </site>
   </distributionManagement>
 
+  <properties>
+    <maven.site.path>doxia-site</maven.site.path>
+    <doxiaVersion>1.12.0</doxiaVersion>
+    <site.output>${project.build.directory}/site</site.output>
+  </properties>
+
   <repositories>
-    <repository><!-- useful to resolve parent pom when it is a SNAPSHOT -->
-      <id>apache.snapshots</id>
-      <name>Apache Snapshot Repository</name>
-      <url>https://repository.apache.org/snapshots</url>
+    <repository>
       <releases>
         <enabled>false</enabled>
       </releases>
+      <!-- useful to resolve parent pom when it is a SNAPSHOT -->
+      <id>apache.snapshots</id>
+      <name>Apache Snapshot Repository</name>
+      <url>https://repository.apache.org/snapshots</url>
     </repository>
   </repositories>
 
@@ -172,12 +179,6 @@ under the License.
     </pluginRepository>
   </pluginRepositories>
 
-  <properties>
-    <maven.site.path>doxia-site</maven.site.path>
-    <doxiaVersion>1.9.1</doxiaVersion>
-    <site.output>${project.build.directory}/site</site.output>
-  </properties>
-
   <build>
     <pluginManagement>
       <plugins>
@@ -188,10 +189,14 @@ under the License.
             <excludes combine.children="append">
               <exclude>Jenkinsfile</exclude>
               <exclude>content/resources/images/architecture.odg</exclude>
-              <exclude>.repository/**</exclude><!-- Jenkins job with local Maven repository -->
-              <exclude>.maven/spy.log</exclude><!-- Hudson Maven3 integration log -->
-              <exclude>dependency-reduced-pom.xml</exclude><!-- Maven shade plugin -->
-              <exclude>.asf.yaml</exclude><!-- GitHub Support -->
+              <exclude>.repository/**</exclude>
+              <!-- Jenkins job with local Maven repository -->
+              <exclude>.maven/spy.log</exclude>
+              <!-- Hudson Maven3 integration log -->
+              <exclude>dependency-reduced-pom.xml</exclude>
+              <!-- Maven shade plugin -->
+              <exclude>.asf.yaml</exclude>
+              <!-- GitHub Support -->
               <exclude>.java-version</exclude>
             </excludes>
           </configuration>
@@ -219,7 +224,8 @@ under the License.
           <artifactId>maven-site-plugin</artifactId>
           <configuration>
             <siteDirectory>${project.basedir}/content</siteDirectory>
-            <skipDeploy>true</skipDeploy><!-- don't deploy site with maven-site-plugin -->
+            <skipDeploy>true</skipDeploy>
+            <!-- don't deploy site with maven-site-plugin -->
           </configuration>
         </plugin>
       </plugins>
@@ -229,31 +235,25 @@ under the License.
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-scm-publish-plugin</artifactId>
         <configuration>
-          <content>${project.reporting.outputDirectory}</content><!-- no need for site:stage, use target/site -->
+          <content>${project.reporting.outputDirectory}</content>
+          <!-- no need for site:stage, use target/site -->
         </configuration>
         <executions>
           <execution>
             <id>scm-publish</id>
-            <phase>site-deploy</phase><!-- deploy site with maven-scm-publish-plugin -->
+            <!-- deploy site with maven-scm-publish-plugin -->
             <goals>
               <goal>publish-scm</goal>
             </goals>
+            <phase>site-deploy</phase>
           </execution>
         </executions>
       </plugin>
-<!-- START SNIPPET: configuration -->
+      <!-- START SNIPPET: configuration -->
       <plugin>
         <groupId>org.apache.maven.doxia</groupId>
         <artifactId>doxia-book-maven-plugin</artifactId>
         <version>1.3-SNAPSHOT</version>
-        <executions>
-          <execution>
-            <phase>pre-site</phase>
-            <goals>
-              <goal>render-books</goal>
-            </goals>
-          </execution>
-        </executions>
         <configuration>
           <books>
             <book>
@@ -276,44 +276,52 @@ under the License.
             </book>
           </books>
         </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>render-books</goal>
+            </goals>
+            <phase>pre-site</phase>
+          </execution>
+        </executions>
       </plugin>
-<!-- END SNIPPET: configuration -->
+      <!-- END SNIPPET: configuration -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-antrun-plugin</artifactId>
         <executions>
           <execution>
             <id>site</id>
-            <phase>site</phase>
             <goals>
               <goal>run</goal>
             </goals>
+            <phase>site</phase>
             <configuration>
               <target>
                 <copy todir="${project.reporting.outputDirectory}/doxia-example-book/">
                   <fileset dir="${project.build.directory}/generated-site/pdf/doxia-example-book">
-                    <include name="**/*.pdf"/>
+                    <include name="**/*.pdf" />
                   </fileset>
                   <fileset dir="${project.build.directory}/generated-site/rtf/doxia-example-book">
-                    <include name="**/*.rtf"/>
+                    <include name="**/*.rtf" />
                   </fileset>
                 </copy>
                 <!-- links to components directories containing releases documentation: https://maven.apache.org/developers/website/ -->
                 <symlink action="recreate" overwrite="true">
-                  <fileset dir="${project.reporting.outputDirectory}" includes="**/components.links"/>  
+                  <fileset dir="${project.reporting.outputDirectory}" includes="**/components.links" />
                 </symlink>
               </target>
             </configuration>
           </execution>
           <execution>
             <id>chmod</id>
-            <phase>site</phase>
             <goals>
               <goal>run</goal>
             </goals>
+            <phase>site</phase>
             <configuration>
               <target>
-                <chmod file="${project.reporting.outputDirectory}/download.cgi" perm="ugo+rx"/>
+                <chmod file="${project.reporting.outputDirectory}/download.cgi" perm="ugo+rx" />
               </target>
             </configuration>
           </execution>
@@ -349,25 +357,29 @@ under the License.
   </build>
 
   <reporting>
-    <excludeDefaults>true</excludeDefaults>
     <outputDirectory>${site.output}</outputDirectory>
+    <excludeDefaults>true</excludeDefaults>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <reportSets>
-          <reportSet><!-- don't execute inherited reports, since some are useless and cannot be removed -->
+          <reportSet>
+            <!-- don't execute inherited reports, since some are useless and cannot be removed -->
             <configuration>
               <skip>true</skip>
             </configuration>
           </reportSet>
-          <reportSet><!-- execute only reports necessary for main site, in a dedicated reportSet -->
+          <reportSet>
+            <!-- execute only reports necessary for main site, in a dedicated reportSet -->
             <id>site-mpir</id>
             <reports>
-              <report>index</report>          <!-- apt/index.apt.vm -->
+              <report>index</report>
+              <!-- apt/index.apt.vm -->
               <report>team</report>
               <report>mailing-lists</report>
-              <report>scm</report>            <!-- xdoc/scm.xml -->
+              <report>scm</report>
+              <!-- xdoc/scm.xml -->
               <report>issue-management</report>
               <report>ci-management</report>
             </reports>

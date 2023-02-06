@@ -34,6 +34,6 @@ Maven Doxia Releases
  Releases of all Doxia sub-project components (currently Doxia, Doxia Sitetools and Doxia Tools)
  may be downloaded from Maven's central repository:
 
- * {{http://repo.maven.apache.org/maven2/org/apache/maven/doxia/}}
+ * {{https://repo.maven.apache.org/maven2/org/apache/maven/doxia/}}
 
  []
