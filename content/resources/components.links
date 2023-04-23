@@ -6,5 +6,4 @@ doxia=components/doxia
 doxia-archives=components/doxia-archives
 doxia-sitetools=components/doxia-sitetools
 doxia-sitetools-archives=components/doxia-sitetools-archives
-doxia-ide=components/doxia-ide
 doxia-tools-archives=components/doxia-tools-archives
