@@ -39,5 +39,3 @@ Available Doxia Tools
 *--------------------------------------------------------------+--------------+------------+------------------+------------------------+--------------------+
 | {{{./doxia-book-maven-plugin/} Doxia Book Maven Plugin}}     | 1.2          | 2010-11-09 | Create books in different output formats. | {{{https://gitbox.apache.org/repos/asf/maven-doxia-book-maven-plugin.git}Git}} / {{{https://github.com/apache/maven-doxia-book-maven-plugin/}GitHub}} | {{{https://issues.apache.org/jira/browse/DOXIATOOLS}Jira DOXIATOOLS}}
 *--------------------------------------------------------------+--------------+------------+------------------+------------------------+--------------------+
-| {{{./doxia-book-renderer/} Doxia Book Renderer}}             | 1.2          | 2010-11-09 |  | {{{https://gitbox.apache.org/repos/asf/maven-doxia-book-renderer.git}Git}} / {{{https://github.com/apache/maven-doxia-book-renderer/}GitHub}} | {{{https://issues.apache.org/jira/browse/DOXIATOOLS}Jira DOXIATOOLS}}
-*--------------------------------------------------------------+--------------+------------+------------------+------------------------+--------------------+
