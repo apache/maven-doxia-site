@@ -315,7 +315,7 @@ under the License.
                   </fileset>
                 </copy>
                 <!-- links to components directories containing releases documentation: https://maven.apache.org/developers/website/ -->
-                <symlink action="recreate" overwrite="true">
+                <symlink action="recreate" overwrite="true" failonerror="false">
                   <fileset dir="${project.reporting.outputDirectory}" includes="**/components.links" />
                 </symlink>
               </target>
