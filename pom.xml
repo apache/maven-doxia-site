@@ -222,7 +222,6 @@ under the License.
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
-          <version>4.0.0-M7</version>
           <configuration>
             <siteDirectory>${project.basedir}/content</siteDirectory>
             <skipDeploy>true</skipDeploy>
