@@ -204,12 +204,12 @@ under the License.
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-antrun-plugin</artifactId>
-          <version>3.0.0</version>
+          <version>3.1.0</version>
           <dependencies>
             <dependency>
               <groupId>org.apache.ant</groupId>
               <artifactId>ant</artifactId>
-              <version>1.10.12</version>
+              <version>1.10.13</version>
             </dependency>
           </dependencies>
         </plugin>
