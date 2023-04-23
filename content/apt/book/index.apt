@@ -43,8 +43,6 @@ Introduction
  The only thing you need in addition to the content files itself is a simple book descriptor which is used to specify
  the ordering of the sections and the names for the chapters.
 
- See {{{../doxia-tools/doxia-book-renderer/book.html}The Book Descriptor Reference}} for a reference to the descriptor.
-
 * Creating a Book Descriptor
 
  An XML file is used to describe the layout of the book.
