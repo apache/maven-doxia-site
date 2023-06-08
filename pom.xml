@@ -228,6 +228,14 @@ under the License.
             <!-- don't deploy site with maven-site-plugin -->
           </configuration>
         </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-scm-publish-plugin</artifactId>
+          <version>3.2.1</version>
+          <configuration>
+            <tryUpdate>true</tryUpdate>
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
