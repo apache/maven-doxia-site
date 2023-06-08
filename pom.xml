@@ -233,7 +233,7 @@ under the License.
           <artifactId>maven-scm-publish-plugin</artifactId>
           <version>3.2.1</version>
           <configuration>
-            <tryUpdate>true</tryUpdate>
+            <tryUpdate>false</tryUpdate>
           </configuration>
         </plugin>
       </plugins>
