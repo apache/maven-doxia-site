@@ -46,7 +46,6 @@ under the License.
       <archive>https://mail-archives.apache.org/mod_mbox/maven-users</archive>
       <otherArchives>
         <otherArchive>https://www.mail-archive.com/users@maven.apache.org/</otherArchive>
-        <otherArchive>https://markmail.org/list/org.apache.maven.users</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
@@ -57,7 +56,6 @@ under the License.
       <archive>https://mail-archives.apache.org/mod_mbox/maven-dev</archive>
       <otherArchives>
         <otherArchive>https://www.mail-archive.com/dev@maven.apache.org/</otherArchive>
-        <otherArchive>https://markmail.org/list/org.apache.maven.dev</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
@@ -68,7 +66,6 @@ under the License.
       <otherArchives>
         <otherArchive>https://www.mail-archive.com/commits@maven.apache.org</otherArchive>
         <otherArchive>https://old.nabble.com/Maven---Commits-f15575.html</otherArchive>
-        <otherArchive>https://markmail.org/list/org.apache.maven.commits</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
@@ -78,7 +75,6 @@ under the License.
       <archive>https://mail-archives.apache.org/mod_mbox/maven-issues/</archive>
       <otherArchives>
         <otherArchive>https://www.mail-archive.com/issues@maven.apache.org</otherArchive>
-        <otherArchive>https://markmail.org/list/org.apache.maven.issues</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
@@ -86,7 +82,6 @@ under the License.
       <archive>https://mail-archives.apache.org/mod_mbox/maven-doxia-dev/</archive>
       <otherArchives>
         <otherArchive>https://www.mail-archive.com/doxia-dev@maven.apache.org</otherArchive>
-        <otherArchive>https://markmail.org/list/org.apache.maven.doxia-dev</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
@@ -94,7 +89,6 @@ under the License.
       <archive>https://mail-archives.apache.org/mod_mbox/maven-doxia-users/</archive>
       <otherArchives>
         <otherArchive>https://www.mail-archive.com/doxia-users@maven.apache.org</otherArchive>
-        <otherArchive>https://markmail.org/list/org.apache.maven.doxia-users</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
@@ -102,7 +96,6 @@ under the License.
       <archive>https://mail-archives.apache.org/mod_mbox/maven-doxia-commits/</archive>
       <otherArchives>
         <otherArchive>https://www.mail-archive.com/doxia-commits@maven.apache.org</otherArchive>
-        <otherArchive>https://markmail.org/list/org.apache.maven.doxia-commits</otherArchive>
       </otherArchives>
     </mailingList>
 
@@ -116,7 +109,6 @@ under the License.
       <otherArchives>
         <otherArchive>https://www.mail-archive.com/announce@maven.apache.org</otherArchive>
         <otherArchive>https://www.nabble.com/Maven-Announcements-f15617.html</otherArchive>
-        <otherArchive>https://markmail.org/list/org.apache.maven.announces</otherArchive>
       </otherArchives>
     </mailingList>
     <mailingList>
@@ -126,7 +118,6 @@ under the License.
       <archive>https://mail-archives.apache.org/mod_mbox/maven-notifications/</archive>
       <otherArchives>
         <otherArchive>https://www.mail-archive.com/notifications@maven.apache.org</otherArchive>
-        <otherArchive>https://markmail.org/list/org.apache.maven.notifications</otherArchive>
       </otherArchives>
     </mailingList>
   </mailingLists>
