@@ -29,8 +29,7 @@
 
 Introduction
 
- Doxia allows you to write books like user manuals and guides in any format supported by Doxia. Combined with the
- Doxia Book Maven you are able to include the manuals directly in your generated site with links to the off-line
+ Doxia allows you to write books like user manuals and guides in any format supported by Doxia. You can include the manuals directly in your generated site with links to the off-line
  friendly formats like XDoc, PDF, RTF and LaTeX.
 
  The Xdoc output which has been rendered into this site can be viewed {{{../doxia-example-book/index.html}here}}.
@@ -40,14 +39,12 @@ Introduction
 
 * How It Works
 
- The only thing you need in addition to the content files itself is a simple book descriptor which is used to specify
+ The only thing you need in addition to the content files is a simple book descriptor which specifies
  the ordering of the sections and the names for the chapters.
-
- See {{{../doxia-tools/doxia-book-renderer/book.html}The Book Descriptor Reference}} for a reference to the descriptor.
 
 * Creating a Book Descriptor
 
- An XML file is used to describe the layout of the book.
+ An XML file describes the layout of the book.
 
  A sample is given below:
 
