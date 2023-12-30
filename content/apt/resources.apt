@@ -46,16 +46,6 @@ External Resources
 | {{{http://en.wikipedia.org/wiki/Lightweight_markup_language}Lightweight markup language}} | wikipedia.org  | ?
 *-----------+--------------+--------------+
 
-* Tools
-
-*-----------+--------------+
-|| Name    || Author
-*-----------+--------------+
-| {{{http://apteditor.sourceforge.net/}APT Editor (Eclipse plugin)}} | Mathieu Avoine
-*-----------+--------------+
-| {{{http://code.google.com/p/nb-doxia-support/}nb-doxia-support (NetBeans plugin)}} | Allan Lykke Christensen
-*-----------+--------------+
-
 Related External Projects
 
  * {{{http://www.xwiki.org/}XWiki}} which uses Doxia in its
