@@ -3,5 +3,8 @@
 # links property file for Ant's symlink task in pom.xml:
 # links to components in https://maven.apache.org/doxia/components/
 doxia=components/doxia
+doxia-archives=components/doxia-archives
 doxia-sitetools=components/doxia-sitetools
+doxia-sitetools-archives=components/doxia-sitetools-archives
+doxia-tools=components/doxia-tools
 doxia-tools-archives=components/doxia-tools-archives
