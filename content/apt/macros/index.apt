@@ -169,11 +169,8 @@ public class MyClass
 +----
 
  This displays a TOC for the second section in the document, including all
- subsections (depth 2) and  sub-subsections (depth 3).
-
-  <<Note>> that in Doxia, apt section titles are not implicit anchors
-  (see {{{../references/doxia-apt.html}Enhancements to the APT format}}), so you need
-  to insert explicit anchors for links to work!
+ subsections (depth 2) and  sub-subsections (depth 3). The macro takes care to
+ automatically generate anchors for each TOC entry.
 
  In a xdoc file, it will be:
 

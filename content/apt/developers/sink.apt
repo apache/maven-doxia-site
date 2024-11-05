@@ -196,6 +196,49 @@ sink.unknown( "cdata", new Object[]{new Integer( HtmlMarkup.CDATA_TYPE ), javasc
 sink.unknown( "script", new Object[]{new Integer( HtmlMarkup.TAG_TYPE_END )}, null );
 +----
 
+* {Using Sink wrappers}
+
+  One or multiple Sink wrappers can be registered with a parser to optionally enrich or modify the output emitted to the sink.
+  Each sink wrapper is responsible for calling its subsequent sink (either again a wrapper or the original sink).
+  The {{{SinkWrapper}}} class automatically just delegates all method calls to its wrapper.
+  A sink wrapper is automatically created by the parser through a dedicated factory.
+  Each JSR303 component implementing a SinkWrapperFactory is automatically registered considering its rank.
+  Other sink wrapper factories can be registered manually via <<<Parser.registerSinkWrapperFactory(...)>>>.
+  
++----
+@Named
+public class MySinkWrapperFactory implements SinkWrapperFactory {
+
+    @Override
+    public Sink createWrapper(Sink sink) {
+        return new MySinkWrapper(sink);
+    }
+
+    @Override
+    public int getRank() {
+        // the higher the rank, the earlier it is called in the processing queue
+        return 0;
+    }
+}
+
++----
+
+  The according SinkWrapper could look like this
+
++----
+public class MySinkWrapper extends SinkWrapper {
+
+    public MySinkWrapper(Sink sink) {
+        super(sink);
+    }
+
+    @Override
+    public void text(String text) {
+        super.text("some prefix emitted in front of every text " + text);
+    }
+
+}
++----
 
 * {References}
 
