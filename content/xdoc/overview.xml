@@ -65,7 +65,7 @@ under the License.
       </p>
       <p>
         <b>Note</b>: Just like Maven, Doxia uses
-        <a class="externalLink" href="http://plexus.codehaus.org/">Plexus</a> extensively.
+        <a class="externalLink" href="https://codehaus-plexus.github.io/">Plexus</a> extensively.
       </p>
 
       <subsection name="Sink API">
