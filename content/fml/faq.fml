@@ -99,33 +99,28 @@ under the License.
         <p>
           Your favorite IDE probably supports XSD schema's for Xdoc and FML files. You need to
           specify the following:
-        <source>
-&lt;document xmlns="http://maven.apache.org/XDOC/2.0"
+        <source>&lt;document xmlns="http://maven.apache.org/XDOC/2.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd"&gt;
   ...
 &lt;/document&gt;</source>
-        <source>
-&lt;faqs xmlns="http://maven.apache.org/FML/1.0.1"
+        <source>&lt;faqs xmlns="http://maven.apache.org/FML/1.0.1"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/FML/1.0.1 http://maven.apache.org/xsd/fml-1.0.1.xsd"&gt;
   ...
 &lt;/faqs&gt;</source>
-          <source>
-&lt;book xmlns="http://maven.apache.org/BOOK/1.0.0"
+          <source>&lt;book xmlns="http://maven.apache.org/BOOK/1.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/BOOK/1.0.0 http://maven.apache.org/xsd/book-1.0.0.xsd">
   ...
 &lt;/book&gt;</source>
-          <source>
-&lt;document xmlns="http://maven.apache.org/DOCUMENT/1.0.1"
+          <source>&lt;document xmlns="http://maven.apache.org/DOCUMENT/1.0.1"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/DOCUMENT/1.0.1 http://maven.apache.org/xsd/document-1.0.1.xsd"
   outputName="..."&gt;
   ...
 &lt;/document&gt;</source>
-          <source>
-&lt;project xmlns="http://maven.apache.org/DECORATION/1.0.0"
+          <source>&lt;project xmlns="http://maven.apache.org/DECORATION/1.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd"&gt;
   ...
@@ -145,8 +140,7 @@ under the License.
         </p>
         <p>
           For instance, you could add the following in your Xdoc XML files to be similar to XHTML 1.0 Transitional dtd:
-        <source>
-&lt;!DOCTYPE document [
+        <source>&lt;!DOCTYPE document [
   &lt;!-- These are the entity sets for ISO Latin 1 characters for the XHTML --&gt;
   &lt;!ENTITY % HTMLlat1 PUBLIC "-//W3C//ENTITIES Latin 1 for XHTML//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml-lat1.ent"&gt;
   %HTMLlat1;

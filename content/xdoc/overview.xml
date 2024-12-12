@@ -77,15 +77,13 @@ under the License.
         <p>
           For instance, you could do things like:
         </p>
-        <source>
-sink.paragraph();
+        <source>sink.paragraph();
 sink.text( &quot;my text&quot; );
 sink.paragraph_(); </source>
         <p>
           similar to this HTML markup:
         </p>
-        <source>
-&lt;p&gt;my text&lt;/p&gt;</source>
+        <source>&lt;p&gt;my text&lt;/p&gt;</source>
         <p>To find out more about the Sink API, you could read the Javadoc
           <a class="externalLink"
             href="http://maven.apache.org/doxia/doxia/doxia-sink-api/apidocs/org/apache/maven/doxia/sink/Sink.html">here</a>.
@@ -97,8 +95,7 @@ sink.paragraph_(); </source>
           The <i>Core</i> is the API to parse a source and populate it in a <i>Sink</i>
           object. The <i>Parser</i> interface contains only one method:
         </p>
-        <source>
-void parse( Reader source, Sink sink )
+        <source>void parse( Reader source, Sink sink )
     throws ParseException; </source>
         <p>
           The <i>ParseException</i> class has the responsibility to catch all parsing
