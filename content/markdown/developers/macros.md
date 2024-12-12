@@ -1,38 +1,32 @@
- -----
- Doxia Developers Centre
- -----
- Vincent Siveton
- ------
- 2008-03-02
- ------
+---
+title: Doxia Developers Centre
+author: 
+  - Vincent Siveton
+date: 2008-03-02
+---
 
-~~ Licensed to the Apache Software Foundation (ASF) under one
-~~ or more contributor license agreements.  See the NOTICE file
-~~ distributed with this work for additional information
-~~ regarding copyright ownership.  The ASF licenses this file
-~~ to you under the Apache License, Version 2.0 (the
-~~ "License"); you may not use this file except in compliance
-~~ with the License.  You may obtain a copy of the License at
-~~
-~~   http://www.apache.org/licenses/LICENSE-2.0
-~~
-~~ Unless required by applicable law or agreed to in writing,
-~~ software distributed under the License is distributed on an
-~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-~~ KIND, either express or implied.  See the License for the
-~~ specific language governing permissions and limitations
-~~ under the License.
+<!-- Licensed to the Apache Software Foundation (ASF) under one-->
+<!-- or more contributor license agreements.  See the NOTICE file-->
+<!-- distributed with this work for additional information-->
+<!-- regarding copyright ownership.  The ASF licenses this file-->
+<!-- to you under the Apache License, Version 2.0 (the-->
+<!-- "License"); you may not use this file except in compliance-->
+<!-- with the License.  You may obtain a copy of the License at-->
+<!---->
+<!--   http://www.apache.org/licenses/LICENSE-2.0-->
+<!---->
+<!-- Unless required by applicable law or agreed to in writing,-->
+<!-- software distributed under the License is distributed on an-->
+<!-- "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY-->
+<!-- KIND, either express or implied.  See the License for the-->
+<!-- specific language governing permissions and limitations-->
+<!-- under the License.-->
 
-~~ NOTE: For help with the syntax of this file, see:
-~~ http://maven.apache.org/doxia/references/apt-format.html
+# Create a New Doxia Macro
 
-Create a New Doxia Macro
+You need to add the following [plexus\-component\-metadata plugin](https://codehaus-plexus.github.io/plexus-containers/plexus-component-metadata/) configuration to generate the correct Plexus _component\.xml_ file from annotations for the project containing your macro:
 
- You need to add the following {{{https://codehaus-plexus.github.io/plexus-containers/plexus-component-metadata/}plexus-component-metadata plugin}}
- configuration to generate the correct Plexus <component.xml> file from annotations
- for the project containing your macro:
-
-+----
+```unknown
 <project>
   ...
   <build>
@@ -55,11 +49,11 @@ Create a New Doxia Macro
   </build>
   ...
 </project>
-+----
+```
 
- You should implement the <AbstractMacro> class:
+You should implement the _AbstractMacro_ class:
 
-+----
+```unknown
 import org.apache.maven.doxia.macro.AbstractMacro;
 
 /**
@@ -77,36 +71,28 @@ public class MyMacro
     }
 ...
 }
-+----
+```
 
- To use it, you need to write the following markups:
+To use it, you need to write the following markups:
 
-  * APT
+- APT
 
-+----
-%{my|myParam=myValue} <!-- my is the macro name defined by role-hint -->
-+----
+    ```unknown
+    %{my|myParam=myValue} <!-- my is the macro name defined by role-hint -->
+    ```
 
-  * XDoc
+- XDoc
 
-+----
-<macro name="my"> <!-- my is the required macro name defined by role-hint -->
-  <param name="myParam" value="myValue"/>
-</macro>
-+----
+    ```unknown
+    <macro name="my"> <!-- my is the required macro name defined by role-hint -->
+      <param name="myParam" value="myValue"/>
+    </macro>
+    ```
 
-  []
+## <a id="References"></a>References
 
-* {References}
-
-  * {{{../modules/index.html}Doxia Modules Guide}}
-
-  * {{{../macros/index.html}Doxia Macros Guide}}
-
-  * {{{../doxia/apidocs/index.html}Doxia API Reference}}
-
-  * {{{../doxia-sitetools/apidocs/index.html}Doxia Sitetools API Reference}}
-
-  * {{{/plugin-developers/cookbook/plexus-plugin-upgrade.html}Upgrading from Plexus Javadoc Tags to Plexus Java Annotations}}
-
-  []
+- [Doxia Modules Guide](../modules/index.html)
+- [Doxia Macros Guide](../macros/index.html)
+- [Doxia API Reference](../doxia/apidocs/index.html)
+- [Doxia Sitetools API Reference](../doxia-sitetools/apidocs/index.html)
+- [Upgrading from Plexus Javadoc Tags to Plexus Java Annotations](/plugin-developers/cookbook/plexus-plugin-upgrade.html)

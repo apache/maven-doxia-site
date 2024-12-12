@@ -1,36 +1,33 @@
- ------
- Doxia - SWF Macro
- ------
- The Maven Team
- ------
- 2007-05-17
- ------
+---
+title: Doxia - SWF Macro
+author: 
+  - The Maven Team
+date: 2007-05-17
+---
 
-~~ Licensed to the Apache Software Foundation (ASF) under one
-~~ or more contributor license agreements.  See the NOTICE file
-~~ distributed with this work for additional information
-~~ regarding copyright ownership.  The ASF licenses this file
-~~ to you under the Apache License, Version 2.0 (the
-~~ "License"); you may not use this file except in compliance
-~~ with the License.  You may obtain a copy of the License at
-~~
-~~   http://www.apache.org/licenses/LICENSE-2.0
-~~
-~~ Unless required by applicable law or agreed to in writing,
-~~ software distributed under the License is distributed on an
-~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-~~ KIND, either express or implied.  See the License for the
-~~ specific language governing permissions and limitations
-~~ under the License.
+<!-- Licensed to the Apache Software Foundation (ASF) under one-->
+<!-- or more contributor license agreements.  See the NOTICE file-->
+<!-- distributed with this work for additional information-->
+<!-- regarding copyright ownership.  The ASF licenses this file-->
+<!-- to you under the Apache License, Version 2.0 (the-->
+<!-- "License"); you may not use this file except in compliance-->
+<!-- with the License.  You may obtain a copy of the License at-->
+<!---->
+<!--   http://www.apache.org/licenses/LICENSE-2.0-->
+<!---->
+<!-- Unless required by applicable law or agreed to in writing,-->
+<!-- software distributed under the License is distributed on an-->
+<!-- "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY-->
+<!-- KIND, either express or implied.  See the License for the-->
+<!-- specific language governing permissions and limitations-->
+<!-- under the License.-->
+# SWF Macro
 
-SWF Macro
+The SWF macro enables users of APT to put SWF \(Flash\) assets in their documentation\.
 
- The SWF macro enables users of APT to put SWF (Flash) assets in their documentation.
+Flash assets typically need to be wrappered in `object` and `embed` tags and can have a variety of parameters\. Below is a typical example:
 
- Flash assets typically need to be wrappered in <<<object>>> and <<<embed>>> tags and can have
- a variety of parameters.  Below is a typical example:
-
-+----
+```unknown
 <object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000'
     codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0'
     width='400' height='400' id='MyMovie'>
@@ -42,53 +39,41 @@ SWF Macro
     pluginspage='http://www.macromedia.com/go/getflashplayer'
     type='application/x-shockwave-flash' menu='false'></embed>
 </object>
-+----
+```
 
-  In order to use a *.swf in your APT file, use the basic syntax:
+In order to use a \*\.swf in your APT file, use the basic syntax:
 
-+----
+```unknown
 %{swf|src=swf/myfile.swf|id=MyMovie|width=600|height=200}
-+----
+```
 
-  For which <<<src>>> is the required parameter.  Make sure to put your *.swf file into
-  the <</resources>> folder so that it will get copied to /target when running the <<<mvn site>>> task.
+For which `src` is the required parameter\. Make sure to put your \*\.swf file into the **/resources** folder so that it will get copied to /target when running the `mvn site` task\.
 
-  You can use more advanced parameters to control the output, as per below:
+You can use more advanced parameters to control the output, as per below:
 
-+----
+```unknown
 %{swf|src=swf/myfile.swf|id=MyMovie|width=600|height=200|version=9|allowScript=always}
-+----
+```
 
-  For a full listing of parameters and their values see the Adobe knowledge base:
+For a full listing of parameters and their values see the Adobe knowledge base:
 
-  {{{http://www.adobe.com/cfusion/knowledgebase/index.cfm?id=tn_12701}http://www.adobe.com/cfusion/knowledgebase/index.cfm?id=tn_12701}}
+[http://www\.adobe\.com/cfusion/knowledgebase/index\.cfm?id=tn\_12701](http://www.adobe.com/cfusion/knowledgebase/index.cfm?id=tn_12701)
 
-*Parameters and Defaults
+## Parameters and Defaults
 
-  Currently the following parameters are available through the macro.  If no value is placed within a parameter, the
-  value will default to the following:
+Currently the following parameters are available through the macro\. If no value is placed within a parameter, the value will default to the following:
 
-  * id = "swf"
+- id = &quot;swf&quot;
+- width = &quot;400&quot;
+- height = &quot;400&quot;
+- quality = &quot;high&quot;
+- menu = &quot;false&quot;
+- loop = &quot;0&quot;
+- play = &quot;true&quot;
+- version = &quot;9,0,45,0&quot;
+- allowScript = &quot;sameDomain&quot;
 
-  * width = "400"
+Note: There is some provided shorthand for versions, i\.e\. \- version=6 \- becomes version=6,0,29,0\.
 
-  * height = "400"
+_TODO:_ only shorthand for 6 and 9 are functional\. Need to find standard long version for other types\.
 
-  * quality = "high"
-
-  * menu = "false"
-
-  * loop = "0"
-
-  * play = "true"
-
-  * version = "9,0,45,0"
-
-  * allowScript = "sameDomain"
-
-  []
-
-  Note:  There is some provided shorthand for versions, i.e. - version=6 - becomes version=6,0,29,0.
-
-  <TODO:>  only shorthand for 6 and 9 are functional.  Need to find standard long
-  version for other types.
