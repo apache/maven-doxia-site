@@ -40,6 +40,10 @@ under the License.
 
       <subsection name="The FML format">
         <p>
+          Below the root element <code>faqs</code> there are one or more <code>part</code> elements.
+          Each <code>part</code> element has a <code>title</code> and contains one or more <code>faq</code> elements.
+          Each <code>faq</code> element has a <code>question</code> and an <code>answer</code> element.
+          The contents of <code>title</code>, <code>question</code> and <code>answer</code> are parsed with the <a href="xdoc-format.html">XDoc parser</a>.
           The full documentation is available at <a href="../doxia/doxia-modules/doxia-module-fml/xsddoc/index.html">here</a>.
         </p>
       </subsection>
