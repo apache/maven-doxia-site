@@ -47,6 +47,12 @@ under the License.
       <item name="FAQ" href="faq.html"/>
     </menu>
 
+    <menu name="Modules" >
+      <item name="Doxia Base" href="doxia/index.html" />
+      <item name="Doxia Sitetools" href="doxia-sitetools/index.html" />
+      <item name="Doxia Tools" href="doxia-tools/index.html" />
+    </menu>
+
     <menu name="Documentation">
       <item name="Format References" href="references/index.html" collapse="true">
         <item name="Apt Format" href="references/apt-format.html" collapse="true">
@@ -63,14 +69,9 @@ under the License.
     </menu>
 
     <menu name="Developer Docs">
-      <item name="Developer Centre" href="developers/index.html" collapse="true">
-        <item name="Create a Doxia Module" href="developers/modules.html"/>
-        <item name="Create a Doxia Macro" href="developers/macros.html"/>
-        <item name="Using the Sink API" href="developers/sink.html"/>
-        <item name="Doxia base" href="doxia/index.html"/>
-        <item name="Doxia Sitetools" href="doxia-sitetools/index.html"/>
-      </item>
-      <item name="Doxia Tools" href="doxia-tools/index.html"/>
+      <item name="Create a Doxia Module" href="developers/modules.html"/>
+      <item name="Create a Doxia Macro" href="developers/macros.html"/>
+      <item name="Using the Sink API" href="developers/sink.html"/>
     </menu>
 
     <menu ref="reports"/>
