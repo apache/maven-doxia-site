@@ -24,8 +24,6 @@ date: 2009-03-02
 
 # Maven Doxia Releases
 
-Releases of Maven Doxia are made available in both binary and source distributions\. Individual JARs are also made available through Apache Maven repositories\.
+Releases of Maven Doxia are made available in both binary and source distributions. Individual JARs are also made available through Apache Maven repositories.
 
-Releases of all Doxia sub\-project components \(currently Doxia, Doxia Sitetools and Doxia Tools\) may be downloaded from Maven&apos;s central repository:
-
-- [https://repo\.maven\.apache\.org/maven2/org/apache/maven/doxia/](https://repo.maven.apache.org/maven2/org/apache/maven/doxia/)
+Releases of all Doxia sub-project components \(currently Doxia, Doxia Sitetools and Doxia Tools\) may be downloaded from Maven Central in the usual way.
