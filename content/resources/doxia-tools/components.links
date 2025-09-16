@@ -5,3 +5,4 @@
 doxia-book-maven-plugin=../components/doxia-tools/doxia-book-maven-plugin
 doxia-converter=../components/doxia-tools/doxia-converter
 doxia-linkcheck=../components/doxia-tools/doxia-linkcheck
+doxia-book-renderer=../components/doxia-tools/doxia-book-renderer
