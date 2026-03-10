@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+---
+title: Source Repository
+---
 
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
@@ -19,66 +21,29 @@ specific language governing permissions and limitations
 under the License.
 -->
 
-<document xmlns="http://maven.apache.org/XDOC/2.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
-  <properties>
-    <title>Source Repository</title>
-  </properties>
-  <body>
-    <section name="Source Repository">
-      <p>
-        Maven Doxia projects use <a href="http://git-scm.com/">Git</a> or <a href="http://subversion.apache.org/">Subversion</a> to manage their source code:
-        decisions to stay with Subversion or move to Git are tracked on <a href="https://cwiki.apache.org/confluence/display/MAVEN/Git+Migration">Maven's Wiki</a>.
-      </p>
-      <p>
-        Instructions on Subversion use can be found in the online book <a href="http://svnbook.red-bean.com/">Version Control with Subversion</a>.
-        Instructions on Git use can be found in the online book <a href="http://git-scm.com/book/">Pro Git</a>.
-        Instructions for using the Apache Software Foundation Git repositories are at <a href="https://git-wip-us.apache.org/">https://git-wip-us.apache.org</a>.
-      </p>
+# Source Repository
 
-      <subsection name="Doxia Website">
-      <p>The sources for this site are available in a separate Git repository:
-        <table>
-          <tr>
-            <td><a href="/doxia/">Apache Maven Doxia website</a></td>
-            <td><source><a href="https://gitbox.apache.org/repos/asf/maven-doxia-site.git">https://gitbox.apache.org/repos/asf/maven-doxia-site.git</a></source></td>
-            <td><a href="https://github.com/apache/maven-doxia-site/">(GitHub mirror)</a></td>
-          </tr>
-        </table>
-      </p>
-      </subsection>
+Maven Doxia projects use [Git](http://git-scm.com/) or [Subversion](http://subversion.apache.org/) to manage their source code: decisions to stay with Subversion or move to Git are tracked on [Maven&apos;s Wiki](https://cwiki.apache.org/confluence/display/MAVEN/Git+Migration). 
 
-      <subsection name="Components in Git">
-      <p>
-        The components in Git are:
-        <table>
-          <tr>
-            <td><a href="doxia/">Apache Maven Doxia base</a></td>
-            <td><source><a href="https://gitbox.apache.org/repos/asf/maven-doxia.git">https://gitbox.apache.org/repos/asf/maven-doxia.git</a></source></td>
-            <td><a href="https://github.com/apache/maven-doxia/">(GitHub mirror)</a></td>
-          </tr>
-          <tr>
-            <td><a href="doxia-sitetools/">Apache Maven Doxia Sitetools</a></td>
-            <td><source><a href="https://gitbox.apache.org/repos/asf/maven-doxia-sitetools.git">https://gitbox.apache.org/repos/asf/maven-doxia-sitetools.git</a></source></td>
-            <td><a href="https://github.com/apache/maven-doxia-sitetools/">(GitHub mirror)</a></td>
-          </tr>
-          <tr>
-            <th>Doxia Tools</th>
-          </tr>
-          <tr>
-            <td><a href="doxia-tools/doxia-converter/">Apache Maven Doxia Converter</a></td>
-            <td><source><a href="https://gitbox.apache.org/repos/asf/maven-doxia-converter.git">https://gitbox.apache.org/repos/asf/maven-doxia-converter.git</a></source></td>
-            <td><a href="https://github.com/apache/maven-doxia-converter/">(GitHub mirror)</a></td>
-          </tr>
-          <tr>
-            <td><a href="doxia-tools/doxia-linkcheck/">Apache Maven Doxia LinkCheck</a></td>
-            <td><source><a href="https://gitbox.apache.org/repos/asf/maven-doxia-linkcheck.git">https://gitbox.apache.org/repos/asf/maven-doxia-linkcheck.git</a></source></td>
-            <td><a href="https://github.com/apache/maven-doxia-linkcheck/">(GitHub mirror)</a></td>
-          </tr>
-        </table>
-      </p>
-      </subsection>
-    </section>
-  </body>
-</document>
+Instructions on Subversion use can be found in the online book [Version Control with Subversion](http://svnbook.red-bean.com/). Instructions on Git use can be found in the online book [Pro Git](http://git-scm.com/book/). Instructions for using the Apache Software Foundation Git repositories are at [https://git-wip-us.apache.org](https://git-wip-us.apache.org/). 
+
+## Doxia Website
+
+The sources for this site are available in a separate Git repository: 
+
+|   |   |   |
+|---|---|---|
+|[Apache Maven Doxia website](/doxia/)|<pre><code><a href="https://gitbox.apache.org/repos/asf/maven-doxia-site.git" class="externalLink">https://gitbox.apache.org/repos/asf/maven-doxia-site.git</a></code></pre>|[\(GitHub mirror\)](https://github.com/apache/maven-doxia-site/)|
+
+## Components in Git
+
+The components in Git are: 
+
+|   |   |   |
+|---|---|---|
+|[Apache Maven Doxia base](doxia/)|<pre><code><a href="https://gitbox.apache.org/repos/asf/maven-doxia.git" class="externalLink">https://gitbox.apache.org/repos/asf/maven-doxia.git</a></code></pre>|[\(GitHub mirror\)](https://github.com/apache/maven-doxia/)|
+|[Apache Maven Doxia Sitetools](doxia-sitetools/)|<pre><code><a href="https://gitbox.apache.org/repos/asf/maven-doxia-sitetools.git" class="externalLink">https://gitbox.apache.org/repos/asf/maven-doxia-sitetools.git</a></code></pre>|[\(GitHub mirror\)](https://github.com/apache/maven-doxia-sitetools/)|
+|Doxia Tools|
+|[Apache Maven Doxia Converter](doxia-tools/doxia-converter/)|<pre><code><a href="https://gitbox.apache.org/repos/asf/maven-doxia-converter.git" class="externalLink">https://gitbox.apache.org/repos/asf/maven-doxia-converter.git</a></code></pre>|[\(GitHub mirror\)](https://github.com/apache/maven-doxia-converter/)|
+|[Apache Maven Doxia LinkCheck](doxia-tools/doxia-linkcheck/)|<pre><code><a href="https://gitbox.apache.org/repos/asf/maven-doxia-linkcheck.git" class="externalLink">https://gitbox.apache.org/repos/asf/maven-doxia-linkcheck.git</a></code></pre>|[\(GitHub mirror\)](https://github.com/apache/maven-doxia-linkcheck/)|
+

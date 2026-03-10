@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+---
+title: Doxia Markup Languages References
+author: 
+  - Lukas Theussl
+  - Vincent Siveton
+---
 
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
@@ -19,168 +24,35 @@ specific language governing permissions and limitations
 under the License.
 -->
 
-<document xmlns="http://maven.apache.org/XDOC/2.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+# Doxia Markup Languages References
 
-  <properties>
-    <title>Doxia Markup Languages References</title>
-    <author email="ltheussl_AT_apache_DOT_org">Lukas Theussl</author>
-    <author email="vsiveton_AT_apache_DOT_org">Vincent Siveton</author>
-  </properties>
+The following table gives an overview of the markup languages currently supported by Doxia: 
 
-  <body>
+- if a _Parser_ is available for a given format, it means that you can write your documentation in this language and Doxia can generate output from it,
 
-    <section name="Doxia Markup Languages References">
-      <p>
-        The following table gives an overview of the markup languages currently
-        supported by Doxia:
-      </p>
-      <ul>
-        <li>if a <i>Parser</i> is available for a given format, it
-        means that you can write your documentation in this language and Doxia
-        can generate output from it,</li>
-        <li>if a <i>Sink</i> is available, it means you can
-        generate output in this format.</li>
-      </ul>
+- if a _Sink_ is available, it means you can generate output in this format.
 
-      <p>
-        The source directory is the directory under which Maven expects source
-        documents in this format (e.g. <code>src/site/apt/</code> for Apt), the
-        file extension is the default file extension, and the parser id is gives the
-        unique identifier that is used by plexus to lookup the corresponding
-        component.
-      </p>
+The source directory is the directory under which Maven expects source documents in this format \(e.g. `src/site/apt/` for Apt\), the file extension is the default file extension, and the parser id is gives the unique identifier that is used by plexus to lookup the corresponding component. 
 
-        <table border="0">
-          <tr>
-            <th>Format</th>
-            <th>Short description</th>
-            <th align="center">Parser<br/>(input)</th>
-            <th align="center">Sink<br/>(output)</th>
-            <th>Source Directory</th>
-            <th>File Extension</th>
-            <th>Doxia Module</th>
-            <th>Parser Id</th>
-          </tr>
+|Format|Short description|Parser<br />\(input\)|Sink<br />\(output\)|Source Directory|File Extension|Doxia Module|Parser Id|
+|---|---|---|---|---|---|---|---|
+|[Apt](./apt-format.html)|Almost Plain Text|![Yes](../images/icon_success_sml.gif)|![Yes](../images/icon_success_sml.gif)|`apt`|`apt`|[`doxia-module-apt`](../doxia/doxia-modules/doxia-module-apt/)|`apt`|
+|[AsciiDoc](https://asciidoctor.org/)|[Asciidoctor Converter Doxia Module](https://docs.asciidoctor.org/maven-tools/latest/site-integration/converter-module-setup-and-configuration/)|![Yes](../images/icon_success_sml.gif)|![No](../images/icon_error_sml.gif)|`asciidoc`|`adoc`, `asciidoc`|[`asciidoctor-converter-doxia-module`](https://github.com/asciidoctor/asciidoctor-maven-plugin#maven-site-integration)|`asciidoc`|
+|[AsciiDoc](https://asciidoctor.org/)|[Asciidoctor Parser Doxia Module](https://docs.asciidoctor.org/maven-tools/latest/site-integration/parser-module-setup-and-configuration/)|![Yes](../images/icon_success_sml.gif)|![Yes](../images/icon_success_sml.gif)|`asciidoc`|`adoc`, `asciidoc`|[`asciidoctor-parser-doxia-module`](https://github.com/asciidoctor/asciidoctor-maven-plugin#maven-site-integration)|`asciidoc`|
+|[Confluence](../modules/index.html#Confluence)|Confluence Enterprise Wiki|![Yes](../images/icon_success_sml.gif)|![Yes](../images/icon_success_sml.gif)<sup>*</sup>|`confluence`|`confluence`|[`doxia-module-confluence`](../doxia/doxia-modules/doxia-module-confluence/)|`confluence`|
+|[Simplified DocBook](../modules/index.html#Simplified_DocBook)|Simplified DocBook XML Standard|![Yes](../images/icon_success_sml.gif)|![Yes](../images/icon_success_sml.gif)|`docbook`|`xml`|[`doxia-module-docbook-simple`](../doxia/doxia-modules/doxia-module-docbook-simple/)|`docbook`|
+|[FML](./fml-format.html)|FAQ Markup Language|![Yes](../images/icon_success_sml.gif)|![No](../images/icon_error_sml.gif)|`fml`|`fml`|[`doxia-module-fml`](../doxia/doxia-modules/doxia-module-fml/)|`fml`|
+|[Markdown](../modules/index.html#Markdown)<sup>**</sup>|Markdown markup language|![Yes](../images/icon_success_sml.gif)|![Yes](../images/icon_success_sml.gif)<sup>****</sup>|`markdown`|`md`, `markdown`<sup>***</sup>|[`doxia-module-markdown`](../doxia/doxia-modules/doxia-module-markdown/)|`markdown`|
+|[TWiki](../modules/index.html#TWiki)<sup>*</sup>|TWiki Structured Wiki|![Yes](../images/icon_success_sml.gif)|![Yes](../images/icon_success_sml.gif)|`twiki`|`twiki`|[`doxia-module-twiki`](../doxia/doxia-modules/doxia-module-twiki/)|`twiki`|
+|[Xdoc](./xdoc-format.html)|XML Documentation Format|![Yes](../images/icon_success_sml.gif)|![Yes](../images/icon_success_sml.gif)|`xdoc`|`xml`|[`doxia-module-xdoc`](../doxia/doxia-modules/doxia-module-xdoc/)|`xdoc`|
+|[XHTML](../modules/index.html#XHTML)|Extensible Hypertext Markup Language|![Yes](../images/icon_success_sml.gif)|![Yes](../images/icon_success_sml.gif)|`xhtml`|`xhtml`|[`doxia-module-xhtml`](../doxia/doxia-modules/doxia-module-xhtml/)|`xhtml`|
 
-          <tr>
-            <td><a href="./apt-format.html">Apt</a></td>
-            <td>Almost Plain Text</td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td><code>apt</code></td>
-            <td><code>apt</code></td>
-            <td><a href="../doxia/doxia-modules/doxia-module-apt/"><code>doxia-module-apt</code></a></td>
-            <td><code>apt</code></td>
-          </tr>
+Note some modules are not included per default with the site plugin. Have a look at the available modules here: [https://repo.maven.apache.org/maven2/org/apache/maven/doxia/](https://repo.maven.apache.org/maven2/org/apache/maven/doxia/).   
 
-          <tr>
-            <td><a href="https://asciidoctor.org/">AsciiDoc</a></td>
-            <td><a href="https://docs.asciidoctor.org/maven-tools/latest/site-integration/converter-module-setup-and-configuration/">Asciidoctor Converter Doxia Module</a></td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td align="center"><img src="../images/icon_error_sml.gif" alt="No"/></td>
-            <td><code>asciidoc</code></td>
-            <td><code>adoc</code>, <code>asciidoc</code></td>
-            <td><a href="https://github.com/asciidoctor/asciidoctor-maven-plugin#maven-site-integration"><code>asciidoctor-converter-doxia-module</code></a></td>
-            <td><code>asciidoc</code></td>
-          </tr>
+If you need to add module for the maven site plugin simply add it as a dependency of the plugin 
 
-          <tr>
-            <td><a href="https://asciidoctor.org/">AsciiDoc</a></td>
-            <td><a href="https://docs.asciidoctor.org/maven-tools/latest/site-integration/parser-module-setup-and-configuration/">Asciidoctor Parser Doxia Module</a></td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td><code>asciidoc</code></td>
-            <td><code>adoc</code>, <code>asciidoc</code></td>
-            <td><a href="https://github.com/asciidoctor/asciidoctor-maven-plugin#maven-site-integration"><code>asciidoctor-parser-doxia-module</code></a></td>
-            <td><code>asciidoc</code></td>
-          </tr>
-
-          <tr>
-            <td><a href="../modules/index.html#Confluence">Confluence</a></td>
-            <td>Confluence Enterprise Wiki</td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/><sup>*</sup></td>
-            <td><code>confluence</code></td>
-            <td><code>confluence</code></td>
-            <td><a href="../doxia/doxia-modules/doxia-module-confluence/"><code>doxia-module-confluence</code></a></td>
-            <td><code>confluence</code></td>
-          </tr>
-
-          <tr>
-            <td><a href="../modules/index.html#Simplified_DocBook">Simplified DocBook</a></td>
-            <td>Simplified DocBook XML Standard</td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td><code>docbook</code></td>
-            <td><code>xml</code></td>
-            <td><a href="../doxia/doxia-modules/doxia-module-docbook-simple/"><code>doxia-module-docbook-simple</code></a></td>
-            <td><code>docbook</code></td>
-          </tr>
-
-          <tr>
-            <td><a href="./fml-format.html">FML</a></td>
-            <td>FAQ Markup Language</td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td align="center"><img src="../images/icon_error_sml.gif" alt="No"/></td>
-            <td><code>fml</code></td>
-            <td><code>fml</code></td>
-            <td><a href="../doxia/doxia-modules/doxia-module-fml/"><code>doxia-module-fml</code></a></td>
-            <td><code>fml</code></td>
-          </tr>
-
-          <tr>
-            <td><a href="../modules/index.html#Markdown">Markdown</a><sup>**</sup></td>
-            <td>Markdown markup language</td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/><sup>****</sup></td>
-            <td><code>markdown</code></td>
-            <td><code>md</code>, <code>markdown</code><sup>***</sup></td>
-            <td><a href="../doxia/doxia-modules/doxia-module-markdown/"><code>doxia-module-markdown</code></a></td>
-            <td><code>markdown</code></td>
-          </tr>
-
-          <tr>
-            <td><a href="../modules/index.html#TWiki">TWiki</a><sup>*</sup></td>
-            <td>TWiki Structured Wiki</td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td><code>twiki</code></td>
-            <td><code>twiki</code></td>
-            <td><a href="../doxia/doxia-modules/doxia-module-twiki/"><code>doxia-module-twiki</code></a></td>
-            <td><code>twiki</code></td>
-          </tr>
-
-          <tr>
-            <td><a href="./xdoc-format.html">Xdoc</a></td>
-            <td>XML Documentation Format</td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td><code>xdoc</code></td>
-            <td><code>xml</code></td>
-            <td><a href="../doxia/doxia-modules/doxia-module-xdoc/"><code>doxia-module-xdoc</code></a></td>
-            <td><code>xdoc</code></td>
-          </tr>
-
-          <tr>
-            <td><a href="../modules/index.html#XHTML">XHTML</a></td>
-            <td>Extensible Hypertext Markup Language</td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td align="center"><img src="../images/icon_success_sml.gif" alt="Yes"/></td>
-            <td><code>xhtml</code></td>
-            <td><code>xhtml</code></td>
-            <td><a href="../doxia/doxia-modules/doxia-module-xhtml/"><code>doxia-module-xhtml</code></a></td>
-            <td><code>xhtml</code></td>
-          </tr>
-        </table>
-
-        <p>
-          Note some modules are not included per default with the site plugin.
-          Have a look at the available modules here: <a href="https://repo.maven.apache.org/maven2/org/apache/maven/doxia/">https://repo.maven.apache.org/maven2/org/apache/maven/doxia/</a>.
-          <br/>
-          If you need to add module for the maven site plugin simply add it as a dependency of the plugin
-          <source><![CDATA[            <plugin>
+```unknown
+            <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-site-plugin</artifactId>
               <version>3.2</version>
@@ -191,61 +63,26 @@ under the License.
                   <version>1.3</version>
                 </dependency>
               </dependencies>
-            </plugin>]]>
-          </source>
-        </p>
+            </plugin>
+          
+```
 
-        <p>
-          <sup>*</sup> Since Doxia 1.1
-        </p>
-        <p>
-          <sup>**</sup> Since Doxia 1.3
-        </p>
-        <p>
-          <sup>***</sup> Since Doxia 1.7
-        </p>
-        <p>
-          <sup>****</sup> Since Doxia 1.12.0
-        </p>
-    </section>
+<sup>*</sup> Since Doxia 1\.1 
 
-    <section  name="Doxia Page Output Format (deprecated)">
-      <p>
-        The following table gives an overview of the output-only page-oriented deprecated (in Doxia 1.11) formats:
-      </p>
+<sup>**</sup> Since Doxia 1\.3 
 
-        <table border="0">
-          <tr>
-            <th>Format</th>
-            <th>Short description</th>
-            <th>Doxia Module</th>
-          </tr>
+<sup>***</sup> Since Doxia 1\.7 
 
-          <tr>
-            <td><a href="../modules/index.html#iText">iText</a></td>
-            <td>iText PDF Library</td>
-            <td><a href="../doxia/doxia-modules/doxia-module-itext/"><code>doxia-module-itext</code></a></td>
-          </tr>
+<sup>****</sup> Since Doxia 1\.12\.0 
 
-          <tr>
-            <td><a href="../modules/index.html#FO">FO</a><sup>*</sup></td>
-            <td>XSL formatting objects (XSL-FO)</td>
-            <td><a href="../doxia/doxia-modules/doxia-module-fo/"><code>doxia-module-fo</code></a></td>
-          </tr>
+# Doxia Page Output Format \(deprecated\)
 
-          <tr>
-            <td><a href="../modules/index.html#LaTeX">LaTeX</a></td>
-            <td>LaTeX typesetting system</td>
-            <td><a href="../doxia/doxia-modules/doxia-module-latex/"><code>doxia-module-latex</code></a></td>
-          </tr>
+The following table gives an overview of the output-only page-oriented deprecated \(in Doxia 1\.11\) formats: 
 
-          <tr>
-            <td><a href="../modules/index.html#RTF">RTF</a></td>
-            <td>Microsoft Rich Text Format</td>
-            <td><a href="../doxia/doxia-modules/doxia-module-rtf/"><code>doxia-module-rtf</code></a></td>
-          </tr>
-        </table>
-    </section>
-  </body>
+|Format|Short description|Doxia Module|
+|---|---|---|
+|[iText](../modules/index.html#iText)|iText PDF Library|[`doxia-module-itext`](../doxia/doxia-modules/doxia-module-itext/)|
+|[FO](../modules/index.html#FO)<sup>*</sup>|XSL formatting objects \(XSL-FO\)|[`doxia-module-fo`](../doxia/doxia-modules/doxia-module-fo/)|
+|[LaTeX](../modules/index.html#LaTeX)|LaTeX typesetting system|[`doxia-module-latex`](../doxia/doxia-modules/doxia-module-latex/)|
+|[RTF](../modules/index.html#RTF)|Microsoft Rich Text Format|[`doxia-module-rtf`](../doxia/doxia-modules/doxia-module-rtf/)|
 
-</document>

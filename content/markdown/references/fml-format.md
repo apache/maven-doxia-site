@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+---
+title: The FML (FAQ Markup Language) format
+author: 
+  - Lukas Theussl
+---
 
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
@@ -19,40 +23,22 @@ specific language governing permissions and limitations
 under the License.
 -->
 
-<document xmlns="http://maven.apache.org/XDOC/2.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+# The FML format
 
-  <properties>
-    <title>The FML (FAQ Markup Language) format</title>
-    <author email="ltheussl_AT_apache_DOT_org">Lukas Theussl</author>
-  </properties>
+## Overview
 
-  <body>
-    <section name="The FML format">
-      <subsection name="Overview">
-        <p>
-          An 'fml' (FAQ Markup Language) is an XML document conforming to a small and simple set of tags.
-          The format was first used in the <a href="http://maven.apache.org/maven-1.x/">Maven 1</a>,
-          version of the <a href="http://maven.apache.org/maven-1.x/plugins/faq/">FAQ plugin</a>.
-        </p>
-      </subsection>
+An &apos;fml&apos; \(FAQ Markup Language\) is an XML document conforming to a small and simple set of tags. The format was first used in the [Maven 1](http://maven.apache.org/maven-1.x/), version of the [FAQ plugin](http://maven.apache.org/maven-1.x/plugins/faq/). 
 
-      <subsection name="The FML format">
-        <p>
-          Below the root element <code>faqs</code> there are one or more <code>part</code> elements.
-          Each <code>part</code> element has a <code>title</code> and contains one or more <code>faq</code> elements.
-          Each <code>faq</code> element has a <code>question</code> and an <code>answer</code> element.
-          The contents of <code>title</code>, <code>question</code> and <code>answer</code> are parsed with the <a href="xdoc-format.html">XDoc parser</a>.
-          The full documentation is available at <a href="../doxia/doxia-modules/doxia-module-fml/xsddoc/index.html">here</a>.
-        </p>
-      </subsection>
+## The FML format
 
-      <subsection name="FML Sample">
-        <p>
-          The following is a sample FML document:
-        </p>
-        <source><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+Below the root element `faqs` there are one or more `part` elements. Each `part` element has a `title` and contains one or more `faq` elements. Each `faq` element has a `question` and an `answer` element. The contents of `title`, `question` and `answer` are parsed with the [XDoc parser](xdoc-format.html). The full documentation is available at [here](../doxia/doxia-modules/doxia-module-fml/xsddoc/index.html). 
+
+## FML Sample
+
+The following is a sample FML document: 
+
+```unknown
+<?xml version="1.0" encoding="UTF-8"?>
 <faqs xmlns="http://maven.apache.org/FML/1.0.1"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/FML/1.0.1 http://maven.apache.org/xsd/fml-1.0.1.xsd"
@@ -101,17 +87,9 @@ under the License.
   </part>
 
 </faqs>
-]]></source>
+```
 
-      </subsection>
-    </section>
+# Validation
 
-    <section name="Validation">
-      <p>
-        Doxia is able to validate your fml files as described
-        <a href="../doxia/doxia-modules/doxia-module-fml/using-fml-xsd.html">here</a>.
-      </p>
-    </section>
+Doxia is able to validate your fml files as described [here](../doxia/doxia-modules/doxia-module-fml/using-fml-xsd.html). 
 
-  </body>
-</document>

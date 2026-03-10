@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+---
+title: The Xdoc format
+author: 
+  - Lukas Theussl
+---
 
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
@@ -19,61 +23,35 @@ specific language governing permissions and limitations
 under the License.
 -->
 
-<document xmlns="http://maven.apache.org/XDOC/2.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+# Content
 
-  <properties>
-    <title>The Xdoc format</title>
-    <author email="ltheussl_AT_apache_DOT_org">Lukas Theussl</author>
-  </properties>
+<a id="Content"></a> 
 
-  <body>
+<!-- MACRO{toc|fromDepth=1|toDepth=2} -->
 
-    <section name="Content">
-      <a name="Content"/>
-      <macro name="toc">
-        <param name="fromDepth" value="1"/>
-        <param name="toDepth" value="2"/>
-      </macro>
-    </section>
+# The XDoc format
 
-    <section name="The XDoc format">
-      <a name="The_XDoc_format"/>
-      <a name="Overview"/>
-      <subsection name="Overview">
-        <p>
-          An 'xdoc' is an XML document conforming to a small and simple set of tags.
-          Xdoc was the primary documentation format in <a href="http://maven.apache.org/maven-1.x/">Maven 1</a>,
-          Maven 2 largely replaced this by <a href="apt-format.html">Apt</a>, but xdoc is still supported.
-        </p>
+<a id="The_XDoc_format"></a> <a id="Overview"></a> 
+## Overview
 
-        <p>
-          Historically, the xdoc format can be traced back to the
-          <a href="http://velocity.apache.org/anakia/devel/">Anakia</a> format, as once used by the
-          <a href="http://jakarta.apache.org/">Apache Jakarta</a> project then moved
-          to <a href="http://velocity.apache.org/">Velocity</a>.
-        </p>
+An &apos;xdoc&apos; is an XML document conforming to a small and simple set of tags. Xdoc was the primary documentation format in [Maven 1](http://maven.apache.org/maven-1.x/), Maven 2 largely replaced this by [Apt](apt-format.html), but xdoc is still supported. 
 
-        <p>
-          The Maven 1 Xdoc plugin introduced a few additions to the Anakia format, they are highlighted in the
-          <a href="http://maven.apache.org/maven-1.x/plugins/xdoc/reference/xdocs.html">plugin</a> documentation.
-        </p>
-      </subsection>
+Historically, the xdoc format can be traced back to the [Anakia](http://velocity.apache.org/anakia/devel/) format, as once used by the [Apache Jakarta](http://jakarta.apache.org/) project then moved to [Velocity](http://velocity.apache.org/). 
 
-      <a name="The_XDoc_xsd"/>
-      <subsection name="The XDoc xsd">
-        <p>
-          The full documentation is available <a href="../doxia/doxia-modules/doxia-module-xdoc/xsddoc/index.html">here</a>.
-        </p>
-      </subsection>
+The Maven 1 Xdoc plugin introduced a few additions to the Anakia format, they are highlighted in the [plugin](http://maven.apache.org/maven-1.x/plugins/xdoc/reference/xdocs.html) documentation. 
 
-      <a name="XDoc_Sample"/>
-      <subsection name="XDoc Sample">
-        <p>
-          The following is a sample XDoc document:
-        </p>
-        <source><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<a id="The_XDoc_xsd"></a> 
+## The XDoc xsd
+
+The full documentation is available [here](../doxia/doxia-modules/doxia-module-xdoc/xsddoc/index.html). 
+
+<a id="XDoc_Sample"></a> 
+## XDoc Sample
+
+The following is a sample XDoc document: 
+
+```unknown
+<?xml version="1.0" encoding="UTF-8"?>
 <document xmlns="http://maven.apache.org/XDOC/2.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
@@ -115,130 +93,94 @@ code line 2
 
   </body>
 
-</document>]]></source>
+</document>
+```
 
-      </subsection>
+<a id="The_source_tag"></a> 
+## The &lt;source&gt; tag
 
-      <a name="The_source_tag"/>
-      <subsection name="The &lt;source&gt; tag">
-        <p>
-        <code>&lt;source&gt;</code> tags are special.
-        Anything within this tag is rendered within a "verbatim box" as pre-formatted text.
-        If you are embedding other XML/XHTML markup
-        within the source tags, then you need to place a CDATA section within
-        the source section. Example:
-        </p>
-<source>&lt;source&gt;&lt;![CDATA[ content here &lt;a href=""&gt;foo&lt;/a&gt;]]&gt;&lt;/source&gt;</source>
-      </subsection>
+`<source>` tags are special. Anything within this tag is rendered within a &quot;verbatim box&quot; as pre-formatted text. If you are embedding other XML/XHTML markup within the source tags, then you need to place a CDATA section within the source section. Example: 
 
-      <a name="Additional_sectioning"/>
-      <subsection name="Additional sectioning">
-        <p>
-          Doxia will produce <code>&lt;h2&gt;</code> and
-          <code>&lt;h3&gt;</code> headings for <code>&lt;section&gt;</code>
-          and <code>&lt;subsection&gt;</code> elements, respectively.
-          It is therefore perfectly valid to put some sub-headings
-          (<code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>,
-          <code>&lt;h6&gt;</code>) inside a subsection. For instance,
-        </p>
+```unknown
+<source><![CDATA[ content here <a href="">foo</a>]]></source>
+```
 
-        <source><![CDATA[<h4>A subsubsection</h4>]]></source>
+<a id="Additional_sectioning"></a> 
+## Additional sectioning
 
-        <p>
-          will produce:
-        </p>
+Doxia will produce `<h2>` and `<h3>` headings for `<section>` and `<subsection>` elements, respectively. It is therefore perfectly valid to put some sub-headings \(`<h4>`, `<h5>`, `<h6>`\) inside a subsection. For instance, 
 
-        <h4>A subsubsection</h4>
-      </subsection>
+```unknown
+<h4>A subsubsection</h4>
+```
 
-      <a name="Referencing_sections_and_subsections"/>
-      <subsection name="Referencing sections and subsections">
-        <p>
-          The core doxia modules do <b>not</b> construct anchors from
-          section/subsection names. If you want to reference a section,
-          you should either provide an explicit anchor:
-        </p>
+will produce: 
 
-        <source><![CDATA[<a name="Section1"/>
+#### A subsubsection
+
+<a id="Referencing_sections_and_subsections"></a> 
+## Referencing sections and subsections
+
+The core doxia modules do **not** construct anchors from section/subsection names. If you want to reference a section, you should either provide an explicit anchor: 
+
+```unknown
+<a name="Section1"/>
 <section name="Section">
 
   <a name="SubSection1"/>
   <subsection name="SubSection">
   </subsection>
 
-</section>]]></source>
+</section>
+```
 
-        <p>
-          or use an <code>id</code> attribute for section and subsections
-          (note that <code>id</code>'s have to be unique within one xdoc
-          source document):
-        </p>
+or use an `id` attribute for section and subsections \(note that `id`&apos;s have to be unique within one xdoc source document\): 
 
-        <source><![CDATA[<section name="Section" id="Section1">
+```unknown
+<section name="Section" id="Section1">
 
   <subsection name="SubSection" id="SubSection1">
   </subsection>
 
-</section>]]></source>
+</section>
+```
 
-        <p>
-          <b>Note</b> that this differs from previous behavior, where anchors
-          were constructed from section/subsection names, replacing special
-          characters by underscores. This behavior presents two shortcomings:
-        </p>
+**Note** that this differs from previous behavior, where anchors were constructed from section/subsection names, replacing special characters by underscores. This behavior presents two shortcomings: 
 
-        <ul>
+- If two sections or subsections have identical names \(within one source document\), you will get an ambiguity when referencing them. Also the resulting html document will not be valid XHTML. For other output formats \(eg pdf\), it might even be impossible to generate the target document. 
 
-          <li>
-            If two sections or subsections have identical names
-            (within one source document), you will get an ambiguity when
-            referencing them. Also the resulting html document will not be
-            valid XHTML. For other output formats (eg pdf), it might even be impossible
-            to generate the target document.
-          </li>
+- For long section titles, this leads to rather cumbersome anchor names. 
 
-          <li>
-            For long section titles, this leads to rather cumbersome anchor names.
-          </li>
+If automatic anchor generation is desired for a particular output format, it should be implemented / overridden by the corresponding low-level Sink. 
 
-        </ul>
+# Validation
 
-        <p>
-          If automatic anchor generation is desired for a particular output format,
-          it should be implemented / overridden by the corresponding low-level Sink.
-        </p>
+<a id="Validation"></a> 
 
-      </subsection>
-    </section>
+Doxia is able to validate your xdoc files as described [here](../doxia/doxia-modules/doxia-module-xdoc/using-xdoc-xsd.html). 
 
-    <section name="Validation">
-      <a name="Validation"/>
-      <p>
-        Doxia is able to validate your xdoc files as described
-        <a href="../doxia/doxia-modules/doxia-module-xdoc/using-xdoc-xsd.html">here</a>.
-      </p>
+Here is a list of common mistakes to be aware of: 
 
-      <p>
-        Here is a list of common mistakes to be aware of:
-      </p>
+<a id="Dont_nest_block_level_elements"></a> 
+## Don&apos;t nest block level elements
 
-      <a name="Dont_nest_block_level_elements"/>
-      <subsection name="Don't nest block level elements">
+Wrong:
 
-        <p>Wrong:</p>
-
-        <source><![CDATA[<p>
+```unknown
+<p>
   Here's a list:
   <ul>
     <li>item 1</li>
     <li>item 2</li>
   </ul>
   of things to do.
-</p>]]></source>
+</p>
+```
 
-        <p>Correct:</p>
+Correct:
 
-        <source><![CDATA[<p>
+```unknown
+<p>
   Here's a list:
 </p>
 <ul>
@@ -247,79 +189,59 @@ code line 2
 </ul>
 <p>
   of things to do.
-</p>]]></source>
+</p>
+```
 
-        <p>
-          Typical block level elements are list elements,
-          <code>&lt;table&gt;</code>, <code>&lt;source&gt;</code>,
-          <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code> and
-          <code>&lt;pre&gt;</code>.
-        </p>
+Typical block level elements are list elements, `<table>`, `<source>`, `<div>`, `<p>` and `<pre>`. 
 
-      </subsection>
+<a id="Put_inline_elements_inside_block_level_elements"></a> 
+## Put inline elements inside block level elements
 
-      <a name="Put_inline_elements_inside_block_level_elements"/>
-      <subsection name="Put inline elements inside block level elements">
+Wrong:
 
-        <p>Wrong:</p>
-
-        <source><![CDATA[<section name="Downloads">
+```unknown
+<section name="Downloads">
   <a href="downloads.html">Downloads</a>
-</section>]]></source>
+</section>
+```
 
-        <p>Correct:</p>
+Correct:
 
-        <source><![CDATA[<section name="Downloads">
+```unknown
+<section name="Downloads">
   <p>
     <a href="downloads.html">Downloads</a>
   </p>
-</section>]]></source>
+</section>
+```
 
-        <p>
-          Typical inline elements are
-          <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>,
-          <code>&lt;code&gt;</code>, <code>&lt;font&gt;</code>,
-          <code>&lt;br&gt;</code> and <code>&lt;img&gt;</code>.
-        </p>
+Typical inline elements are `<a>`, `<strong>`, `<code>`, `<font>`, `<br>` and `<img>`. 
 
-      </subsection>
+<a id="Right_order_of_elements_in_properties"></a> 
+## Right order of elements in &lt;properties&gt;
 
-      <a name="Right_order_of_elements_in_properties"/>
-      <subsection name="Right order of elements in &lt;properties&gt;">
+The `<title>` element has to come before `<author>`. 
 
-        <p>
-          The <code>&lt;title&gt;</code> element has to come before
-          <code>&lt;author&gt;</code>.
-        </p>
+<a id="Dont_put_source_inside_paragraphs"></a> 
+## Don&apos;t put &lt;source&gt; inside paragraphs
 
-      </subsection>
+Wrong:
 
-      <a name="Dont_put_source_inside_paragraphs"/>
-      <subsection name="Don't put &lt;source&gt; inside paragraphs">
-
-        <p>Wrong:</p>
-
-        <source><![CDATA[<p>
+```unknown
+<p>
   The following command executes the program:
   <source>java -jar CoolApp.jar</source>
-</p>]]></source>
+</p>
+```
 
-        <p>Correct:</p>
+Correct:
 
-        <source><![CDATA[<p>
+```unknown
+<p>
   The following command executes the program:
 </p>
-<source>java -jar CoolApp.jar</source>]]></source>
+<source>java -jar CoolApp.jar</source>
+```
 
-        <p>
-          However, you may put <code>&lt;source&gt;</code> elements inside
-          list items or table rows.
-        </p>
+However, you may put `<source>` elements inside list items or table rows. 
 
-      </subsection>
-
-    </section>
-
-  </body>
-
-</document>
