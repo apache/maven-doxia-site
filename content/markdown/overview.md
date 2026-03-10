@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+---
+title: Overview Of The Doxia Framework
+author: 
+  - Vincent Siveton
+date: 2009-03-02
+---
 
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
@@ -19,139 +24,64 @@ specific language governing permissions and limitations
 under the License.
 -->
 
-<document>
-  <properties>
-    <title>Overview Of The Doxia Framework</title>
-    <author>Vincent Siveton</author>
-    <date>2009-03-02</date>
-  </properties>
-  <body>
-    <section name="Overview Of The Doxia Framework">
-      <p>
-        The following figure represents the main components of the Doxia Framework.
-      </p>
-      <p>
-        <img src="images/architecture.png" width="574" height="439" border="0" usemap="#Doxia_Framework" alt="Doxia Framework"/>
-        <map id="Doxia_Framework" name="Doxia_Framework">
-          <area shape="rect" coords="87,45,172,99"    alt="Sink API"
-            href="http://maven.apache.org/doxia/doxia/doxia-sink-api/" />
-          <area shape="rect" coords="66,170,193,232"  alt="Core"
-            href="http://maven.apache.org/doxia/doxia/doxia-core/" />
-          <area shape="rect" coords="26,361,69,403"   alt="APT Module"
-            href="http://maven.apache.org/doxia/doxia/doxia-modules/doxia-module-apt/" />
-          <area shape="rect" coords="78,361,119,403"  alt="XDoc Module"
-            href="http://maven.apache.org/doxia/doxia/doxia-modules/doxia-module-xdoc/" />
-          <area shape="rect" coords="130,361,172,404" alt="FML Module"
-            href="http://maven.apache.org/doxia/doxia/doxia-modules/doxia-module-fml/" />
-          <area shape="rect" coords="14,311,235,428"  alt="Modules"
-            href="http://maven.apache.org/doxia/doxia/doxia-modules/" />
-          <area shape="rect" coords="0,0,260,438"     alt="Doxia"
-            href="http://maven.apache.org/doxia/doxia/" />
-          <area shape="rect" coords="297,157,422,200" alt="Site Renderer"
-            href="http://maven.apache.org/doxia/doxia-sitetools/doxia-site-renderer/" />
-          <area shape="rect" coords="455,157,557,200" alt="Decoration Model"
-            href="http://maven.apache.org/doxia/doxia-sitetools/doxia-decoration-model/" />
-          <area shape="rect" coords="298,209,421,251" alt="Doc Renderer"
-            href="http://maven.apache.org/doxia/doxia-sitetools/doxia-doc-renderer/" />
-          <area shape="rect" coords="286,114,575,262" alt="Site Tools"
-            href="http://maven.apache.org/doxia/doxia-sitetools/" />
-          <area shape="rect" coords="304,362,403,404" alt="Converter"
-            href="http://maven.apache.org/doxia/doxia-tools/doxia-converter/" />
-          <area shape="rect" coords="424,362,517,404" alt="Linkcheck"
-            href="http://maven.apache.org/doxia/doxia-tools/doxia-linkcheck/" />
-          <area shape="rect" coords="285,310,537,426" alt="Tools"
-            href="http://maven.apache.org/doxia/doxia-tools/" />
-        </map>
-      </p>
-      <p>
-        <b>Note</b>: Just like Maven, Doxia uses
-        <a class="externalLink" href="https://codehaus-plexus.github.io/">Plexus</a> extensively.
-      </p>
+# Overview Of The Doxia Framework
 
-      <subsection name="Sink API">
-        <p>
-          The <i>Sink</i> interface is a generic markup language interface. It contains
-          several methods that encapsulate common text syntax. A start tag is denoted by
-            <i>xxxx()</i> method and a end of tag by <i>xxxx_()</i> method.
-        </p>
-        <p>
-          For instance, you could do things like:
-        </p>
-        <source>sink.paragraph();
-sink.text( &quot;my text&quot; );
-sink.paragraph_(); </source>
-        <p>
-          similar to this HTML markup:
-        </p>
-        <source>&lt;p&gt;my text&lt;/p&gt;</source>
-        <p>To find out more about the Sink API, you could read the Javadoc
-          <a class="externalLink"
-            href="http://maven.apache.org/doxia/doxia/doxia-sink-api/apidocs/org/apache/maven/doxia/sink/Sink.html">here</a>.
-        </p>
-      </subsection>
+The following figure represents the main components of the Doxia Framework. 
 
-      <subsection name="Doxia Core">
-        <p>
-          The <i>Core</i> is the API to parse a source and populate it in a <i>Sink</i>
-          object. The <i>Parser</i> interface contains only one method:
-        </p>
-        <source>void parse( Reader source, Sink sink )
-    throws ParseException; </source>
-        <p>
-          The <i>ParseException</i> class has the responsibility to catch all parsing
-          exceptions. It provides an helper method, <i>getLineNumber()</i>, which helps to
-          find where an error occurred.
-        </p>
-        <p>
-          The <i>AbstractParser</i> class is an abstract implementation of the
-          <i>Parser</i>. It provides a macro mechanism to give dynamic functionalities for
-          the parsing. For more information on macros, read the <a
-            href="./macros/index.html">Doxia Macro Guide</a>.
-        </p>
-        <p>
-          Finally, the <i>SiteModule</i> interface is the last part of the puzzle. It
-          provides main definitions of a given Doxia module and it is used by the
-            <i>doxia-site-renderer</i> site tools.
-        </p>
-      </subsection>
+![Doxia Framework](images/architecture.png) 
 
-      <subsection name="Doxia Modules">
-        <p>
-          A Doxia module is an implementation of a given markup language like APT or Xdoc.
-          Each module should implement these interfaces:
-        </p>
-        <ul>
-          <li><i>Parser</i> interface, more specifically the <i>AbstractParser</i> class</li>
-          <li><i>SiteModule</i> interface</li>
-        </ul>
-        <p>
-          Several modules provide also a <i>Sink</i> implementation to handle a specific
-          output markup language.
-        </p>
-        <p>
-          For more information on modules, read the <a href="./modules/index.html">Doxia
-          Module Guide</a>.
-        </p>
-      </subsection>
+**Note**: Just like Maven, Doxia uses [Plexus](https://codehaus-plexus.github.io/) extensively. 
 
-      <subsection name="Doxia Site Tools">
-        <p>
-          The <i>Site Tools</i> are a collection of tools to renderer an output. The main
-          tool used by Maven, specifically the
-          <a class="externalLink" href="http://maven.apache.org/plugins/maven-site-plugin/">Maven Site Plugin</a>,
-          is the <i>doxia-site-renderer</i> which renders in HTML any
-          documents written with supported markup syntax. It uses
-          <a class="externalLink" href="http://velocity.apache.org/">Velocity templates</a>
-          to customize the renderer and the <i>site-decoration-model</i> tool to decorate the
-          renderer.
-          This component describes the layout of the site defined in the <i>site.xml</i>
-          file.
-        </p>
-        <p>
-          The <i>doxia-doc-renderer</i> tool is used to renderer any document in another
-          document.
-        </p>
-      </subsection>
-    </section>
-  </body>
-</document>
+## Sink API
+
+The _Sink_ interface is a generic markup language interface. It contains several methods that encapsulate common text syntax. A start tag is denoted by _xxxx\(\)_ method and a end of tag by _xxxx\_\(\)_ method. 
+
+For instance, you could do things like: 
+
+```unknown
+sink.paragraph();
+sink.text( "my text" );
+sink.paragraph_(); 
+```
+
+similar to this HTML markup: 
+
+```unknown
+<p>my text</p>
+```
+
+To find out more about the Sink API, you could read the Javadoc [here](http://maven.apache.org/doxia/doxia/doxia-sink-api/apidocs/org/apache/maven/doxia/sink/Sink.html). 
+
+## Doxia Core
+
+The _Core_ is the API to parse a source and populate it in a _Sink_ object. The _Parser_ interface contains only one method: 
+
+```unknown
+void parse( Reader source, Sink sink )
+    throws ParseException; 
+```
+
+The _ParseException_ class has the responsibility to catch all parsing exceptions. It provides an helper method, _getLineNumber\(\)_, which helps to find where an error occurred. 
+
+The _AbstractParser_ class is an abstract implementation of the _Parser_. It provides a macro mechanism to give dynamic functionalities for the parsing. For more information on macros, read the [Doxia Macro Guide](./macros/index.html). 
+
+Finally, the _SiteModule_ interface is the last part of the puzzle. It provides main definitions of a given Doxia module and it is used by the _doxia-site-renderer_ site tools. 
+
+## Doxia Modules
+
+A Doxia module is an implementation of a given markup language like APT or Xdoc. Each module should implement these interfaces: 
+
+- _Parser_ interface, more specifically the _AbstractParser_ class
+
+- _SiteModule_ interface
+
+Several modules provide also a _Sink_ implementation to handle a specific output markup language. 
+
+For more information on modules, read the [Doxia Module Guide](./modules/index.html). 
+
+## Doxia Site Tools
+
+The _Site Tools_ are a collection of tools to renderer an output. The main tool used by Maven, specifically the [Maven Site Plugin](http://maven.apache.org/plugins/maven-site-plugin/), is the _doxia-site-renderer_ which renders in HTML any documents written with supported markup syntax. It uses [Velocity templates](http://velocity.apache.org/) to customize the renderer and the _site-decoration-model_ tool to decorate the renderer. This component describes the layout of the site defined in the _site.xml_ file. 
+
+The _doxia-doc-renderer_ tool is used to renderer any document in another document. 
+
