@@ -145,11 +145,7 @@ under the License.
   </distributionManagement>
 
   <properties>
-    <maven.site.path>doxia-site</maven.site.path>
-    <version.maven-fluido-skin>2.0.1</version.maven-fluido-skin>
-    <version.maven-site-plugin>3.21.0</version.maven-site-plugin>
     <doxiaVersion>2.0.0</doxiaVersion>
-    <site.output>${project.build.directory}/site</site.output>
   </properties>
 
   <repositories>
@@ -194,23 +190,6 @@ under the License.
             </excludes>
           </configuration>
         </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-antrun-plugin</artifactId>
-          <version>3.2.0</version>
-          <dependencies>
-            <dependency>
-              <groupId>org.apache.ant</groupId>
-              <artifactId>ant</artifactId>
-              <version>1.10.15</version>
-            </dependency>
-          </dependencies>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-pdf-plugin</artifactId>
-          <version>1.5.1</version>
-        </plugin>
         <!-- publish mono-module site with "mvn site-deploy" -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -224,7 +203,6 @@ under the License.
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-scm-publish-plugin</artifactId>
-          <version>3.3.0</version>
           <configuration>
             <tryUpdate>false</tryUpdate>
           </configuration>
@@ -284,24 +262,6 @@ under the License.
         </executions>
       </plugin>
 
-      <!--plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-pdf-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>pdf</id>
-            <phase>site</phase>
-            <goals>
-              <goal>pdf</goal>
-            </goals>
-            <configuration>
-              <outputDirectory>${project.reporting.outputDirectory}</outputDirectory>
-              <siteDirectory>${basedir}/content</siteDirectory>
-              <docDescriptor>${basedir}/content/pdf.xml</docDescriptor>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin-->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-deploy-plugin</artifactId>
@@ -313,7 +273,6 @@ under the License.
   </build>
 
   <reporting>
-    <outputDirectory>${site.output}</outputDirectory>
     <excludeDefaults>true</excludeDefaults>
     <plugins>
       <plugin>
@@ -331,11 +290,9 @@ under the License.
             <id>site-mpir</id>
             <reports>
               <report>index</report>
-              <!-- apt/index.apt.vm -->
               <report>team</report>
               <report>mailing-lists</report>
               <report>scm</report>
-              <!-- xdoc/scm.xml -->
               <report>issue-management</report>
               <report>ci-management</report>
             </reports>
@@ -348,7 +305,6 @@ under the License.
   <profiles>
     <profile>
       <id>linkcheck</id>
-      <!-- TODO: remove pdf from build, apparently linkcheck plugin is not compatible -->
       <reporting>
         <plugins>
           <plugin>
