@@ -42,7 +42,7 @@ Based on the \(now defunct\) Aptconvert project developed by [Xmlmind](http://ww
 ${esc.h}${esc.h} Main Features
 
 - Developed in Java
-- [Support of several markup formats](./references/index.html): APT \(Almost Plain Text\), Confluence, Simplified DocBook, Markdown, FML \(FAQ Markup Language\), FO, iText, LaTeX, RTF, TWiki, XDoc \(popular in Apache land\), XHTML
+- [Support of several markup formats](./references/index.html): APT \(Almost Plain Text\), Markdown, FML \(FAQ Markup Language\), XDoc \(popular in Apache land\), XHTML
 - Easy to [learn the syntax of the supported markup formats](./modules/index.html)
 - Macro support
 - No need to have a corporate infrastructure \(like wiki\) to host your documentation
