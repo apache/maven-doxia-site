@@ -145,6 +145,8 @@ under the License.
   </distributionManagement>
 
   <properties>
+    <!-- used from scm-publish-maven-plugin, parameter checkoutDirectory-->
+    <maven.site.path>doxia-site</maven.site.path>
     <doxiaVersion>2.0.0</doxiaVersion>
   </properties>
 
