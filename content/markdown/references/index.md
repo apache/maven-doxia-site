@@ -70,7 +70,7 @@ The following table gives an overview of the formats which used to be supported 
 |Format|Short description|Doxia Module|Removed Since
 |---|---|---|
 |iText|iText PDF Library|[`doxia-module-itext`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-itext/)|2.0
-|FO|XSL formatting objects \(XSL-FO\)|[`doxia-module-fo`](../doxia-archives/doxia-1.11.1doxia-modules/doxia-module-fo/)|2.0
+|FO|XSL formatting objects \(XSL-FO\)|[`doxia-module-fo`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-fo/)|2.0
 |LaTeX|LaTeX typesetting system|[`doxia-module-latex`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-latex/)|2.0
 |RTF|Microsoft Rich Text Format|[`doxia-module-rtf`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-rtf/)|2.0
 |Confluence|Confluence Enterprise Wiki|[`doxia-module-confluence`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-confluence/)|2.0
