@@ -45,5 +45,3 @@ The components in Git are:
 |[Apache Maven Doxia Sitetools](doxia-sitetools/)|<pre><code><a href="https://gitbox.apache.org/repos/asf/maven-doxia-sitetools.git" class="externalLink">https://gitbox.apache.org/repos/asf/maven-doxia-sitetools.git</a></code></pre>|[\(GitHub mirror\)](https://github.com/apache/maven-doxia-sitetools/)|
 |Doxia Tools|
 |[Apache Maven Doxia Converter](doxia-tools/doxia-converter/)|<pre><code><a href="https://gitbox.apache.org/repos/asf/maven-doxia-converter.git" class="externalLink">https://gitbox.apache.org/repos/asf/maven-doxia-converter.git</a></code></pre>|[\(GitHub mirror\)](https://github.com/apache/maven-doxia-converter/)|
-|[Apache Maven Doxia LinkCheck](doxia-tools/doxia-linkcheck/)|<pre><code><a href="https://gitbox.apache.org/repos/asf/maven-doxia-linkcheck.git" class="externalLink">https://gitbox.apache.org/repos/asf/maven-doxia-linkcheck.git</a></code></pre>|[\(GitHub mirror\)](https://github.com/apache/maven-doxia-linkcheck/)|
-

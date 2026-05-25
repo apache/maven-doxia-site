@@ -28,4 +28,13 @@ date: 2023-01-08
 |**Doxia Tool**|**Version**|**Release Date**|**Description**|**Source Repository**|**Issue Tracking**|
 |:---|:---|:---|:---|:---|:---|
 |[ Doxia Converter](./doxia-converter/)|1\.3|2023\-01\-14|Convert a source document from one supported Doxia format to other supported Doxia format\.\.|[Git](https://gitbox.apache.org/repos/asf/maven-doxia-converter.git) / [GitHub](https://github.com/apache/maven-doxia-converter/)|[GitHub Issues](https://github.com/apache/maven-doxia-converter/issues) |
-|[ Doxia LinkCheck](./doxia-linkcheck/)|1\.2|2010\-11\-09|Validate the links in a set of HTML documents\.|[Git](https://gitbox.apache.org/repos/asf/maven-doxia-linkcheck.git) / [GitHub](https://github.com/apache/maven-doxia-linkcheck/)|[GitHub Issues](https://github.com/apache/maven-doxia-linkcheck/issues)|
+
+## Retired
+
+The following tools are retired and not maintained anymore.
+
+|**Doxia Tool**| **Version** | **Retire Date** | **Description**                                                   |
+|:---|:------------|:----------------|:------------------------------------------------------------------|
+|[ Doxia LinkCheck](./doxia-linkcheck/)| 1.2         | 2025-09-18      | Validate the links in a set of HTML documents.                    |
+|[Doxia Book Maven Plugin](./doxia-book-maven-plugin/)| No release  | 2026-05-25      | Plugin using the book renderer to generate offline documentation. |
+|[Doxia Book Renderer](./doxia-book-renderer)|No release| 2025-09-18      | Tool to generate offline documentation.                           |
