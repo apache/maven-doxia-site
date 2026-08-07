@@ -24,7 +24,7 @@ date: 2009-03-02
 
 # Doxia Issues &amp; Gotchas
 
-This document collects some infos about specific issues and &apos;gotchas&apos; when working with Doxia\. Please check also the [Frequently Asked Questions](../faq.html)\.
+This document collects some infos about specific issues and &apos;gotchas&apos; when working with Doxia. Please check also the [Frequently Asked Questions](../faq.html).
 
 <!-- MACRO{toc|section=1|fromDepth=2|toDepth=2} -->
 ## <a id="Apt_anchors_and_links"></a>Apt anchors and links
@@ -41,13 +41,13 @@ and
 [WARNING] [Apt Parser] Modified invalid link: references/doxia-apt.html
 ```
 
-The reason is that in Apt, links to other source documents have to start with either `./` or `../` to distinguish them from internal links\. Please read the sections on [anchors](../references/doxia-apt.html#Anchors) and [links](../references/doxia-apt.html#Links) in our Apt guide\. Note in particular that internal links in Apt do **not** start with &apos;\#&apos;\.
+The reason is that in Apt, links to other source documents have to start with either `./` or `../` to distinguish them from internal links. Please read the sections on [anchors](../references/doxia-apt.html#Anchors) and [links](../references/doxia-apt.html#Links) in our Apt guide. Note in particular that internal links in Apt do **not** start with &apos;\#&apos;.
 
-**You should pay attention to these warnings since your links will most likely be broken\.** Unfortunately, the warning message cannot indicate the source file with the broken link \(see eg [MPDF\-11](https://issues.apache.org/jira/browse/MPDF-11)\), however, if you run in `DEBUG` mode, eg invoke maven with the `-X` switch, you can see which source document is being parsed when the warning is emitted\.
+**You should pay attention to these warnings since your links will most likely be broken.** Unfortunately, the warning message cannot indicate the source file with the broken link (see eg [MPDF-11](https://issues.apache.org/jira/browse/MPDF-11)), however, if you run in `DEBUG` mode, eg invoke maven with the `-X` switch, you can see which source document is being parsed when the warning is emitted.
 
 ## <a id="Figure_sink_events"></a>Figure sink events
 
-Doxia distinguishes between figures, which are block\-level elements, and images \(or icons\), which are in\-line elements\. For instance, the following sequence of sink events
+Doxia distinguishes between figures, which are block-level elements, and images (or icons), which are in-line elements. For instance, the following sequence of sink events
 
 ```unknown
 sink.figure( null );
@@ -70,9 +70,9 @@ should output the equivalent of this html snippet:
 </div>
 ```
 
-while the `figureGraphics( ... );` event alone can be used to generate an in\-line image, i\.e\. just the `<img>` tag in case of html\.
+while the `figureGraphics( ... );` event alone can be used to generate an in-line image, i.e. just the `<img>` tag in case of html.
 
-**Note** that we are using the forms that take a `SinkEventAttributeSet` above, even though we are just passing in null values\. The reason is that the alternative forms \(without `SinkEventAttributeSet`\) have a different behavior, which is kept for backward compatibility \(but the methods have been deprecated\)\. Using the same sequence of sink events as above, but omitting the `null` method parameters, will generate
+**Note** that we are using the forms that take a `SinkEventAttributeSet` above, even though we are just passing in null values. The reason is that the alternative forms (without `SinkEventAttributeSet`) have a different behavior, which is kept for backward compatibility (but the methods have been deprecated). Using the same sequence of sink events as above, but omitting the `null` method parameters, will generate
 
 ```unknown
 <img src="figure.png" alt="Figure caption"/>
@@ -80,5 +80,5 @@ while the `figureGraphics( ... );` event alone can be used to generate an in\-li
 
 ## <a id="Empty_Generated_Page"></a>Empty Generated Page
 
-After running `mvn site` using your Maven reporting plugin, you see that the generated page is empty\. Be sure that the the code calls `sink.close()`\.
+After running `mvn site` using your Maven reporting plugin, you see that the generated page is empty. Be sure that the the code calls `sink.close()`.
 

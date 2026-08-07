@@ -23,9 +23,9 @@ date: 2007-05-17
 <!-- under the License.-->
 # SWF Macro
 
-The SWF macro enables users of APT to put SWF \(Flash\) assets in their documentation\.
+The SWF macro enables users of APT to put SWF (Flash) assets in their documentation.
 
-Flash assets typically need to be wrappered in `object` and `embed` tags and can have a variety of parameters\. Below is a typical example:
+Flash assets typically need to be wrappered in `object` and `embed` tags and can have a variety of parameters. Below is a typical example:
 
 ```unknown
 <object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000'
@@ -41,13 +41,13 @@ Flash assets typically need to be wrappered in `object` and `embed` tags and can
 </object>
 ```
 
-In order to use a \*\.swf in your APT file, use the basic syntax:
+In order to use a \*.swf in your APT file, use the basic syntax:
 
 ```unknown
 %{swf|src=swf/myfile.swf|id=MyMovie|width=600|height=200}
 ```
 
-For which `src` is the required parameter\. Make sure to put your \*\.swf file into the **/resources** folder so that it will get copied to /target when running the `mvn site` task\.
+For which `src` is the required parameter. Make sure to put your \*.swf file into the **/resources** folder so that it will get copied to /target when running the `mvn site` task.
 
 You can use more advanced parameters to control the output, as per below:
 
@@ -57,11 +57,11 @@ You can use more advanced parameters to control the output, as per below:
 
 For a full listing of parameters and their values see the Adobe knowledge base:
 
-[http://www\.adobe\.com/cfusion/knowledgebase/index\.cfm?id=tn\_12701](http://www.adobe.com/cfusion/knowledgebase/index.cfm?id=tn_12701)
+[http://www.adobe.com/cfusion/knowledgebase/index.cfm?id=tn_12701](http://www.adobe.com/cfusion/knowledgebase/index.cfm?id=tn_12701)
 
 ## Parameters and Defaults
 
-Currently the following parameters are available through the macro\. If no value is placed within a parameter, the value will default to the following:
+Currently the following parameters are available through the macro. If no value is placed within a parameter, the value will default to the following:
 
 - id = &quot;swf&quot;
 - width = &quot;400&quot;
@@ -73,7 +73,7 @@ Currently the following parameters are available through the macro\. If no value
 - version = &quot;9,0,45,0&quot;
 - allowScript = &quot;sameDomain&quot;
 
-Note: There is some provided shorthand for versions, i\.e\. \- version=6 \- becomes version=6,0,29,0\.
+Note: There is some provided shorthand for versions, i.e. \- version=6 \- becomes version=6,0,29,0\.
 
-_TODO:_ only shorthand for 6 and 9 are functional\. Need to find standard long version for other types\.
+_TODO:_ only shorthand for 6 and 9 are functional. Need to find standard long version for other types.
 

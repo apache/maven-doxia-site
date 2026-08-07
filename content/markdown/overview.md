@@ -34,7 +34,7 @@ The following figure represents the main components of the Doxia Framework.
 
 ## Sink API
 
-The _Sink_ interface is a generic markup language interface. It contains several methods that encapsulate common text syntax. A start tag is denoted by _xxxx\(\)_ method and a end of tag by _xxxx\_\(\)_ method. 
+The _Sink_ interface is a generic markup language interface. It contains several methods that encapsulate common text syntax. A start tag is denoted by _xxxx()_ method and a end of tag by _xxxx\_()_ method. 
 
 For instance, you could do things like: 
 
@@ -61,7 +61,7 @@ void parse( Reader source, Sink sink )
     throws ParseException; 
 ```
 
-The _ParseException_ class has the responsibility to catch all parsing exceptions. It provides an helper method, _getLineNumber\(\)_, which helps to find where an error occurred. 
+The _ParseException_ class has the responsibility to catch all parsing exceptions. It provides an helper method, _getLineNumber()_, which helps to find where an error occurred. 
 
 The _AbstractParser_ class is an abstract implementation of the _Parser_. It provides a macro mechanism to give dynamic functionalities for the parsing. For more information on macros, read the [Doxia Macro Guide](./macros/index.html). 
 

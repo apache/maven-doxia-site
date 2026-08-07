@@ -27,7 +27,7 @@ date: 2023-01-08
 
 |**Doxia Tool**|**Version**|**Release Date**|**Description**|**Source Repository**|**Issue Tracking**|
 |:---|:---|:---|:---|:---|:---|
-|[ Doxia Converter](./doxia-converter/)|1\.3|2023\-01\-14|Convert a source document from one supported Doxia format to other supported Doxia format\.\.|[Git](https://gitbox.apache.org/repos/asf/maven-doxia-converter.git) / [GitHub](https://github.com/apache/maven-doxia-converter/)|[GitHub Issues](https://github.com/apache/maven-doxia-converter/issues) |
+|[ Doxia Converter](./doxia-converter/)|1\.3|2023-01-14|Convert a source document from one supported Doxia format to other supported Doxia format\.\.|[Git](https://gitbox.apache.org/repos/asf/maven-doxia-converter.git) / [GitHub](https://github.com/apache/maven-doxia-converter/)|[GitHub Issues](https://github.com/apache/maven-doxia-converter/issues) |
 
 ## Retired
 

@@ -108,7 +108,7 @@ code line 2
 <a id="Additional_sectioning"></a> 
 ## Additional sectioning
 
-Doxia will produce `<h2>` and `<h3>` headings for `<section>` and `<subsection>` elements, respectively. It is therefore perfectly valid to put some sub-headings \(`<h4>`, `<h5>`, `<h6>`\) inside a subsection. For instance, 
+Doxia will produce `<h2>` and `<h3>` headings for `<section>` and `<subsection>` elements, respectively. It is therefore perfectly valid to put some sub-headings (`<h4>`, `<h5>`, `<h6>`) inside a subsection. For instance, 
 
 ```unknown
 <h4>A subsubsection</h4>
@@ -134,7 +134,7 @@ The core doxia modules do **not** construct anchors from section/subsection name
 </section>
 ```
 
-or use an `id` attribute for section and subsections \(note that `id`&apos;s have to be unique within one xdoc source document\): 
+or use an `id` attribute for section and subsections (note that `id`&apos;s have to be unique within one xdoc source document): 
 
 ```unknown
 <section name="Section" id="Section1">
@@ -147,7 +147,7 @@ or use an `id` attribute for section and subsections \(note that `id`&apos;s hav
 
 **Note** that this differs from previous behavior, where anchors were constructed from section/subsection names, replacing special characters by underscores. This behavior presents two shortcomings: 
 
-- If two sections or subsections have identical names \(within one source document\), you will get an ambiguity when referencing them. Also the resulting html document will not be valid XHTML. For other output formats \(eg pdf\), it might even be impossible to generate the target document. 
+- If two sections or subsections have identical names (within one source document), you will get an ambiguity when referencing them. Also the resulting html document will not be valid XHTML. For other output formats (eg pdf), it might even be impossible to generate the target document. 
 
 - For long section titles, this leads to rather cumbersome anchor names. 
 

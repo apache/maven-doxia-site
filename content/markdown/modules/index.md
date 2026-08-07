@@ -24,13 +24,13 @@ date: 2009-06-15
 
 # Doxia Modules Guide
 
-Doxia has several built\-in modules that support some standard markup languages, see the [References](../references/index.html) page for an overview\. The following is just a collection of reference links for the individual formats\.
+Doxia has several built-in modules that support some standard markup languages, see the [References](../references/index.html) page for an overview. The following is just a collection of reference links for the individual formats.
 
 <!-- MACRO{toc|section=1|fromDepth=2|toDepth=2} -->
 
 ## <a id="APT"></a>APT
 
-APT \(Almost Plain Text\) is a legacy simple text format.
+APT (Almost Plain Text) is a legacy simple text format.
 
 **References**:
 
@@ -38,7 +38,7 @@ APT \(Almost Plain Text\) is a legacy simple text format.
 
 ## <a id="FML"></a>FML
 
-FML \(FAQ Markup Language\) is a legacy FAQ markup language based on XHTML 1.0.
+FML (FAQ Markup Language) is a legacy FAQ markup language based on XHTML 1.0.
 
 **References**:
 
