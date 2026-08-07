@@ -32,9 +32,9 @@ The following table gives an overview of the markup languages currently supporte
 
 - if a _Sink_ is available, it means you can generate output in this format.
 
-The source directory is the directory under which Maven expects source documents in this format \(e.g. `src/site/apt/` for Apt\), the file extension is the default file extension, and the parser id is gives the unique identifier that is used by plexus to lookup the corresponding component. 
+The source directory is the directory under which Maven expects source documents in this format (e.g. `src/site/apt/` for Apt), the file extension is the default file extension, and the parser id is gives the unique identifier that is used by plexus to lookup the corresponding component. 
 
-|Format|Short description|Parser<br />\(input\)|Sink<br />\(output\)|Source Directory|File Extension|Doxia Module|Parser Id|
+|Format|Short description|Parser<br />(input)|Sink<br />(output)|Source Directory|File Extension|Doxia Module|Parser Id|
 |---|---|---|---|---|---|---|---|
 |[Apt](./apt-format.html)|Almost Plain Text|![Yes](../images/icon_success_sml.gif)|![Yes](../images/icon_success_sml.gif)|`apt`|`apt`|[`doxia-module-apt`](../doxia/doxia-modules/doxia-module-apt/)|`apt`|
 |[AsciiDoc](https://asciidoctor.org/)|[Asciidoctor Converter Doxia Module](https://docs.asciidoctor.org/maven-tools/latest/site-integration/converter-module-setup-and-configuration/), only emits `Sink.rawText()`|![Yes](../images/icon_success_sml.gif)|![No](../images/icon_error_sml.gif)|`asciidoc`|`adoc`, `asciidoc`|[`asciidoctor-converter-doxia-module`](https://github.com/asciidoctor/asciidoctor-maven-plugin#maven-site-integration)|`asciidoc`|
@@ -70,7 +70,7 @@ The following table gives an overview of the formats which used to be supported 
 |Format|Short description|Doxia Module|Removed Since
 |---|---|---|
 |iText|iText PDF Library|[`doxia-module-itext`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-itext/)|2.0
-|FO|XSL formatting objects \(XSL-FO\)|[`doxia-module-fo`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-fo/)|2.0
+|FO|XSL formatting objects (XSL-FO)|[`doxia-module-fo`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-fo/)|2.0
 |LaTeX|LaTeX typesetting system|[`doxia-module-latex`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-latex/)|2.0
 |RTF|Microsoft Rich Text Format|[`doxia-module-rtf`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-rtf/)|2.0
 |Confluence|Confluence Enterprise Wiki|[`doxia-module-confluence`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-confluence/)|2.0

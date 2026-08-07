@@ -27,7 +27,7 @@ under the License.
 
 ## Overview
 
-An &apos;fml&apos; \(FAQ Markup Language\) is an XML document conforming to a small and simple set of tags. The format was first used in the [Maven 1](http://maven.apache.org/maven-1.x/), version of the [FAQ plugin](http://maven.apache.org/maven-1.x/plugins/faq/). 
+An &apos;fml&apos; (FAQ Markup Language) is an XML document conforming to a small and simple set of tags. The format was first used in the [Maven 1](http://maven.apache.org/maven-1.x/), version of the [FAQ plugin](http://maven.apache.org/maven-1.x/plugins/faq/). 
 
 ## The FML format
 

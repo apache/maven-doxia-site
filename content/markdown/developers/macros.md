@@ -24,7 +24,7 @@ date: 2008-03-02
 
 # Create a New Doxia Macro
 
-You need to add the following [plexus\-component\-metadata plugin](https://codehaus-plexus.github.io/plexus-containers/plexus-component-metadata/) configuration to generate the correct Plexus _component\.xml_ file from annotations for the project containing your macro:
+You need to add the following [plexus-component-metadata plugin](https://codehaus-plexus.github.io/plexus-containers/plexus-component-metadata/) configuration to generate the correct Plexus _component.xml_ file from annotations for the project containing your macro:
 
 ```unknown
 <project>

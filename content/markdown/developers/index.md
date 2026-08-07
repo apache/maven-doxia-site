@@ -24,7 +24,7 @@ date: 2008-03-02
 
 # Doxia Developers Centre
 
-This documentation centre is for those that are developing Doxia modules or macro\.
+This documentation centre is for those that are developing Doxia modules or macro.
 
 Currently you can find information on the following topics:
 

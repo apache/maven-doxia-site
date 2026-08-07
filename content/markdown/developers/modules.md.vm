@@ -24,7 +24,7 @@ date: 2008-03-02
 
 # Create a New Doxia Module
 
-First, the easiest way is to create a POM with _doxia\-modules_ as parent:
+First, the easiest way is to create a POM with _doxia-modules_ as parent:
 
 ```unknown
 <project>
@@ -41,7 +41,7 @@ First, the easiest way is to create a POM with _doxia\-modules_ as parent:
 </project>
 ```
 
-Secondly, you should implement some Doxia classes, depending on what features you want: parsing or generating markup\.
+Secondly, you should implement some Doxia classes, depending on what features you want: parsing or generating markup.
 
 ${esc.h}${esc.h} Parsing
 
@@ -60,9 +60,9 @@ ${esc.h}${esc.h} Parsing
     }
     ```
 
-    Depending on the type markup, extending `AbstractTextParser`, `AbstractXmlParser` or `XhtmlBaseParser` may give you more features\.
+    Depending on the type markup, extending `AbstractTextParser`, `AbstractXmlParser` or `XhtmlBaseParser` may give you more features.
 
-- _MyParseException_ class \(optional\)
+- _MyParseException_ class (optional)
 
     ```unknown
     import org.apache.maven.doxia.parser.ParseException;
@@ -102,7 +102,7 @@ ${esc.h}${esc.h} Generating
     }
     ```
 
-    Depending on the type markup, extending `AbstractTextSink`, `AbstractXmlSink` or `XhtmlBaseSink` may give you more features\.
+    Depending on the type markup, extending `AbstractTextSink`, `AbstractXmlSink` or `XhtmlBaseSink` may give you more features.
 
 - _MySinkFactory_ class
 
@@ -118,7 +118,7 @@ ${esc.h}${esc.h} Generating
     }
     ```
 
-    Depending on the type markup, extending `AbstractTextSinkFactory`, `AbstractXmlSinkFactory` or `AbstractBinarySinkFactory` may give you more features\.
+    Depending on the type markup, extending `AbstractTextSinkFactory`, `AbstractXmlSinkFactory` or `AbstractBinarySinkFactory` may give you more features.
 
 ${esc.h}${esc.h} <a id="References"></a>References
 

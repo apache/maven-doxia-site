@@ -27,7 +27,7 @@ date: 2008-03-02
 <!-- MACRO{toc|section=1|fromDepth=2|toDepth=2} -->
 ## <a id="Transforming_documents"></a>Transforming documents
 
-Doxia can be used to transform an arbitrary input document to any supported output format\. The following snippet shows how to use a Doxia _Parser_ to transform an apt file to html:
+Doxia can be used to transform an arbitrary input document to any supported output format. The following snippet shows how to use a Doxia _Parser_ to transform an apt file to html:
 
 ```unknown
   File userDir = new File( System.getProperty ( "user.dir" ) );
@@ -45,13 +45,13 @@ Doxia can be used to transform an arbitrary input document to any supported outp
   parser.parse( reader, sink );
 ```
 
-It is recommended that you use [Plexus](http://plexus.codehaus.org/) to look up the parser\. In principle you could instantiate the parser directly \( `Parser parser = new AptParser();` \) but then some special features like macros will not be available\.
+It is recommended that you use [Plexus](http://plexus.codehaus.org/) to look up the parser. In principle you could instantiate the parser directly ( `Parser parser = new AptParser();` ) but then some special features like macros will not be available.
 
-You could also use the [Doxia Converter Tool](http://maven.apache.org/doxia/doxia-tools/doxia-converter/index.html) to parse a given file/dir to another file/dir\.
+You could also use the [Doxia Converter Tool](http://maven.apache.org/doxia/doxia-tools/doxia-converter/index.html) to parse a given file/dir to another file/dir.
 
 ## <a id="Generating_documents"></a>Generating documents
 
-The snippet below gives a simple example of how to generate a document using the Doxia Sink API\.
+The snippet below gives a simple example of how to generate a document using the Doxia Sink API.
 
 ```unknown
     /**
@@ -102,11 +102,11 @@ The snippet below gives a simple example of how to generate a document using the
     }
 ```
 
-A more complete example that also shows the &apos;canonical&apos; order of events to use when generating a document, can be found in the Doxia [SinkTestDocument](./doxia/doxia-core/xref-test/org/apache/maven/doxia/sink/SinkTestDocument.html) class\.
+A more complete example that also shows the &apos;canonical&apos; order of events to use when generating a document, can be found in the Doxia [SinkTestDocument](./doxia/doxia-core/xref-test/org/apache/maven/doxia/sink/SinkTestDocument.html) class.
 
 ## <a id="Passing_attributes_to_Sink_events"></a>Passing attributes to Sink events
 
-A number of methods in the Sink API enable passing a set of attributes to many sink events\. A typical use case is:
+A number of methods in the Sink API enable passing a set of attributes to many sink events. A typical use case is:
 
 ```unknown
 SinkEventAttributeSet atts = new SinkEventAttributeSet();
@@ -115,11 +115,11 @@ atts.addAttribute( SinkEventAttributes.ALIGN, "center" );
 sink.paragraph( atts );
 ```
 
-The kind of attributes supported depends on the event and the sink implementation\. The sink API specifies a list of suggested attribute names that sinks are expected to recognize and parsers are expected to use when emitting events\.
+The kind of attributes supported depends on the event and the sink implementation. The sink API specifies a list of suggested attribute names that sinks are expected to recognize and parsers are expected to use when emitting events.
 
-## <a id="Avoid_sink.rawText.21"></a>Avoid sink\.rawText\!
+## <a id="Avoid_sink.rawText.21"></a>Avoid sink.rawText!
 
-In **Doxia 1\.0** it was a common practice to use sink\.rawText\(\) to generate elements that were not supported by the Sink API\. For example, the following snippet could be used to generate a styled HTML &lt;div&gt; block:
+In **Doxia 1\.0** it was a common practice to use sink.rawText() to generate elements that were not supported by the Sink API. For example, the following snippet could be used to generate a styled HTML &lt;div&gt; block:
 
 ```unknown
 sink.RawText( "<div style=\"cool\">" );
@@ -127,9 +127,9 @@ sink.text( "A text with a cool style." );
 sink.rawText( "</div>" );
 ```
 
-This has a major drawback however: it only works if the receiving Sink is a HTML Sink\. In other words, the above method will not work for target documents in any other format than HTML \(think of the FO Sink to generate a pdf, or a LaTeX sink,\.\.\.\)\.
+This has a major drawback however: it only works if the receiving Sink is a HTML Sink. In other words, the above method will not work for target documents in any other format than HTML (think of the FO Sink to generate a pdf, or a LaTeX sink,\.\.\.).
 
-In **Doxia 1\.1** a new method unknown\(\) was added to the Sink API that can be used to emit an arbitrary event without making special assumptions about the receiving Sink\. Depending on the parameters, a Sink may decide whether or not to process the event, emit it as raw text, as a comment, log it, etc\.
+In **Doxia 1\.1** a new method unknown() was added to the Sink API that can be used to emit an arbitrary event without making special assumptions about the receiving Sink. Depending on the parameters, a Sink may decide whether or not to process the event, emit it as raw text, as a comment, log it, etc.
 
 The correct way to generate the above &lt;div&gt; block is now:
 
@@ -142,9 +142,9 @@ sink.text( "A text with a cool style." );
 sink.unknown( "div", new Object[]{new Integer( HtmlMarkup.TAG_TYPE_END )}, null );
 ```
 
-Read the javadocs of the unknown\(\) method in the [Sink](./doxia/doxia-sink-api/apidocs/org/apache/maven/doxia/sink/Sink.html) interface and the [XhtmlbaseSink](./doxia/doxia-core/apidocs/org/apache/maven/doxia/sink/XhtmlBaseSink.html) for information on the method parameters\. Note that an arbitrary sink may be expected to ignore the unknown event completely\!
+Read the javadocs of the unknown() method in the [Sink](./doxia/doxia-sink-api/apidocs/org/apache/maven/doxia/sink/Sink.html) interface and the [XhtmlbaseSink](./doxia/doxia-core/apidocs/org/apache/maven/doxia/sink/XhtmlBaseSink.html) for information on the method parameters. Note that an arbitrary sink may be expected to ignore the unknown event completely!
 
-**In general, the rawText method should be avoided alltogether when emitting events into an arbitrary Sink\.**
+**In general, the rawText method should be avoided alltogether when emitting events into an arbitrary Sink.**
 
 ## <a id="How_to_inject_javascript_code_into_HTML"></a>How to inject javascript code into HTML
 
