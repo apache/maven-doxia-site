@@ -36,11 +36,11 @@ The source directory is the directory under which Maven expects source documents
 
 |Format|Short description|Parser<br />(input)|Sink<br />(output)|Source Directory|File Extension|Doxia Module|Parser Id|
 |---|---|---|---|---|---|---|---|
-|[Apt](./apt-format.html)|Almost Plain Text|![Yes](../images/icon_success_sml.gif)|![Yes](../images/icon_success_sml.gif)|`apt`|`apt`|[`doxia-module-apt`](../doxia/doxia-modules/doxia-module-apt/)|`apt`|
+|[Apt](./apt-format.html)|Almost Plain Text, predates Doxia's Markdown support|![Yes](../images/icon_success_sml.gif)|![Yes](../images/icon_success_sml.gif)|`apt`|`apt`|[`doxia-module-apt`](../doxia/doxia-modules/doxia-module-apt/)|`apt`|
 |[AsciiDoc](https://asciidoctor.org/)|[Asciidoctor Converter Doxia Module](https://docs.asciidoctor.org/maven-tools/latest/site-integration/converter-module-setup-and-configuration/), only emits `Sink.rawText()`|![Yes](../images/icon_success_sml.gif)|![No](../images/icon_error_sml.gif)|`asciidoc`|`adoc`, `asciidoc`|[`asciidoctor-converter-doxia-module`](https://github.com/asciidoctor/asciidoctor-maven-plugin#maven-site-integration)|`asciidoc`|
 |[AsciiDoc](https://asciidoctor.org/)|[Asciidoctor Parser Doxia Module](https://docs.asciidoctor.org/maven-tools/latest/site-integration/parser-module-setup-and-configuration/), still in beta|![Yes](../images/icon_success_sml.gif)|![No](../images/icon_error_sml.gif)|`asciidoc`|`adoc`, `asciidoc`|[`asciidoctor-parser-doxia-module`](https://github.com/asciidoctor/asciidoctor-maven-plugin#maven-site-integration)|`asciidoc`|
 |[FML](./fml-format.html)|FAQ Markup Language|![Yes](../images/icon_success_sml.gif)|![No](../images/icon_error_sml.gif)|`fml`|`fml`|[`doxia-module-fml`](../doxia/doxia-modules/doxia-module-fml/)|`fml`|
-|[Markdown](../modules/index.html#Markdown)|Markdown markup language|![Yes](../images/icon_success_sml.gif)|![Yes](../images/icon_success_sml.gif)|`markdown`|`md`, `markdown`|[`doxia-module-markdown`](../doxia/doxia-modules/doxia-module-markdown/)|`markdown`|
+|[Markdown](./markdown-format.html)|Markdown markup language|![Yes](../images/icon_success_sml.gif)|![Yes](../images/icon_success_sml.gif)|`markdown`|`md`, `markdown`|[`doxia-module-markdown`](../doxia/doxia-modules/doxia-module-markdown/)|`markdown`|
 |[Xdoc](./xdoc-format.html)|XML Documentation Format|![Yes](../images/icon_success_sml.gif)|![Yes](../images/icon_success_sml.gif)|`xdoc`|`xml`|[`doxia-module-xdoc`](../doxia/doxia-modules/doxia-module-xdoc/)|`xdoc`|
 |[XHTML](../modules/index.html#XHTML)|Extensible Hypertext Markup Language|![Yes](../images/icon_success_sml.gif)|![Yes](../images/icon_success_sml.gif)|`xhtml`|`xhtml`|[`doxia-module-xhtml`](../doxia/doxia-modules/doxia-module-xhtml/)|`xhtml`|
 

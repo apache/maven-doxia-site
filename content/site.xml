@@ -54,6 +54,7 @@ under the License.
 
     <menu name="Documentation">
       <item name="Format References" href="references/index.html" collapse="true">
+        <item name="Markdown Format" href="references/markdown-format.html"/>
         <item name="Apt Format" href="references/apt-format.html" collapse="true">
           <item name="Doxia Apt Enhancements" href="references/doxia-apt.html"/>
         </item>
