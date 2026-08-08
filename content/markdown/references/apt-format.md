@@ -277,7 +277,9 @@ Verbatim
 
 A verbatim block is not indented. It begins with a non indented line containing at least 3 dashes (`---`). It ends with a similar line.
 
-`+--` instead of `---` draws a box around verbatim text.
+`+--` instead of `---` marks the block as source code rather than plain preformatted text. The two produce different Sink events, and so different output: `+--` emits `verbatim` with the `source` decoration, which the XHTML5 Sink renders as `<pre><code>`, while `---` emits a plain `verbatim`, rendered as `<pre>`. Skins use that distinction to decide what to syntax highlight, so use `+--` for code and `---` for anything else, such as console output or a directory listing.
+
+Before Doxia 2 this was described as drawing a box around the text, and the attribute was named `BOXED` accordingly. It never really meant boxing, and the attribute was renamed to `SOURCE` in Doxia 2 to say what it is actually for.
 
 Like in HTML, verbatim text is preformatted. Unlike HTML, verbatim text is escaped: inside a verbatim display, markup is not interpreted by the APT processor.
 
@@ -512,10 +514,10 @@ Verbatim text not contained in list item 3
 
 +-------------------------------+
 Verbatim text
-                        in a box
+                     as source code
 +-------------------------------+
 
-  --- instead of +-- suppresses the box around verbatim text.
+  --- instead of +-- marks the block as plain text rather than source code.
 
 [Figure name] Figure caption
 
