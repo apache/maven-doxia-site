@@ -37,18 +37,14 @@ under the License.
       <question>How to export in PDF?</question>
       <answer>
         <p>
-          There are two modules available that can be used to generate pdf output: an
-          <a href="/doxia/doxia/doxia-modules/doxia-module-itext/">iText module</a>
-          that uses the
-          <a href="http://www.lowagie.com/iText/">iText</a> framework, and a
-          <a href="/doxia/doxia/doxia-modules/doxia-module-fo/">FO</a> module,
-          that can be used e.g. in conjunction with
-          <a href="http://xmlgraphics.apache.org/fop/">Apache FOP</a> to generate a pdf.
-          Unfortunately, the iText team has discontinued the XML to PDF functionalities, so probably
-          only the fo module is going to be supported in the future.
+          Doxia no longer generates PDF. The two modules that used to do it, the iText module and the
+          FO module, were removed in Doxia 2.0.0-M1, see
+          <a href="https://issues.apache.org/jira/browse/DOXIA-630">DOXIA-630</a>.
         </p>
         <p>
-          For Maven there is a <a href="/plugins/maven-pdf-plugin/">pdf plugin</a> available.
+          The Maven PDF Plugin, which built on those modules, was retired in March 2025. Its final
+          release, 1.6.2, is still resolvable from Maven Central, but it is not maintained and the
+          modules it depends on only exist in the unmaintained Doxia 1.x line.
         </p>
       </answer>
     </faq>
