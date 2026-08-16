@@ -35,7 +35,7 @@ date: 2009-03-02
 |:---|:---|:---|
 |[Quick and dirty typesetting with APT](https://www.linux.com/news/quick-and-dirty-typesetting-apt/)|linux.com|Scott Nesbitt|
 |[Lightweight markup language](http://en.wikipedia.org/wiki/Lightweight_markup_language)|wikipedia.org|?|
-# Related External Projects
+## Related External Projects
 
 - [XWiki](http://www.xwiki.org/) which uses Doxia in its [rendering](http://svn.xwiki.org/svnroot/xwiki/platform/core/trunk/xwiki-rendering/xwiki-rendering-parsers/xwiki-rendering-parser-doxia/).
 - [Mylyn WikiText](http://wiki.eclipse.org/Mylyn/Incubator/WikiText) (originally known as Textile-J).

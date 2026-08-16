@@ -89,7 +89,7 @@ The following is a sample FML document:
 </faqs>
 ```
 
-# Validation
+## Validation
 
 Doxia is able to validate your fml files as described [here](../doxia/doxia-modules/doxia-module-fml/using-fml-xsd.html). 
 
