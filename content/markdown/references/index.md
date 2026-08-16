@@ -32,7 +32,7 @@ The following table gives an overview of the markup languages currently supporte
 
 - if a _Sink_ is available, it means you can generate output in this format.
 
-The source directory is the directory under which Maven expects source documents in this format (e.g. `src/site/apt/` for Apt), the file extension is the default file extension, and the parser id is gives the unique identifier that is used by plexus to lookup the corresponding component. 
+The source directory is the directory under which Maven expects source documents in this format (e.g. `src/site/apt/` for Apt), the file extension is the default file extension, and the parser id is the unique identifier used to look up the corresponding component. 
 
 |Format|Short description|Parser<br />(input)|Sink<br />(output)|Source Directory|File Extension|Doxia Module|Parser Id|
 |---|---|---|---|---|---|---|---|
@@ -42,7 +42,7 @@ The source directory is the directory under which Maven expects source documents
 |[FML](./fml-format.html)|FAQ Markup Language|![Yes](../images/icon_success_sml.gif)|![No](../images/icon_error_sml.gif)|`fml`|`fml`|[`doxia-module-fml`](../doxia/doxia-modules/doxia-module-fml/)|`fml`|
 |[Markdown](./markdown-format.html)|Markdown markup language|![Yes](../images/icon_success_sml.gif)|![Yes](../images/icon_success_sml.gif)|`markdown`|`md`, `markdown`|[`doxia-module-markdown`](../doxia/doxia-modules/doxia-module-markdown/)|`markdown`|
 |[Xdoc](./xdoc-format.html)|XML Documentation Format|![Yes](../images/icon_success_sml.gif)|![Yes](../images/icon_success_sml.gif)|`xdoc`|`xml`|[`doxia-module-xdoc`](../doxia/doxia-modules/doxia-module-xdoc/)|`xdoc`|
-|[XHTML](../modules/index.html#XHTML)|Extensible Hypertext Markup Language|![Yes](../images/icon_success_sml.gif)|![Yes](../images/icon_success_sml.gif)|`xhtml`|`xhtml`|[`doxia-module-xhtml`](../doxia/doxia-modules/doxia-module-xhtml/)|`xhtml`|
+|[XHTML5](../modules/index.html#XHTML)|Extensible Hypertext Markup Language, HTML5 serialisation|![Yes](../images/icon_success_sml.gif)|![Yes](../images/icon_success_sml.gif)|`xhtml`|`xhtml`|[`doxia-module-xhtml5`](../doxia/doxia-modules/doxia-module-xhtml5/)|`xhtml`|
 
 Note some modules are not included per default with the site plugin. Have a look at the available modules here: [https://repo.maven.apache.org/maven2/org/apache/maven/doxia/](https://repo.maven.apache.org/maven2/org/apache/maven/doxia/).   
 
@@ -63,16 +63,17 @@ If you need to add module for the `maven-site-plugin` simply add it as a depende
 </plugin>
 ```
 
-# Former Doxia Formats
+## Former Doxia Formats
 
 The following table gives an overview of the formats which used to be supported mostly as Parser in former versions of Doxia: 
 
-|Format|Short description|Doxia Module|Removed Since
-|---|---|---|
-|iText|iText PDF Library|[`doxia-module-itext`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-itext/)|2.0
-|FO|XSL formatting objects (XSL-FO)|[`doxia-module-fo`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-fo/)|2.0
-|LaTeX|LaTeX typesetting system|[`doxia-module-latex`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-latex/)|2.0
-|RTF|Microsoft Rich Text Format|[`doxia-module-rtf`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-rtf/)|2.0
-|Confluence|Confluence Enterprise Wiki|[`doxia-module-confluence`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-confluence/)|2.0
-|Simplified DocBook|Simplified DocBook XML Standard|[`doxia-module-docbook-simple`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-docbook-simple/)|2.0
-|TWiki|TWiki Structured Wiki|[`doxia-module-twiki`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-twiki/)|2.0
+|Format|Short description|Doxia Module|Removed Since|
+|---|---|---|---|
+|iText|iText PDF Library|[`doxia-module-itext`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-itext/)|2.0|
+|FO|XSL formatting objects (XSL-FO)|[`doxia-module-fo`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-fo/)|2.0|
+|LaTeX|LaTeX typesetting system|[`doxia-module-latex`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-latex/)|2.0|
+|RTF|Microsoft Rich Text Format|[`doxia-module-rtf`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-rtf/)|2.0|
+|Confluence|Confluence Enterprise Wiki|[`doxia-module-confluence`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-confluence/)|2.0|
+|Simplified DocBook|Simplified DocBook XML Standard|[`doxia-module-docbook-simple`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-docbook-simple/)|2.0|
+|TWiki|TWiki Structured Wiki|[`doxia-module-twiki`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-twiki/)|2.0|
+|XHTML|XHTML 1.0, superseded by the XHTML5 module|[`doxia-module-xhtml`](../doxia-archives/doxia-1.11.1/doxia-modules/doxia-module-xhtml/)|2.0|
