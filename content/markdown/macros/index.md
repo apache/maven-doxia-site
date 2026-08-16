@@ -26,7 +26,7 @@ date: 2009-03-02
 
 The Doxia _Core_ includes macro mechanisms to facilitate the documentation writing.
 
-Macros are currently only supported for APT, Xdoc and FML formats. Starting with Doxia 1\.7 (maven-site-plugin 3\.5), macros are also supported for XHTML and Markdown. Macros are not (and probably will never be) supported by Confluence, Docbook and Twiki modules.
+Macros are supported by the APT, Xdoc, FML, XHTML and Markdown formats.
 
 A macro in an APT source file is a **non-indented** line that looks like this:
 
@@ -50,7 +50,7 @@ Since Doxia 1\.7, an XHTML or Markdown macro has the following syntax:
 <!-- MACRO{macro_name|param1=value1|param2=value2|...} -->
 ```
 
-As of Doxia 1\.7, the following macros are available:
+The following macros are available:
 
 <!-- MACRO{toc|section=1|fromDepth=2|toDepth=2} -->
 ## <a id="Echo_Macro"></a>Echo Macro
@@ -170,58 +170,8 @@ From **Doxia 1\.1\.1** on you may also specify any of the html base attributes (
 
 This can be used for styling the TOC via css.
 
-## <a id="SWF_Macro"></a>SWF Macro
+## <a id="Removed_Macros"></a>Removed Macros
 
-The _Swf_ macro prints Shockwave Flash assets in the documentation. For instance, in an APT file, you could write:
-
-```unknown
-%{swf|src=swf/myfile.swf|id=MyMovie|width=600|height=200}
-```
-
-In a xdoc file, it will be:
-
-```unknown
-<macro name="swf">
-  <param name="src" value="swf/myfile.swf"/>
-  <param name="id" value="MyMovie"/>
-  <param name="width" value="600"/>
-  <param name="height" value="200"/>
-</macro>
-```
-
-|Parameter|Description|
-|:---|:---|
-|src|Specifies the location (URL) of the movie to be loaded.|
-|id|Identifies the Flash movie to the host environment (a web browser, for example) so that it can be referenced using a scripting language.|
-|width|Specifies the width of the movie in either pixels or percentage of browser window.|
-|height|Specifies the height of the movie in either pixels or percentage of browser window.|
-|quality|Possible values: low, high, autolow, autohigh, best.|
-|menu|True displays the full menu, allowing the user a variety of options to enhance or control playback. False displays a menu that contains only the Settings option and the About Flash option.|
-|loop|Possible values: true, false. Specifies whether the movie repeats indefinitely or stops when it reaches the last frame. The default value is true if this attribute is omitted.|
-|play|Possible values: true, false. Specifies whether the movie begins playing immediately on loading in the browser. The default value is true if this attribute is omitted.|
-|version|Specifies the width of the movie in either pixels or percentage of browser window.|
-|allowScript|Specifies the width of the movie in either pixels or percentage of browser window.|
-
-For more information, see the [SWF Macro](./swf-macro.html) page.
-
-## <a id="SSI_Macro"></a>SSI Macro
-
-Since Doxia 1\.7, the _SSI_ macro prints a server side include. For instance, in an APT file, you could write:
-
-```unknown
-%{ssi|function=include|file=included-file.html}
-```
-
-In a xdoc file, it will be:
-
-```unknown
-<macro name="ssi">
-  <param name="function" value="include"/>
-  <param name="file" value="included-file.html"/>
-</macro>
-```
-
-|Parameter|Description|
-|:---|:---|
-|function|The SSI function to insert.|
-|_any_|Parameter that will be added to the SSI directive.|
+The _SWF_ macro, which embedded Shockwave Flash assets, and the _SSI_ macro, which emitted a server
+side include, were both removed in Doxia 2\.0\. A document that still invokes either one fails to
+render.
