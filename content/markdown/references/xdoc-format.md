@@ -23,15 +23,13 @@ specific language governing permissions and limitations
 under the License.
 -->
 
-# Content
+# The XDoc format
 
-<a id="Content"></a> 
+<a id="The_XDoc_format"></a> 
 
 <!-- MACRO{toc|fromDepth=1|toDepth=2} -->
 
-# The XDoc format
-
-<a id="The_XDoc_format"></a> <a id="Overview"></a> 
+<a id="Overview"></a> 
 ## Overview
 
 An &apos;xdoc&apos; is an XML document conforming to a small and simple set of tags. Xdoc was the primary documentation format in [Maven 1](http://maven.apache.org/maven-1.x/), Maven 2 largely replaced this by [Apt](apt-format.html), but xdoc is still supported. 
@@ -153,7 +151,7 @@ or use an `id` attribute for section and subsections (note that `id`&apos;s have
 
 If automatic anchor generation is desired for a particular output format, it should be implemented / overridden by the corresponding low-level Sink. 
 
-# Validation
+## Validation
 
 <a id="Validation"></a> 
 
@@ -162,7 +160,7 @@ Doxia is able to validate your xdoc files as described [here](../doxia/doxia-mod
 Here is a list of common mistakes to be aware of: 
 
 <a id="Dont_nest_block_level_elements"></a> 
-## Don&apos;t nest block level elements
+### Don&apos;t nest block level elements
 
 Wrong:
 
@@ -195,7 +193,7 @@ Correct:
 Typical block level elements are list elements, `<table>`, `<source>`, `<div>`, `<p>` and `<pre>`. 
 
 <a id="Put_inline_elements_inside_block_level_elements"></a> 
-## Put inline elements inside block level elements
+### Put inline elements inside block level elements
 
 Wrong:
 
@@ -218,12 +216,12 @@ Correct:
 Typical inline elements are `<a>`, `<strong>`, `<code>`, `<font>`, `<br>` and `<img>`. 
 
 <a id="Right_order_of_elements_in_properties"></a> 
-## Right order of elements in &lt;properties&gt;
+### Right order of elements in &lt;properties&gt;
 
 The `<title>` element has to come before `<author>`. 
 
 <a id="Dont_put_source_inside_paragraphs"></a> 
-## Don&apos;t put &lt;source&gt; inside paragraphs
+### Don&apos;t put &lt;source&gt; inside paragraphs
 
 Wrong:
 
