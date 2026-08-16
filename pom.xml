@@ -304,19 +304,4 @@ under the License.
     </plugins>
   </reporting>
 
-  <profiles>
-    <profile>
-      <id>linkcheck</id>
-      <reporting>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-linkcheck-plugin</artifactId>
-            <version>1.2</version>
-          </plugin>
-        </plugins>
-      </reporting>
-    </profile>
-  </profiles>
-
 </project>
