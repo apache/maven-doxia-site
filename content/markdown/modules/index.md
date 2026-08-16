@@ -64,7 +64,7 @@ XDoc is a legacy format for document into a styled HTML document based on XHTML 
 
 ## <a id="XHTML"></a>XHTML
 
-[XHTML](https://html.spec.whatwg.org/multipage/xhtml.html) is a markup language with the same expressions as HTML, but also conforms to XML syntax.
+[XHTML](https://html.spec.whatwg.org/multipage/xhtml.html) is a markup language with the same expressions as HTML, but also conforms to XML syntax. Doxia supports it through the `doxia-module-xhtml5` module; the earlier XHTML 1\.0 module was removed in Doxia 2\.0\.
 
 **References**:
 
