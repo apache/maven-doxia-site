@@ -23,9 +23,9 @@ under the License.
 
 # Source Repository
 
-Maven Doxia projects use [Git](http://git-scm.com/) or [Subversion](http://subversion.apache.org/) to manage their source code: decisions to stay with Subversion or move to Git are tracked on [Maven&apos;s Wiki](https://cwiki.apache.org/confluence/display/MAVEN/Git+Migration). 
+Maven Doxia projects use [Git](https://git-scm.com/) to manage their source code. 
 
-Instructions on Subversion use can be found in the online book [Version Control with Subversion](http://svnbook.red-bean.com/). Instructions on Git use can be found in the online book [Pro Git](http://git-scm.com/book/). Instructions for using the Apache Software Foundation Git repositories are at [https://git-wip-us.apache.org](https://git-wip-us.apache.org/). 
+Instructions on Git use can be found in the online book [Pro Git](https://git-scm.com/book/). The Apache Software Foundation hosts its Git repositories at [GitBox](https://gitbox.apache.org/), which is mirrored to [GitHub](https://github.com/apache/). 
 
 ## Doxia Website
 
