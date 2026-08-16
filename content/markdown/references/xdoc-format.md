@@ -106,20 +106,22 @@ code line 2
 <a id="Additional_sectioning"></a> 
 ## Additional sectioning
 
-Doxia will produce `<h2>` and `<h3>` headings for `<section>` and `<subsection>` elements, respectively. It is therefore perfectly valid to put some sub-headings (`<h4>`, `<h5>`, `<h6>`) inside a subsection. For instance, 
+Since Doxia 2\.0, `<section>` and `<subsection>` elements produce `<h1>` and `<h2>` headings respectively; before 2\.0 they started at `<h2>`. It is therefore perfectly valid to put some sub-headings (`<h3>` to `<h6>`) inside a subsection. For instance, 
 
 ```unknown
-<h4>A subsubsection</h4>
+<h3>A subsubsection</h3>
 ```
 
 will produce: 
 
-#### A subsubsection
+### A subsubsection
 
 <a id="Referencing_sections_and_subsections"></a> 
 ## Referencing sections and subsections
 
-The core doxia modules do **not** construct anchors from section/subsection names. If you want to reference a section, you should either provide an explicit anchor: 
+When a document is rendered as part of a Maven site, Doxia creates an anchor for every section and subsection title by itself, deriving the name from the title text and making it unique within the document. A title that is reworded therefore gets a different anchor, which silently breaks links pointing at it. 
+
+For a reference that has to survive editing, name the anchor yourself. Either provide an explicit anchor: 
 
 ```unknown
 <a name="Section1"/>
@@ -143,13 +145,7 @@ or use an `id` attribute for section and subsections (note that `id`&apos;s have
 </section>
 ```
 
-**Note** that this differs from previous behavior, where anchors were constructed from section/subsection names, replacing special characters by underscores. This behavior presents two shortcomings: 
-
-- If two sections or subsections have identical names (within one source document), you will get an ambiguity when referencing them. Also the resulting html document will not be valid XHTML. For other output formats (eg pdf), it might even be impossible to generate the target document. 
-
-- For long section titles, this leads to rather cumbersome anchor names. 
-
-If automatic anchor generation is desired for a particular output format, it should be implemented / overridden by the corresponding low-level Sink. 
+An anchor you write yourself always wins: Doxia only generates one where the title does not already carry it. Two sections sharing a title no longer collide, because generated names are numbered to keep them unique, and Doxia warns when the same anchor name is used more than once in a document. 
 
 ## Validation
 

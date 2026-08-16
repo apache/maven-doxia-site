@@ -105,7 +105,7 @@ produces:
 <!--~~~~~~~~~~~~~~~~~~~-->
 ### <a id="Anchors_for_section_titles"></a>Anchors for section titles
 
-Contrary to the original APT format, section titles are **not** implicitly defined anchors. If you want an anchor for a section title you need to define it explicitly as such:
+When a document is rendered as part of a Maven site, Doxia gives every section title an anchor of its own, built from the title text by the rules below. Because that name follows the wording, rewording a title moves the anchor and breaks links aimed at it. Define the anchor explicitly where a reference has to hold:
 
 ```unknown
 * {Anchors for section titles}
