@@ -31,7 +31,7 @@ An &apos;fml&apos; (FAQ Markup Language) is an XML document conforming to a smal
 
 ## The FML format
 
-Below the root element `faqs` there are one or more `part` elements. Each `part` element has a `title` and contains one or more `faq` elements. Each `faq` element has a `question` and an `answer` element. The contents of `title`, `question` and `answer` are parsed with the [XDoc parser](xdoc-format.html). The full documentation is available at [here](../doxia/doxia-modules/doxia-module-fml/xsddoc/index.html). 
+Below the root element `faqs` there are one or more `part` elements. Each `part` element has a `title` and contains one or more `faq` elements. Each `faq` element has a `question` and an `answer` element. The contents of `title`, `question` and `answer` are parsed with the [XDoc parser](xdoc-format.html). The full documentation is available in the annotated [fml-1.0.1.xsd](https://maven.apache.org/xsd/fml-1.0.1.xsd) schema. 
 
 ## FML Sample
 

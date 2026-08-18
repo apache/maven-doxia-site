@@ -41,7 +41,7 @@ The Maven 1 Xdoc plugin introduced a few additions to the Anakia format, they ar
 <a id="The_XDoc_xsd"></a> 
 ## The XDoc xsd
 
-The full documentation is available [here](../doxia/doxia-modules/doxia-module-xdoc/xsddoc/index.html). 
+The full documentation is available in the annotated [xdoc-2.0.xsd](https://maven.apache.org/xsd/xdoc-2.0.xsd) schema. 
 
 <a id="XDoc_Sample"></a> 
 ## XDoc Sample
